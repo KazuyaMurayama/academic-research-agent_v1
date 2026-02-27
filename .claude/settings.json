@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allowedTools": [
+      "Read",
+      "Write",
+      "Bash(python *)",
+      "Bash(pip *)",
+      "Bash(cat *)",
+      "Bash(ls *)",
+      "Bash(mkdir *)",
+      "Bash(cp *)"
+    ]
+  }
+}
