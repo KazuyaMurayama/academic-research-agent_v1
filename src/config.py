@@ -17,7 +17,7 @@ TEMPLATES_DIR: Path = PROJECT_ROOT / "templates"
 
 # ─── APIエンドポイント ───────────────────────────────────────────
 SEMANTIC_SCHOLAR_API_URL: str = "https://api.semanticscholar.org/graph/v1"
-ARXIV_API_URL: str = "http://export.arxiv.org/api/query"
+ARXIV_API_URL: str = "https://export.arxiv.org/api/query"
 OPENALEX_API_URL: str = "https://api.openalex.org"
 
 # ─── APIキー（環境変数から読み込み） ──────────────────────────────
