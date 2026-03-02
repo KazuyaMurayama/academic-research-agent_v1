@@ -31,7 +31,7 @@ def deduplicate(papers: list[dict[str, Any]]) -> list[dict[str, Any]]:
 
     for paper in papers:
         doi = paper.get("doi")
-        normalized_title = _normalize_title(paper.get("title", ""))
+        normalized_title = _normalize_title(paper.get("title") or "")
 
         # DOI による重複チェック
         if doi:
