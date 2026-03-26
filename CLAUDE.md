@@ -32,6 +32,13 @@
 - arXiv API: リクエスト間隔3秒以上
 - コンテキスト窓対策: 論文は必ず10本ずつバッチ処理する
 
+## Notion連携
+- レポート生成後、自動的にNotionデータベースに保存（毎回自動。「skip Notion」で個別スキップ可能）
+- MCP Server: notionApi（user scope で登録済み）
+- Database ID: .env の NOTION_DATABASE_ID を参照
+- フォールバック: `python src/notion_client.py`（MCP利用不可時のみ）
+- 詳細ルール: ~/.claude/CLAUDE.md の「Notion Report Output Rules」を参照
+
 ## 進捗報告ルール
 
 長時間タスク（/research等）の実行中、以下のタイミングで進捗を報告する:

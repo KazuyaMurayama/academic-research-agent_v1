@@ -96,5 +96,30 @@ description: >
 - レポート全文: outputs/{session_id}/05_report.md
 - 検索戦略: outputs/{session_id}/01_search_plan.md
 - エビデンス統合: outputs/{session_id}/04_synthesis.md
+- Notion: {Notion_page_URL}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
+
+### Phase 6: Notion保存（自動実行）
+※ ユーザーが「Notionに保存しない」「skip Notion」等と指示した場合はスキップ
+
+1. 05_report.md からExecutive Summaryを抽出（300字以内）→ Summaryプロパティ
+2. 研究テーマに基づいてTagsを自動選択（タグマスターリストから2-5個）:
+   - **ビジネス・コンサル系**: ai-strategy, ai-implementation, dx-transformation, consulting-methodology, client-communication, pricing-strategy, freelance-ops, market-analysis, sales-strategy, project-management
+   - **テクニカル系**: python, claude-api, prompt-engineering, mcp, automation, data-analysis, backtesting, web-scraping, github-actions, react-firebase
+   - **ドメイン知識**: finance-investment, real-estate, tax-japan, health-optimization, skincare-dermatology, childcare-japan, marathon-fitness
+   - **メタ・ナレッジ管理**: knowledge-base, research-summary, case-study, how-to, decision-log, lesson-learned
+   - 必ず `research-summary` を含め、テーマに該当するドメイン系タグを1つ以上選ぶ
+3. Notion MCPツール（notionApi の API-post-page）を使用してデータベースにページを作成:
+   - 名前: 「{YYYY/MM/DD} {研究テーマ} - 論文サーチレポート」
+   - Tags: 自動選択したタグ
+   - Source: `claude-code`
+   - Date: 実行日（ISO 8601形式）
+   - Status: `draft`
+   - Summary: Executive Summary テキスト
+   - ページ本文: レポートのMarkdownをNotionブロック（heading_2, heading_3, paragraph, bulleted_list_item, numbered_list_item, code）に変換して挿入
+4. Notion MCP が利用不可の場合:
+   - `python src/notion_client.py --session-id {session_id}` でフォールバック投稿を試行
+   - それも失敗した場合: ローカル保存のみで完了とし、エラーを報告
+5. outputs/{session_id}/06_notion_url.txt にNotion URLを保存
+6. ユーザーに表示: 「📝 Notionに保存しました: {Notion_page_URL}」
