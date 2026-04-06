@@ -39,6 +39,8 @@ async def collect_papers(
     *,
     year_range: str | None = None,
     max_results: int = 100,
+    skip_apis: list[str] | None = None,
+    api_timeout: float = 60.0,
 ) -> dict[str, Any]:
     """複数のクエリ・APIから論文を収集し、重複排除・ソートして返す。
 
@@ -46,6 +48,8 @@ async def collect_papers(
         queries: 検索クエリのリスト。
         year_range: 出版年範囲（例: "2020-2025"）。
         max_results: API ごとの最大取得件数。
+        skip_apis: スキップするAPI名のリスト（例: ["semantic_scholar"]）。
+        api_timeout: 1クエリ×1APIあたりのタイムアウト秒数（デフォルト: 60）。
 
     Returns:
         メタデータと論文リストを含む辞書:
@@ -54,6 +58,7 @@ async def collect_papers(
             "papers": [ ... ]
         }
     """
+    skip_apis = [s.lower() for s in (skip_apis or [])]
     all_papers: list[dict[str, Any]] = []
     api_stats: dict[str, int] = {
         "semantic_scholar": 0,
@@ -65,32 +70,37 @@ async def collect_papers(
         for query in queries:
             logger.info("検索クエリ: %r", query)
 
-            # 3つのAPIを並列実行
-            results = await asyncio.gather(
-                _safe_search(
+            # 各APIをタイムアウト付きで並列実行
+            tasks = {
+                "semantic_scholar": _safe_search(
                     semantic_scholar.search_papers,
                     query,
                     year_range=year_range,
                     max_results=max_results,
                     client=client,
-                ),
-                _safe_search(
+                    api_timeout=api_timeout,
+                ) if "semantic_scholar" not in skip_apis else _empty(),
+                "arxiv": _safe_search(
                     arxiv_client.search_papers,
                     query,
                     year_range=year_range,
                     max_results=max_results,
                     client=client,
-                ),
-                _safe_search(
+                    api_timeout=api_timeout,
+                ) if "arxiv" not in skip_apis else _empty(),
+                "openalex": _safe_search(
                     openalex_client.search_papers,
                     query,
                     year_range=year_range,
                     max_results=max_results,
                     client=client,
-                ),
-            )
+                    api_timeout=api_timeout,
+                ) if "openalex" not in skip_apis else _empty(),
+            }
 
-            for source_name, papers in zip(api_stats.keys(), results):
+            results = await asyncio.gather(*tasks.values())
+
+            for source_name, papers in zip(tasks.keys(), results):
                 api_stats[source_name] += len(papers)
                 all_papers.extend(papers)
 
@@ -120,22 +130,43 @@ async def collect_papers(
     }
 
 
-async def _safe_search(search_fn: Any, *args: Any, **kwargs: Any) -> list[dict[str, Any]]:
-    """API検索をエラーハンドリング付きで実行する。
+async def _safe_search(
+    search_fn: Any,
+    *args: Any,
+    api_timeout: float = 60.0,
+    **kwargs: Any,
+) -> list[dict[str, Any]]:
+    """API検索をタイムアウト・エラーハンドリング付きで実行する。
 
     Args:
         search_fn: 検索関数。
         *args: 位置引数。
-        **kwargs: キーワード引数。
+        api_timeout: タイムアウト秒数。超過時は空リストを返す。
+        **kwargs: キーワード引数（api_timeout は除去して渡す）。
 
     Returns:
-        論文リスト。エラー時は空リスト。
+        論文リスト。タイムアウト・エラー時は空リスト。
     """
     try:
-        return await search_fn(*args, **kwargs)
+        return await asyncio.wait_for(
+            search_fn(*args, **kwargs),
+            timeout=api_timeout,
+        )
+    except asyncio.TimeoutError:
+        logger.warning(
+            "API検索タイムアウト (%s, %.0fs超過): スキップします",
+            search_fn.__module__,
+            api_timeout,
+        )
+        return []
     except Exception as e:
         logger.error("API検索エラー (%s): %s", search_fn.__module__, e)
         return []
+
+
+async def _empty() -> list[dict[str, Any]]:
+    """スキップされたAPIの代わりに空リストを返す。"""
+    return []
 
 
 def save_results(data: dict[str, Any], output_path: str | Path) -> Path:
@@ -192,6 +223,19 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         required=True,
         help="出力JSONファイルパス",
     )
+    parser.add_argument(
+        "--skip-apis",
+        nargs="*",
+        default=[],
+        metavar="API",
+        help="スキップするAPI名（semantic_scholar / arxiv / openalex）",
+    )
+    parser.add_argument(
+        "--api-timeout",
+        type=float,
+        default=60.0,
+        help="1クエリ×1APIあたりのタイムアウト秒数（デフォルト: 60）",
+    )
     return parser.parse_args(argv)
 
 
@@ -201,6 +245,8 @@ async def _async_main(args: argparse.Namespace) -> None:
         queries=args.queries,
         year_range=args.years,
         max_results=args.max_results,
+        skip_apis=args.skip_apis,
+        api_timeout=args.api_timeout,
     )
 
     save_results(data, args.output)

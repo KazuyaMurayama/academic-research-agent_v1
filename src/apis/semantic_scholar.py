@@ -106,9 +106,9 @@ async def _request_with_backoff(
     *,
     params: dict[str, Any],
     headers: dict[str, str],
-    max_retries: int = 5,
-    initial_wait: float = 5.0,
-    max_wait: float = 60.0,
+    max_retries: int = 2,
+    initial_wait: float = 3.0,
+    max_wait: float = 10.0,
 ) -> httpx.Response | None:
     """429 レート制限時に指数バックオフでリトライする。
 
