@@ -11,6 +11,11 @@
 1. **Pythonの役割はデータ収集のみ**: API呼び出し、JSON保存、重複排除
 2. **分析・統合・レポート生成はClaude自身が実行**: LLMの推論力を直接活用
 3. **中間ファイルによるフェーズ間連携**: outputs/{session_id}/ に各フェーズの成果物を保存
+4. **【必須】最終レポートは必ずGitHubから開けるようにする**:
+   - `reports/YYYY-MM-DD_{英語スラグ}.md` に保存（gitignore対象外）
+   - `git add reports/ → git commit → git push` を毎回実行
+   - GitHub URL をユーザーに提示する（省略禁止）
+   - `outputs/` はgitignore済みのため、`reports/` への保存が必須
 
 ## 利用可能なスキル（スラッシュコマンド）
 - `/research テーマ` : フル論文サーチ＆レポート生成（5フェーズ）

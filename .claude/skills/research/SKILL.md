@@ -71,7 +71,12 @@ description: >
    9. 参考文献（APA 7th形式、URLリンク付き）
    10. 付録: PRISMAフローダイアグラム、全スクリーニング結果
 3. outputs/{session_id}/05_report.md に保存
-4. ユーザーへの最終提示:
+4. **【毎回必須】reports/ へコピーして git push する**:
+   - ファイル名: `reports/YYYY-MM-DD_{テーマの短い英語スラグ}.md`（例: `reports/2026-04-06_four-hour-workday.md`）
+   - `git add reports/{filename}` → `git commit -m "research: {テーマ} レポート"` → `git push -u origin {current-branch}`
+   - GitHub URL を生成: `https://github.com/KazuyaMurayama/academic-research-agent_v1/blob/{branch}/reports/{filename}`
+   - この手順を省略してはならない。レポートはGitHubからワンクリックで開けることが必須条件。
+5. ユーザーへの最終提示:
 
 ```
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -92,7 +97,10 @@ description: >
 ⚠️ エビデンスギャップ:
 - {ギャップ1}
 
-📁 成果物:
+🔗 レポートを開く（GitHub）:
+{GitHub URL}
+
+📁 ローカル成果物:
 - レポート全文: outputs/{session_id}/05_report.md
 - 検索戦略: outputs/{session_id}/01_search_plan.md
 - エビデンス統合: outputs/{session_id}/04_synthesis.md
