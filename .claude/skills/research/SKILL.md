@@ -110,8 +110,7 @@ description: >
 ⚠️ エビデンスギャップ:
 - {ギャップ1}
 
-🔗 レポートを開く（GitHub）:
-{GitHub URL}
+🔗 [📄 レポートを開く（GitHub）]({GitHub URL})
 
 📁 ローカル成果物:
 - レポート全文: outputs/{session_id}/05_report.md

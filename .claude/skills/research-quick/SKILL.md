@@ -17,4 +17,5 @@ Phase 1（検索戦略）→ Phase 2（論文収集、上位10本のみ）→ Ph
 レポート生成後、必ず以下を実行する（省略禁止）:
 1. `reports/YYYY-MM-DD_{英語スラグ}.md` にコピー
 2. `git add reports/ → git commit → git push`
-3. GitHub URL をユーザーに提示: `https://github.com/KazuyaMurayama/academic-research-agent_v1/blob/{branch}/reports/{filename}`
+3. ハイパーリンクをMarkdown形式でユーザーに提示（URL直貼り禁止）:
+   `[📄 レポートを開く（GitHub）](https://github.com/KazuyaMurayama/academic-research-agent_v1/blob/{branch}/reports/{filename})`

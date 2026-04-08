@@ -11,10 +11,13 @@
 1. **Pythonの役割はデータ収集のみ**: API呼び出し、JSON保存、重複排除
 2. **分析・統合・レポート生成はClaude自身が実行**: LLMの推論力を直接活用
 3. **中間ファイルによるフェーズ間連携**: outputs/{session_id}/ に各フェーズの成果物を保存
-4. **【必須】最終レポートは必ずGitHubから開けるようにする**:
+4. **【必須】最終レポートは必ずGitHubからワンクリックで開けるようにする**:
    - `reports/YYYY-MM-DD_{英語スラグ}.md` に保存（gitignore対象外）
-   - `git add reports/ → git commit → git push` を毎回実行
-   - GitHub URL をユーザーに提示する（省略禁止）
+   - `git add reports/ → git commit → git push -u origin {ブランチ名}` を毎回実行
+   - **ハイパーリンクをユーザーに提示する（省略禁止・URL直貼り禁止）**:
+     - URLフォーマット: `https://github.com/KazuyaMurayama/academic-research-agent_v1/blob/{ブランチ名}/reports/{ファイル名}`
+     - 必ずMarkdownリンク形式で表示: `[📄 レポートを開く（GitHub）](上記URL)`
+     - ブランチ名は `git branch --show-current` で取得すること
    - `outputs/` はgitignore済みのため、`reports/` への保存が必須
 5. **【必須】過去レポートの参照・重複確認**:
    - 新規調査を始める前に必ず `reports/INDEX.md` を確認する
