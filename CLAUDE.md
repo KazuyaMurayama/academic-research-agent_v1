@@ -16,6 +16,10 @@
    - `git add reports/ → git commit → git push` を毎回実行
    - GitHub URL をユーザーに提示する（省略禁止）
    - `outputs/` はgitignore済みのため、`reports/` への保存が必須
+5. **【必須】過去レポートの参照・重複確認**:
+   - 新規調査を始める前に必ず `reports/INDEX.md` を確認する
+   - 既存レポートで対応できる場合はそれを提示し、追加調査が必要な場合のみ新規実行
+   - 新しいレポートを `reports/` に保存したら、必ず `reports/INDEX.md` に追記する（IDは連番）
 
 ## 利用可能なスキル（スラッシュコマンド）
 - `/research テーマ` : フル論文サーチ＆レポート生成（5フェーズ）

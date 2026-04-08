@@ -11,6 +11,13 @@ description: >
 ユーザーが研究テーマを指定したら、以下の5フェーズを順次実行する。
 各フェーズ完了時に短い進捗サマリーをユーザーに表示すること。
 
+## 【必須】実行前チェック: 過去レポートの確認
+
+**Phase 1 の前に必ず `reports/INDEX.md` を Read して**、類似テーマのレポートが存在しないか確認すること。
+- 既存レポートで対応できる場合: そのレポートをユーザーに提示し、追加調査の要否を確認する
+- 類似テーマがある場合: そのレポートを出発点として差分調査のみ行う
+- 完全に新規テーマの場合: 通常通り5フェーズを実行する
+
 ## 実行手順
 
 ### Phase 1: 検索戦略立案（Query Planning）
@@ -76,7 +83,13 @@ description: >
    - `git add reports/{filename}` → `git commit -m "research: {テーマ} レポート"` → `git push -u origin {current-branch}`
    - GitHub URL を生成: `https://github.com/KazuyaMurayama/academic-research-agent_v1/blob/{branch}/reports/{filename}`
    - この手順を省略してはならない。レポートはGitHubからワンクリックで開けることが必須条件。
-5. ユーザーへの最終提示:
+5. **【毎回必須】`reports/INDEX.md` を更新する**:
+   - 次のIDを確認（既存の最大ID + 1）
+   - 一覧テーブルに1行追加
+   - 詳細セクションに1ブロック追加（タイトル・ファイル名・テーマ・一言サマリー・主要発見・タグ・エビデンスレベル）
+   - タグ索引を更新
+   - `git add reports/INDEX.md` → 前のコミットにまとめるか個別コミット
+6. ユーザーへの最終提示:
 
 ```
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
