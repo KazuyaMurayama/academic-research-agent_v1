@@ -1,65 +1,68 @@
-# Academic Research Agent
+# Academic Research Agent — CLAUDE.md
 
 論文サーチ＆エビデンスベースレポート自動生成システム。
 
-## プロジェクト概要
-- ユーザーの研究テーマに対して、複数の学術APIから論文を自動収集
-- Claude自身が論文のスクリーニング・分析・統合を実行
-- PRISMA準拠の構造化レポートを自動生成
+> **詳細ルールは各参照先ファイルを読むこと。このファイルは最小限に保つ。**
 
-## アーキテクチャ原則
-1. **Pythonの役割はデータ収集のみ**: API呼び出し、JSON保存、重複排除
-2. **分析・統合・レポート生成はClaude自身が実行**: LLMの推論力を直接活用
-3. **中間ファイルによるフェーズ間連携**: outputs/{session_id}/ に各フェーズの成果物を保存
-4. **【必須】最終レポートは必ずGitHubからワンクリックで開けるようにする**:
-   - `reports/YYYY-MM-DD_{英語スラグ}.md` に保存（gitignore対象外）
-   - `git add reports/ → git commit → git push -u origin {ブランチ名}` を毎回実行
-   - **ハイパーリンクをユーザーに提示する（省略禁止・URL直貼り禁止）**:
-     - URLフォーマット: `https://github.com/KazuyaMurayama/academic-research-agent_v1/blob/{ブランチ名}/reports/{ファイル名}`
-     - 必ずMarkdownリンク形式で表示: `[📄 レポートを開く（GitHub）](上記URL)`
-     - ブランチ名は `git branch --show-current` で取得すること
-   - `outputs/` はgitignore済みのため、`reports/` への保存が必須
-5. **【必須】過去レポートの参照・重複確認**:
-   - 新規調査を始める前に必ず `reports/INDEX.md` を確認する
-   - 既存レポートで対応できる場合はそれを提示し、追加調査が必要な場合のみ新規実行
-   - 新しいレポートを `reports/` に保存したら、必ず `reports/INDEX.md` に追記する（IDは連番）
+---
 
-## 利用可能なスキル（スラッシュコマンド）
-- `/research テーマ` : フル論文サーチ＆レポート生成（5フェーズ）
-- `/research-quick テーマ` : 簡易版（検索→即レポート）
-- `/search-only テーマ` : 論文リスト取得のみ
+## 🚀 セッション開始時の必須手順（毎回）
 
-## 技術スタック
-- Python 3.10+
-- httpx（非同期HTTP）, xmltodict（arXiv XML解析）
-- python-dotenv（環境変数）
+1. `FILE_INDEX.md` を Read → プロジェクト全体のファイル構造を把握
+2. `tasks.md` を Read → 未完了タスク・優先度を確認
+3. `reports/INDEX.md` を Read → 既存レポートを確認（重複調査防止）
 
-## コードスタイル
-- type hints必須
-- docstring必須（Google style）
-- エラーハンドリング: API障害時は他APIで継続（フォールバック）
+---
 
-## 重要な制約
-- Semantic Scholar API: 100 requests/5min（APIキーなし）
+## 📋 回答の基本ルール
+
+1. **回答冒頭にプロンプト要約を必ず明記**してから本題に入る
+2. 論理的・客観的・事実ベース（おべっか・楽観コメント禁止）
+3. 意外な点・反直感的な情報は強調（太字・⚠️等）
+4. ユーザーに判断を求めるときは選択肢＋推奨案を提示
+5. Claude Code側でタスク実行し、ユーザー側タスクを最小化
+6. セッション継続困難になったら、その旨＋新セッション用引き継ぎプロンプトを提示
+
+---
+
+## 📌 最重要ルール（省略禁止）
+
+### Git
+- **ブランチ作成禁止**: `git checkout -b` / `git branch <name>` は実行しない
+- **全成果物は master に push**: `git push origin HEAD:master`
+- 詳細 → `.claude/rules/git-rules.md`
+
+### レポート
+- 保存先: `reports/YYYY-MM-DD_{英語スラグ}.md`（gitignore対象外）
+- push後: **Markdownハイパーリンク形式**でユーザーに提示（URL直貼り禁止）
+  - 形式: `[📄 レポートを開く（GitHub）](https://github.com/KazuyaMurayama/academic-research-agent_v1/blob/master/reports/{ファイル名})`
+  - **ブランチ名は常に `master`**（セッション跨ぎで確実にアクセス可能）
+- `reports/INDEX.md` を毎回更新（IDは R001〜連番、次は `R025`）
+- 詳細 → `.claude/rules/output-rules.md`
+
+### タスク管理
+- `tasks.md` を常に最新状態に保つ（完了時に即更新・コミット）
+
+### モデル使い分け
+- 計画・高度な論理推論 → **Opus**
+- 実行・大部分のステップ → **Sonnet**
+- 詳細 → `.claude/rules/model-selection.md`
+
+---
+
+## 🛠️ スキル（スラッシュコマンド）
+
+| コマンド | 用途 | 参照先 |
+|---|---|---|
+| `/research テーマ` | フル論文サーチ＆レポート生成（5フェーズ） | `.claude/skills/research/SKILL.md` |
+| `/research-quick テーマ` | 簡易版（検索→即レポート） | `.claude/skills/research-quick/SKILL.md` |
+| `/search-only テーマ` | 論文リスト取得のみ | `.claude/skills/search-only/SKILL.md` |
+
+---
+
+## ⚙️ 技術制約（最小限）
+
+- Semantic Scholar API: タイムアウト頻発 → フォールバック: `collect_no_ss.py`
 - arXiv API: リクエスト間隔3秒以上
-- コンテキスト窓対策: 論文は必ず10本ずつバッチ処理する
-
-## 進捗報告ルール
-
-長時間タスク（/research等）の実行中、以下のタイミングで進捗を報告する:
-
-1. **フェーズ完了時**: 各フェーズ（Phase 1-5）完了時に短いサマリーを表示
-2. **10分経過時**: 10分以上経過したら中間進捗を表示（処理中の論文数、完了率等）
-3. **エラー発生時**: 即座にエラー内容と回復策を報告
-
-進捗報告フォーマット:
-
-```
-⏳ 進捗報告 [{現在のPhase}/{全Phase数}]
-━━━━━━━━━━━━━━━━━━━━━━━━━━
-✅ 完了: {完了したフェーズ一覧}
-🔄 実行中: {現在のフェーズと詳細}
-⏳ 待機中: {未実行のフェーズ}
-📊 統計: 論文{N}件処理済み / 推定残り時間{M}分
-━━━━━━━━━━━━━━━━━━━━━━━━━━
-```
+- 論文は10本ずつバッチ処理（コンテキスト窓対策）
+- `outputs/` はgitignore済み → `reports/` への保存が必須
