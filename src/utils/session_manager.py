@@ -105,9 +105,10 @@ def get_phase_path(session_id: str, phase: int) -> Path:
         3: "03_screening.md",
         4: "04_synthesis.md",
         5: "05_report.md",
+        6: "06_notion_url.txt",
     }
     if phase not in filenames:
-        raise ValueError(f"Invalid phase: {phase}. Must be 1-5.")
+        raise ValueError(f"Invalid phase: {phase}. Must be 1-6.")
 
     return get_session_dir(session_id) / filenames[phase]
 

@@ -66,3 +66,4 @@
 - arXiv API: リクエスト間隔3秒以上
 - 論文は10本ずつバッチ処理（コンテキスト窓対策）
 - `outputs/` はgitignore済み → `reports/` への保存が必須
+- Notion連携: レポート生成後に自動保存可（`src/notion_client.py` / MCP: notionApi）

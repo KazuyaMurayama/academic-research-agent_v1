@@ -24,6 +24,12 @@ OPENALEX_API_URL: str = "https://api.openalex.org"
 SEMANTIC_SCHOLAR_API_KEY: str | None = os.getenv("SEMANTIC_SCHOLAR_API_KEY") or None
 OPENALEX_EMAIL: str | None = os.getenv("OPENALEX_EMAIL") or None
 
+# ─── Notion API ──────────────────────────────────────────────────
+NOTION_API_KEY: str | None = os.getenv("NOTION_API_KEY") or None
+NOTION_DATABASE_ID: str | None = os.getenv("NOTION_DATABASE_ID") or None
+NOTION_API_URL: str = "https://api.notion.com/v1"
+NOTION_VERSION: str = "2022-06-28"
+
 # ─── デフォルトパラメータ ────────────────────────────────────────
 DEFAULT_YEAR_RANGE: str = "2021-2026"
 DEFAULT_MAX_RESULTS: int = 100
