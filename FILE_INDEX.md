@@ -2,7 +2,7 @@
 
 > **新セッション開始時に必ずこのファイルを読む。**
 > ファイル追加・削除時は必ずこのファイルを更新してコミットすること。
-> 最終更新: 2026-04-13
+> 最終更新: 2026-04-19
 
 ---
 
@@ -39,7 +39,7 @@ academic-research-agent_v1/
 │
 ├── .claude/
 │   ├── settings.json            ← Claude Code設定
-│   ├── rules/                   ← ★ 詳細ルールファイル群（新規）
+│   ├── rules/                   ← ★ 詳細ルールファイル群
 │   │   ├── git-rules.md
 │   │   ├── output-rules.md
 │   │   └── model-selection.md
@@ -48,8 +48,9 @@ academic-research-agent_v1/
 │       ├── research-quick/SKILL.md
 │       └── search-only/SKILL.md
 │
-├── src/                         ← Pythonソースコード（データ収集のみ）
+├── src/                         ← Pythonソースコード（データ収集・連携）
 │   ├── config.py
+│   ├── notion_client.py         ← Notion API連携クライアント
 │   ├── apis/
 │   │   ├── arxiv_client.py
 │   │   ├── openalex_client.py
@@ -59,6 +60,8 @@ academic-research-agent_v1/
 │   └── utils/
 │       ├── deduplicator.py
 │       └── session_manager.py
+│
+├── prompts/                     ← プロンプトテンプレート置き場（現在空）
 │
 ├── templates/
 │   └── report_template.md       ← レポート雛形
@@ -114,6 +117,7 @@ academic-research-agent_v1/
 | ファイル | 役割 | 備考 |
 |---|---|---|
 | `src/config.py` | API設定・年範囲デフォルト値 | 検索年範囲変更はここ |
+| `src/notion_client.py` | Notion API連携クライアント | レポート自動保存用（467行） |
 | `src/collectors/paper_collector.py` | メイン論文収集スクリプト | `--queries`, `--years`, `--max-results`, `--output` |
 | `collect_no_ss.py` | SS障害時フォールバック | Semantic Scholar除外版 |
 | `src/apis/arxiv_client.py` | arXiv API クライアント | 3秒間隔制限あり |
