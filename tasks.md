@@ -27,6 +27,7 @@
 | T004 | 花粉症・黄砂×サプリvs薬 レポート作成（R024） | 2026-04-13 | Sonnet | `reports/2026-04-13_hayfever-supplements-vs-drugs.md` |
 | T005 | 小児便秘レポートにマンナンごはんvsさつまいも追記（Section 11） | 2026-04-13 | Sonnet | `reports/2026-03-30_pediatric-constipation-fiber.md` |
 | T006 | masterへの全ファイル統合・リポジトリ整備 | 2026-04-13 | Sonnet | `master` ブランチ |
+| T007 | 胃がん予防介入の包括的スコアリングレポート作成（R025） | 2026-04-21 | Opus+Sonnet | `reports/2026-04-21_gastric-cancer-prevention-scoring.md` |
 
 ---
 
@@ -58,6 +59,6 @@
 
 | 業務 | タイミング | 方法 |
 |---|---|---|
-| `reports/INDEX.md` 更新 | 新レポート作成時 | 次のIDは `R025` |
+| `reports/INDEX.md` 更新 | 新レポート作成時 | 次のIDは `R026` |
 | `FILE_INDEX.md` 更新 | 新ファイル追加時 | ファイル種別・説明を追記 |
 | masterへのpush | 全コミット後 | `git push origin HEAD:master` |
