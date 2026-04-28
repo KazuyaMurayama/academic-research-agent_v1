@@ -108,8 +108,9 @@ academic-research-agent_v1/
 | R023 | `2026-04-03_infant-gut-microbiome.md` | 乳幼児腸内環境 | 2026-04-03 |
 | R024 | `2026-04-13_hayfever-supplements-vs-drugs.md` | 花粉症×サプリvs薬100点 | 2026-04-13 |
 | R025 | `2026-04-21_gastric-cancer-prevention-scoring.md` | 胃がん予防介入スコアリング | 2026-04-21 |
+| R026 | `2026-04-28_supplement-drug-risk-analysis.md` | 40代男性サプリ＆処方薬リスク分析 | 2026-04-28 |
 
-**次のレポートID: R026**
+**次のレポートID: R027**
 
 ---
 

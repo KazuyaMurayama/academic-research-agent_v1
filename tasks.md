@@ -28,6 +28,7 @@
 | T005 | 小児便秘レポートにマンナンごはんvsさつまいも追記（Section 11） | 2026-04-13 | Sonnet | `reports/2026-03-30_pediatric-constipation-fiber.md` |
 | T006 | masterへの全ファイル統合・リポジトリ整備 | 2026-04-13 | Sonnet | `master` ブランチ |
 | T007 | 胃がん予防介入の包括的スコアリングレポート作成（R025） | 2026-04-21 | Opus+Sonnet | `reports/2026-04-21_gastric-cancer-prevention-scoring.md` |
+| T008 | 40代男性サプリ＆処方薬全レジメンのリスク分析レポート（R026） | 2026-04-28 | Sonnet | `reports/2026-04-28_supplement-drug-risk-analysis.md` |
 
 ---
 
