@@ -249,27 +249,166 @@ system_prompt = """あなたは{専門領域}の専門家です。
 
 ## RAG精度向上技術
 
-<!-- R_SECTION_INTRO_PLACEHOLDER -->
+RAGは「ハルシネーション率 -42%」（ベースラインLLM比）という最強クラスの効果量を持ちます。ただし**コンポーネントごとに精度への寄与が異なる**ため、どの段階を優先して改善するかが重要です。検索段（Retrieval）→ 再ランキング段（Reranking）→ 生成段（Generation）の順に改善するのが推奨です。
 
 ### R-01 Hybrid Retrieval（Dense + BM25）
 
-<!-- R01_HYBRID_RETRIEVAL_PLACEHOLDER -->
+| 軸 | 内容 |
+|---|---|
+| **E1 効果量** | 精度 **+15〜48%**（Pinecone: 62%→91% = +48%、BEIR一般: +15〜30%）|
+| **E2 証拠強度** | 4（複数独立評価 + 商用実装報告） |
+| **E3 適用範囲** | 専門用語・固有名詞の多いドメイン文書検索（法律・医療・金融） |
+| **E4 コスト** | ×1.1（2種の検索 + マージ処理、無視できるレベル） |
+| **E5 実装難度** | ★★（BM25インデックス + Dense埋め込みインデックスの両方を構築） |
+| **E6 適用条件** | **専門用語・固有名詞が多く、語彙ミスマッチが頻発する場面で最も効果的**。Dense単体では語彙ミスマッチで失敗するケースを補完する |
+| **E7 限界・反例** | 短い口語クエリ・FAQタスクではDense単体との差が縮小。財務文書ではBM25単体がDenseを上回るケースあり |
+| **E8 アクショナビリティ** | 4 |
+
+**今すぐできるアクション**:
+```python
+# Reciprocal Rank Fusion (RRF) による結合（推奨）
+def rrf_merge(dense_results, sparse_results, k=60):
+    scores = {}
+    for rank, doc_id in enumerate(dense_results):
+        scores[doc_id] = scores.get(doc_id, 0) + 1 / (k + rank + 1)
+    for rank, doc_id in enumerate(sparse_results):
+        scores[doc_id] = scores.get(doc_id, 0) + 1 / (k + rank + 1)
+    return sorted(scores.items(), key=lambda x: x[1], reverse=True)
+
+# BM25推奨パラメータ: k1=1.2, b=0.75
+# Dense推奨モデル: e5-large-v2 / text-embedding-3-large
+```
+出典: [Pinecone Hybrid Search Analysis](https://www.pinecone.io/)、[arXiv:2604.01733](https://arxiv.org/html/2604.01733v1)（BM25 vs RAG Benchmark 2025）
 
 ### R-02 Cross-Encoder Reranking（二段階検索）
 
-<!-- R02_CROSS_ENCODER_PLACEHOLDER -->
+| 軸 | 内容 |
+|---|---|
+| **E1 効果量** | nDCG@10 **+5〜15点**（MS MARCO）/ 精度 **+40%**（ailog.fr 2025報告）/ zerank-1: **+28%** nDCG@10 vs ベースライン |
+| **E2 証拠強度** | 4（MS MARCO・BEIR複数評価 + MIT 2段階検索研究） |
+| **E3 適用範囲** | RAGパイプラインの第2段階。ドメイン問わず汎用的に有効 |
+| **E4 コスト** | ×1.5〜2（上位K件を全文比較するため計算コスト増） |
+| **E5 実装難度** | ★★（検索後にRerankerモデルを追加するだけ） |
+| **E6 適用条件** | **第1段階の検索でRecall@100が高い場合に最も効果的**。ただし第1段階のRecallが低い場合はRerankで補えない |
+| **E7 限界・反例** | Cross-encoderは計算コストが高く、リアルタイムの低レイテンシが必要なケースでは採用しにくい。代替: CROSS-JEM（4倍低レイテンシ）|
+| **E8 アクショナビリティ** | 4 |
+
+**今すぐできるアクション**:
+```python
+from sentence_transformers import CrossEncoder
+
+# 推奨モデル（2025年時点）
+reranker = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2")  # 高速
+# または
+reranker = CrossEncoder("BAAI/bge-reranker-v2-m3")  # 高精度
+
+def rerank(query, candidate_docs, top_k=5):
+    pairs = [(query, doc) for doc in candidate_docs]
+    scores = reranker.predict(pairs)
+    ranked = sorted(zip(scores, candidate_docs), reverse=True)
+    return [doc for _, doc in ranked[:top_k]]
+```
+出典: [Cross-Encoder Reranking Improves RAG by 40%](https://app.ailog.fr/en/blog/news/reranking-cross-encoders-study)、[ZeroEntropy zerank-1](https://zeroentropy.dev/articles/ultimate-guide-to-choosing-the-best-reranking-model-in-2025/)
 
 ### R-03 Contextual Retrieval（Anthropic方式）
 
-<!-- R03_CONTEXTUAL_RETRIEVAL_PLACEHOLDER -->
+| 軸 | 内容 |
+|---|---|
+| **E1 効果量** | 検索失敗率 **-49%**（Contextual Embeddingsのみ）/ **-67%**（+reranking）。Precision@20: 0.65→0.89（+37%）|
+| **E2 証拠強度** | 3（Anthropic公式ベンチマーク 2024年9月発表） |
+| **E3 適用範囲** | 長文書（報告書・マニュアル・法令）のチャンク化RAG |
+| **E4 コスト** | ×2〜3（チャンクごとにLLMで文脈説明を生成、**prompt cachingで大幅削減可能**） |
+| **E5 実装難度** | ★★ |
+| **E6 適用条件** | チャンクが単独では文脈不足になるドキュメント（例: 「その会社の収益が3%増加した」← どの会社？）に特に有効 |
+| **E7 限界・反例** | 文脈生成コストが高い（ただしprompt cachingで90%削減可能）。短い独立性の高いチャンクでは効果小 |
+| **E8 アクショナビリティ** | 3 |
+
+**今すぐできるアクション**:
+```python
+# Anthropic公式実装（Claude + Prompt Caching）
+# 推奨チャンクサイズ: 800トークン、オーバーラップ: 100トークン
+
+CONTEXTUAL_PROMPT = """
+<document>
+{full_document}
+</document>
+
+<chunk>
+{chunk_content}
+</chunk>
+
+このチャンクが文書全体の中でどのような文脈にあるかを、
+1〜2文の簡潔な説明で記述してください。
+検索クエリに対してこのチャンクが見つかりやすくなるよう記述します。
+"""
+
+def add_context_to_chunk(chunk, full_doc):
+    context = llm(CONTEXTUAL_PROMPT.format(
+        full_document=full_doc, chunk_content=chunk
+    ))
+    return f"{context}\n\n{chunk}"
+```
+出典: [Anthropic Contextual Retrieval (2024)](https://www.anthropic.com/news/contextual-retrieval)、[Anthropic Claude Cookbook](https://platform.claude.com/cookbook/capabilities-contextual-embeddings-guide)
 
 ### R-04 HyDE（仮想ドキュメント埋め込み）
 
-<!-- R04_HYDE_PLACEHOLDER -->
+| 軸 | 内容 |
+|---|---|
+| **E1 効果量** | nDCG@10 **61.3 vs 44.5**（Contriever比）on TREC DL-20。クエリ拡張全体で **+14〜37%** 向上 |
+| **E2 証拠強度** | 3（Gao et al. 2022 + TREC/BEIR評価） |
+| **E3 適用範囲** | 専門文書への検索・ゼロショット検索・クエリが短い場合 |
+| **E4 コスト** | ×1.5〜2（仮想ドキュメント生成分のLLMコール追加） |
+| **E5 実装難度** | ★★ |
+| **E6 適用条件** | クエリが短く・曖昧で、コーパスと語彙ミスマッチが生じる場面で有効。**LLMがドメイン知識を持っていることが前提** |
+| **E7 限界・反例** | ⚠️ **生成モデルが弱い・ドメイン外の場合、幻覚した仮想ドキュメントが検索精度を下げる**。クエリが具体的な場合はHybrid Retrievalの方が安定 |
+| **E8 アクショナビリティ** | 3 |
+
+**今すぐできるアクション**:
+```python
+def hyde_retrieval(query, retriever, n_hypothetical=5):
+    # Step 1: 仮想ドキュメントを複数生成
+    hypothetical_docs = []
+    for _ in range(n_hypothetical):
+        hyp_doc = llm(f"次のクエリに答える可能性が高い文書を生成してください:\n{query}")
+        hypothetical_docs.append(hyp_doc)
+
+    # Step 2: 仮想ドキュメントの埋め込みを取得して検索
+    embeddings = [embed(doc) for doc in hypothetical_docs]
+    avg_embedding = sum(embeddings) / len(embeddings)
+    results = retriever.search_by_vector(avg_embedding)
+    return results
+```
+出典: [Gao et al. 2022 HyDE](https://arxiv.org/abs/2212.10496)、[Adaptive HyDE (arXiv 2025)](https://arxiv.org/html/2507.16754v1)
 
 ### R-05 チャンク設計・オーバーラップ最適化
 
-<!-- R05_CHUNK_DESIGN_PLACEHOLDER -->
+| 軸 | 内容 |
+|---|---|
+| **E1 効果量** | 最適チャンクサイズでRecall@20 **+2.8pp**（Contextual Retrieval実験より）。不適切なチャンク設計は検索失敗率を2〜3倍に悪化させる |
+| **E2 証拠強度** | 3（Anthropic Cookbook + 複数実装比較） |
+| **E3 適用範囲** | すべてのRAGシステム（基盤設計段階で決定必要） |
+| **E4 コスト** | ×1.0（一度設計すれば変わらない） |
+| **E5 実装難度** | ★★ |
+| **E6 適用条件** | ドキュメントの構造・文書長・クエリの平均長に応じて最適値が異なる |
+| **E7 限界・反例** | 万能な最適値はなく、ドメイン・タスクごとに実験が必要 |
+| **E8 アクショナビリティ** | 4 |
+
+**今すぐできるアクション**:
+```python
+# Anthropic推奨値（Contextual Retrieval用）
+CHUNK_SIZE = 800       # トークン
+CHUNK_OVERLAP = 100    # トークン（前後の文脈連続性を保つ）
+
+# ドキュメント構造に応じた分割方針
+# - 法律文書: 条項単位（=意味的チャンク）
+# - 技術マニュアル: セクション見出しで分割
+# - 長文レポート: 段落 + オーバーラップ
+# - Q&A集: Q&Aペア単位（分割しない）
+
+# 評価指標: Recall@K（K=5,10,20）でチューニング
+# target Recall@20 ≥ 0.85 for regulated content
+```
+出典: [Anthropic Contextual Retrieval](https://www.anthropic.com/news/contextual-retrieval)、[RAG Evaluation Guide 2025](https://www.getmaxim.ai/articles/rag-evaluation-a-complete-guide-for-2025/)
 
 ---
 
