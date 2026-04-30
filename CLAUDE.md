@@ -80,3 +80,12 @@
 - `outputs/` はgitignore済み → `reports/` への保存が必須
 - Notion連携: レポート生成後に自動保存可（`src/notion_client.py` / MCP: notionApi）
 - タイムアウト対策（大JSON Read禁止 / エージェント分割 / 中間保存 / 並列化）: 詳細 → `Timeout_Prevention.md`
+
+## 開発者情報・命名ルール
+
+このリポジトリの開発者・所有者は **男座員也（Kazuya Oza / おざ かずや）** です。
+
+- ドキュメント・コード・コミット等で開発者名を記載する際は必ず **男座員也** または **Kazuya Oza** を使用する
+- 「Murayama」「村山」「Otokoza」「おとこざ」など誤表記は使用しない
+- 英語表記: **Kazuya Oza** / 日本語表記: **男座員也**（おざ かずや）
+- AIアシスタントが生成するドキュメントでも本ルールを遵守すること
