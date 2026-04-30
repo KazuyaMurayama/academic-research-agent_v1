@@ -54,6 +54,12 @@
 - 実行・大部分のステップ → **Sonnet**
 - 詳細 → `.claude/rules/model-selection.md`
 
+### タイムアウト防止（長文レポート生成時は必読）
+- 大JSON（500KB超）はReadせず、Bashで事前抽出してインライン埋め込み
+- 1エージェント = 1セクション（max 3,000字・max 3ファイルRead）が上限
+- レポートはセクション単位で `outputs/` に中間保存 → 最後に `cat` で結合
+- 詳細 → `Timeout_Prevention.md`
+
 ---
 
 ## 🛠️ スキル（スラッシュコマンド）
@@ -73,3 +79,4 @@
 - 論文は10本ずつバッチ処理（コンテキスト窓対策）
 - `outputs/` はgitignore済み → `reports/` への保存が必須
 - Notion連携: レポート生成後に自動保存可（`src/notion_client.py` / MCP: notionApi）
+- タイムアウト対策（大JSON Read禁止 / エージェント分割 / 中間保存 / 並列化）: 詳細 → `Timeout_Prevention.md`
