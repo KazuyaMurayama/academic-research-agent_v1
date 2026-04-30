@@ -34,7 +34,7 @@ academic-research-agent_v1/
 ├── .gitignore                   ← outputs/等を除外
 │
 ├── reports/                     ← ★ 全レポートの正本（master必須）
-│   ├── INDEX.md                 ← レポートカタログ（R001〜R027、次はR028）
+│   ├── INDEX.md                 ← レポートカタログ（R001〜R028、次はR029）
 │   └── YYYY-MM-DD_slug.md       ← 個別レポート（27本）
 │
 ├── .claude/
@@ -109,8 +109,10 @@ academic-research-agent_v1/
 | R024 | `2026-04-13_hayfever-supplements-vs-drugs.md` | 花粉症×サプリvs薬100点 | 2026-04-13 |
 | R025 | `2026-04-21_gastric-cancer-prevention-scoring.md` | 胃がん予防介入スコアリング | 2026-04-21 |
 | R026 | `2026-04-28_supplement-drug-risk-analysis.md` | 40代男性サプリ＆処方薬リスク分析 | 2026-04-28 |
+| R027 | `2026-04-28_immunity-boost-v2.md` | 免疫力強化戦略 v2: 16介入の定量スコアリング | 2026-04-28 |
+| R028 | `2026-04-30_cold-remedy-evidence.md` | 風邪（感冒）介入の包括的エビデンス評価 | 2026-04-30 |
 
-**次のレポートID: R027**
+**次のレポートID: R029**
 
 ---
 
