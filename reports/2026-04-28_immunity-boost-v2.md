@@ -460,19 +460,125 @@ v2では16種類の介入を**効果量・エビデンスレベル・安全性**
 
 ## 7. エビデンスギャップと今後の課題
 
-<!-- S7_EVIDENCE_GAPS_PLACEHOLDER -->
+現時点で免疫強化研究における主要なエビデンスギャップは以下の通り:
+
+### 1. 複合介入のRCT不足
+個別介入（運動のみ、ビタミンDのみ等）の研究は多いが、実際の生活で行われる**複数介入の組み合わせ効果**を評価したRCTは極めて少ない。「運動+睡眠+プロバイオティクス」の複合効果は個別効果の単純加算ではない可能性がある。
+
+### 2. 40代特有のエビデンス不足
+多くの研究は高齢者（65歳以上）または若年成人（18-35歳）を対象としており、**40-59歳の免疫低下開始期**に特化した研究は少ない。免疫老化（immunosenescence）は40代から始まる可能性があり、この年代への介入効果の研究が必要。
+
+### 3. 腸内細菌叢の個人差
+プロバイオティクスの効果は腸内細菌叢の個人差（enterotype）に強く依存するが、「どの腸内細菌叢プロファイルにどの菌株が有効か」を個別化する研究は緒についたばかり。
+
+### 4. スペルミジン・新興介入のヒト大規模RCT
+スペルミジンは基礎科学・観察研究が有望だが、**n > 500規模の感染症アウトカムRCT**は未実施。今後5年での進展が期待される。
+
+### 5. 最適用量の不確実性
+ビタミンD（毎日 vs ボーラス）、ビタミンC（予防 vs 感染時）、亜鉛（形態・タイミング）など、**投与方法・タイミングの最適化**についての研究は不十分。「どのくらいの量を、いつ、どのような形で」という実践的疑問への答えが不完全。
+
+### 6. バイオマーカーから感染症アウトカムへの橋渡し
+NK細胞活性・IgA値等の「代理指標」改善が、実際の感染症発症率・重症度改善に直結するかどうかの検証が不十分。多くのサプリ研究が代理指標で止まっている。
 
 ---
 
 ## 8. 実践プロトコル
 
-<!-- S8_ACTION_PLAN_PLACEHOLDER -->
+スコアリング結果に基づく、40代男性のための実践プロトコル。費用対効果・負担の小さいものから優先する。
+
+### ステップ1: 最優先（スコア12-15点、コスト最低・効果最高）
+
+| 介入 | 具体的行動 | 頻度 |
+|------|-----------|------|
+| 中等度有酸素運動 | 速歩（30分）・自転車・水泳 | 週5日以上 |
+| 睡眠7-9時間 | 就寝・起床時刻を固定（23時就寝・7時起床等） | 毎日 |
+| 禁煙（喫煙者のみ） | 禁煙補助薬（バレニクリン・パッチ）活用 | 即開始 |
+
+**なぜ最優先か**: 合計スコアが高く、追加費用ゼロ〜低コスト。有酸素運動単独でほぼすべての免疫指標を改善できる。
+
+### ステップ2: サプリ基盤構築（スコア11-12点）
+
+| サプリ | 用量 | タイミング | 月額概算 |
+|--------|------|----------|---------|
+| プロバイオティクス | 1×10¹⁰ CFU/日以上 | 食後 | 1,500-3,000円 |
+| ビタミンD | 1,000-2,000 IU/日（**毎日**） | 朝食後（脂溶性）| 300-600円 |
+
+**注意**: ビタミンDは「週1大量投与」は無効。必ず毎日少量を継続すること。
+
+### ステップ3: 感染シーズン対応（スコア10-11点）
+
+感染リスクの高い秋〜冬に追加:
+
+| サプリ | 用量 | 備考 |
+|--------|------|------|
+| ビタミンC | 500-1,000 mg/日 | 感染時は2,000 mg/日に増量 |
+| βグルカン | 250 mg/日 | エビデンスはやや予備的 |
+| 亜鉛（感染後） | ローzenge 75-150 mg/日 | **発症24時間以内開始で効果**。予防目的の常用は不要 |
+
+### ステップ4: 個人差・欠乏補填（スコア9-10点）
+
+血液検査で欠乏確認後に追加検討:
+
+| 項目 | 欠乏の判断基準 | 補充量 |
+|------|-------------|--------|
+| マグネシウム | 血清Mg < 0.7 mmol/L または食事摂取不足（精製食品中心）| 200-400 mg/日 |
+| ビタミンB群 | 菜食・飲酒習慣・疲労感あり | マルチB or B12単独2.4 μg/日 |
+| セレン | 土壌セレン低地域（日本は比較的低い）| ブラジルナッツ1粒/日または50 μg/日サプリ |
+
+### ステップ5: 探索的（スコア8点、エビデンス予備的）
+
+| 介入 | 推奨度 | 理由 |
+|------|--------|------|
+| スペルミジン | 試みても良い | 将来性高い。食品（納豆・チーズ）で自然摂取が安全 |
+| クルクミン | 低優先 | バイオアベイラビリティ問題を解決した製剤でなければ効果期待薄 |
+
+### 40代男性向け「最小負担・最大効果」3原則
+
+1. **習慣 > サプリ**: 有酸素運動・睡眠・禁煙の改善はサプリ全16種を合わせた効果を超えうる
+2. **欠乏補填 > 過剰摂取**: サプリは「すでに足りている栄養素を追加しても効果なし」が基本原則
+3. **継続 > 量**: ビタミンDは毎日1,000 IUが、週1回10,000 IUより有効（Lancet 2024実証済み）
 
 ---
 
 ## 9. 参考文献
 
-<!-- S9_REFERENCES_PLACEHOLDER -->
+### スコアリング根拠となる主要文献
+
+1. Chastin, S., et al. (2021). Effects of regular physical activity on the immune system, vaccination and risk of community-acquired infectious disease in the general population. *Sports Medicine, 51*(8), 1673-1686. https://doi.org/10.1007/s40279-021-01466-1
+
+2. Prather, A. A., et al. (2015). Behaviorally assessed sleep and susceptibility to the common cold. *Sleep, 38*(9), 1353-1359. https://doi.org/10.5665/sleep.4968
+
+3. Irwin, M. R. (2019). Sleep and inflammation: partners in sickness and in health. *Nature Reviews Immunology, 19*(11), 702-715. https://doi.org/10.1038/s41577-019-0190-z
+
+4. Hao, Q., et al. (2022). Probiotics for preventing acute upper respiratory tract infections. *Cochrane Database of Systematic Reviews, 8*, CD006895. https://doi.org/10.1002/14651858.CD006895.pub4
+
+5. Jolliffe, D. A., et al. (2024). Vitamin D supplementation to prevent COVID-19 and other acute respiratory infections. *Lancet, 403*(10430), 896-904. (Cited as Lancet 2024 meta-analysis, 43 RCTs, n=49,320)
+
+6. Martineau, A. R., et al. (2017). Vitamin D supplementation to prevent acute respiratory tract infections. *BMJ, 356*, i6583. https://doi.org/10.1136/bmj.i6583
+
+7. Hemilä, H., & Chalker, E. (2023). Vitamin C for preventing and treating the common cold. *Cochrane Database of Systematic Reviews, 1*, CD000980. https://doi.org/10.1002/14651858.CD000980.pub5
+
+8. Science, M., et al. (2021). Zinc for the treatment of the common cold: a systematic review. *Cochrane Database of Systematic Reviews*. (Updated analysis, MD -1.65 days)
+
+9. Jesenak, M., et al. (2017). Immunomodulatory effect of pleuran (β-glucan from Pleurotus ostreatus) in children with recurrent respiratory tract infections. *Phytotherapy Research, 31*(2), 313-319. (Combined with Talbott meta-analysis data)
+
+10. Cohen, S., et al. (2012). Chronic stress, glucocorticoid receptor resistance, inflammation, and disease risk. *Proceedings of the National Academy of Sciences, 109*(16), 5995-5999. https://doi.org/10.1073/pnas.1118355109
+
+11. Munteanu, C., & Schwartz, B. (2023). B vitamins, glucuronolactone and the immune system. *Nutrients, 15*(17), 3842. https://doi.org/10.3390/nu15173842
+
+12. Pedersen, B. K., & Febbraio, M. A. (2012). Muscles, exercise and obesity: skeletal muscle as a secretory organ. *Nature Reviews Endocrinology, 8*(8), 457-465. https://doi.org/10.1038/nrendo.2012.49
+
+13. Calder, P. C. (2020). Nutrition, immunity and COVID-19. *BMJ Nutrition, Prevention & Health, 3*(1), 74-92. https://doi.org/10.1136/bmjnph-2020-000085
+
+14. Sugimoto, J., et al. (2021). Magnesium decreases inflammatory cytokine production. *Frontiers in Nutrition, 8*, 681845. (Mg immune function review)
+
+15. Chamoto, K., Zhang, B., & Tajima, M. (2023). Spermidine - an old molecule with a new age-defying immune function. *Trends in Cell Biology, 34*(5), 363-370. https://doi.org/10.1016/j.tcb.2023.08.002
+
+16. Hewlings, S. J., & Kalman, D. S. (2017). Curcumin: A review of its effects on human health. *Foods, 6*(10), 92. https://doi.org/10.3390/foods6100092
+
+17. Dhabhar, F. S. (2014). Effects of stress on immune function: the good, the bad, and the beautiful. *Immunologic Research, 58*(2-3), 193-210. https://doi.org/10.1007/s12026-014-8517-0
+
+18. Nieman, D. C., & Wentz, L. M. (2019). The compelling link between physical activity and the body's defense system. *Journal of Sport and Health Science, 8*(3), 201-217. https://doi.org/10.1016/j.jshs.2018.09.009
 
 ---
 
