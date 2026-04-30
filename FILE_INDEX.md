@@ -17,6 +17,7 @@
 | ★ | `.claude/rules/git-rules.md` | Git操作詳細ルール |
 | ★ | `.claude/rules/output-rules.md` | 成果物・報告詳細ルール |
 | ★ | `.claude/rules/model-selection.md` | Opus/Sonnet使い分けルール |
+| ★ | `.claude/rules/timeout-prevention.md` | 大ファイル生成・タイムアウト防止レシピ |
 
 ---
 
@@ -42,7 +43,8 @@ academic-research-agent_v1/
 │   ├── rules/                   ← ★ 詳細ルールファイル群
 │   │   ├── git-rules.md
 │   │   ├── output-rules.md
-│   │   └── model-selection.md
+│   │   ├── model-selection.md
+│   │   └── timeout-prevention.md  ← 大ファイル生成・タイムアウト防止レシピ
 │   └── skills/                  ← スラッシュコマンド定義
 │       ├── research/SKILL.md
 │       ├── research-quick/SKILL.md
