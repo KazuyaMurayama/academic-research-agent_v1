@@ -31,6 +31,7 @@
 | T006 | masterへの全ファイル統合・リポジトリ整備 | 2026-04-13 | Sonnet | `master` ブランチ |
 | T007 | 胃がん予防介入の包括的スコアリングレポート作成（R025） | 2026-04-21 | Opus+Sonnet | `reports/2026-04-21_gastric-cancer-prevention-scoring.md` |
 | T008 | 40代男性サプリ＆処方薬全レジメンのリスク分析レポート（R026） | 2026-04-28 | Sonnet | `reports/2026-04-28_supplement-drug-risk-analysis.md` |
+| T009 | 免疫力強化v2レポート作成（R027）: 16介入定量スコアリング、Opus計画+Sonnet実行 | 2026-04-28 | Opus+Sonnet | `reports/2026-04-28_immunity-boost-v2.md` |
 
 ---
 
@@ -43,7 +44,7 @@
 4. `reports/INDEX.md` を Read → 既存レポートを確認
 
 ### タスク追加時
-- 「未着手」セクションに追加（ID: T001〜連番、次は `T007`）
+- 「未着手」セクションに追加（ID: T001〜連番、次は `T010`）
 - 担当モデル（Opus/Sonnet）を明記
 - 期待成果物を具体的に記述
 

@@ -2,7 +2,7 @@
 
 > **新セッション開始時に必ずこのファイルを読む。**
 > ファイル追加・削除時は必ずこのファイルを更新してコミットすること。
-> 最終更新: 2026-04-21
+> 最終更新: 2026-04-28
 
 ---
 
@@ -34,8 +34,8 @@ academic-research-agent_v1/
 ├── .gitignore                   ← outputs/等を除外
 │
 ├── reports/                     ← ★ 全レポートの正本（master必須）
-│   ├── INDEX.md                 ← レポートカタログ（R001〜R024、次はR025）
-│   └── YYYY-MM-DD_slug.md       ← 個別レポート（24本）
+│   ├── INDEX.md                 ← レポートカタログ（R001〜R027、次はR028）
+│   └── YYYY-MM-DD_slug.md       ← 個別レポート（27本）
 │
 ├── .claude/
 │   ├── settings.json            ← Claude Code設定
