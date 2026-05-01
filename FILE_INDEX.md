@@ -113,8 +113,9 @@ academic-research-agent_v1/
 | R026 | `2026-04-28_supplement-drug-risk-analysis.md` | 40代男性サプリ＆処方薬リスク分析 | 2026-04-28 |
 | R027 | `2026-04-28_immunity-boost-v2.md` | 免疫力強化戦略 v2: 16介入の定量スコアリング | 2026-04-28 |
 | R028 | `2026-04-30_cold-remedy-evidence.md` | 風邪（感冒）介入の包括的エビデンス評価 | 2026-04-30 |
+| R029 | `2026-04-30_genai-instruction-design.md` | 生成AIツール活用・指示設計手法カタログ（22手法・8軸スコアリング） | 2026-04-30 |
 
-**次のレポートID: R029**
+**次のレポートID: R030**
 
 ---
 

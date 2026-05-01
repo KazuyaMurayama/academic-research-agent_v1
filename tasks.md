@@ -7,9 +7,7 @@
 
 ## 🔄 進行中
 
-| ID | タスク | 開始日 | 担当モデル | 期待成果物 |
-|---|---|---|---|---|
-| T011 | 生成AIツール活用の効果的な指示設計レポート（R029）作成: RAG/エージェント/プロンプト/Claude Code/その他 5カテゴリ × 8軸スコアリング | 2026-04-30 | Opus計画+Sonnet実行 | `reports/2026-04-30_genai-instruction-design.md` |
+なし
 
 ---
 
@@ -33,6 +31,7 @@
 | T008 | 40代男性サプリ＆処方薬全レジメンのリスク分析レポート（R026） | 2026-04-28 | Sonnet | `reports/2026-04-28_supplement-drug-risk-analysis.md` |
 | T009 | 免疫力強化v2レポート作成（R027）: 16介入定量スコアリング、Opus計画+Sonnet実行 | 2026-04-28 | Opus+Sonnet | `reports/2026-04-28_immunity-boost-v2.md` |
 | T010 | R028: 風邪介入エビデンス評価レポート作成 | 2026-04-30 | Opus+Sonnet | `reports/2026-04-30_cold-remedy-evidence.md` |
+| T011 | R029: 生成AIツール活用・指示設計手法カタログ（22手法・8軸スコアリング） | 2026-04-30 | Opus計画+Sonnet実行 | `reports/2026-04-30_genai-instruction-design.md` |
 
 ---
 
