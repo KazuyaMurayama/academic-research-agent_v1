@@ -624,19 +624,52 @@ Criteria（完了条件）: 何ができたら完了か
 
 ## アンチパターン集
 
-<!-- S4_ANTIPATTERNS_PLACEHOLDER -->
+| # | アンチパターン | 何が起きるか | 代わりにすること |
+|---|---|---|---|
+| 1 | **プロンプトを複雑にしすぎる** | over-prompting。例が多すぎると精度低下。長い指示は後半を無視される | Few-shotは3〜5件。指示は箇条書き3〜5点に絞る |
+| 2 | **Self-correctionを万能と信じる** | 初期プロンプトが強い場合は改善ほぼゼロ。弱い場合のみ有効（ICLR 2024） | 初期プロンプトを強化。外部ファクトチェック（ツール）を使う |
+| 3 | **RAGでDense検索のみ使う** | 固有名詞・型番のミスマッチで想定外のドキュメントを取得 | M-03のHybrid検索（Dense + BM25 + RRF）を使う |
+| 4 | **LLMに計算・最新情報を任せる** | 知識カットオフ後の情報や複雑な計算でハルシネーション多発 | M-05のTool-Augmented Groundingで外部ツールに委ねる |
+| 5 | **エージェントにループ上限を設定しない** | 無限ループ・無限コスト増加のリスク | `max_iterations=10`等の上限を必ず実装。人間の確認ポイントを挿入 |
 
 ---
 
 ## 廃止手法早見表（v1との差分）
 
-<!-- S5_DEPRECATED_PLACEHOLDER -->
+v1（22手法）から削除した15手法。「なぜ削除したか」を明記します。代替手法で対応可能です。
+
+| 手法（v1 ID） | 削除理由 | 代替 |
+|---|---|---|
+| P-02 Self-Refine | コスト×2-3の割に効果が読みにくい | M-01 CoT強化 |
+| P-03 Structured Prompt | Few-shotカードに実例として吸収済み | M-02 Few-shot |
+| P-05 Role Prompting | E1小（+10pp）。CoTと併用すれば追加不要 | M-01 CoT |
+| R-02 Cross-Encoder Reranking | M-03カードに統合済み | M-03 Hybrid RAG |
+| R-04 HyDE | 生成LLMが弱いと逆効果リスク。Contextual Retrievalの方が安全 | M-04 Contextual |
+| R-05 チャンク設計最適化 | M-03カードの「落とし穴」に512トークン目安として記載済み | M-03 Hybrid RAG |
+| A-01 Multi-Agent Debate | コスト×3-5。+85.5%はコールセンター特化ドメイン（汎用値未確立）| 不採用 |
+| A-02 Planner-Executor-Critic | 定量値未確立。Claude Code実践セットのサブエージェント分割で代替可 | M-07 Claude Code |
+| A-04 信頼度較正 | E2=2。プロンプトレベルで即使用可だが効果の確認が取れていない | 不採用 |
+| C-02 サブエージェント分割 | M-07 Claude Code実践セットに統合済み | M-07 Claude Code |
+| C-04 ワークフロー5パターン | M-07に概念として統合 | M-07 Claude Code |
+| O-02 NeMo Guardrails | 実装★★、安全性特化で本レポート範囲外 | 不採用 |
+| O-03 Human-in-the-Loop | 設計原則寄り。具体的実装はM-05落とし穴に記載 | M-05 Tool |
 
 ---
 
 ## 参考文献
 
-<!-- S6_REFERENCES_PLACEHOLDER -->
+| # | タイトル | 著者・出典 | リンク |
+|---|---|---|---|
+| 1 | Chain-of-Thought Prompting Elicits Reasoning in LLMs | Wei et al. NeurIPS 2022 | [arXiv:2201.11903](https://arxiv.org/abs/2201.11903) |
+| 2 | Language Models are Few-Shot Learners (GPT-3) | Brown et al. NeurIPS 2020 | [arXiv:2005.14165](https://arxiv.org/abs/2005.14165) |
+| 3 | The Few-shot Dilemma: Over-prompting LLMs | 2025 | [arXiv:2509.13196](https://arxiv.org/html/2509.13196v1) |
+| 4 | From BM25 to Corrective RAG: Benchmarking Strategies | 2025 | [arXiv:2604.01733](https://arxiv.org/html/2604.01733v1) |
+| 5 | RAGBench: Explainable Benchmark for RAG Systems | 2024 | [arXiv:2407.11005](https://arxiv.org/abs/2407.11005) |
+| 6 | Contextual Retrieval | Anthropic 2024 | [anthropic.com](https://www.anthropic.com/news/contextual-retrieval) |
+| 7 | Toolformer: Language Models Can Teach Themselves | Schick et al. 2023 | [arXiv:2302.04761](https://arxiv.org/abs/2302.04761) |
+| 8 | JSONSchemaBench: Evaluating Constrained Decoding | OpenReview 2024 | [OpenReview](https://openreview.net/forum?id=FKOaJqKoio) |
+| 9 | Large Language Models Cannot Self-Correct Reasoning Yet | Huang et al. ICLR 2024 | [ICLR 2024](https://proceedings.iclr.cc/paper_files/paper/2024/file/8b4add8b0aa8749d80a34ca5d941c355-Paper-Conference.pdf) |
+| 10 | Claude Code Best Practices | Anthropic | [docs.anthropic.com](https://docs.anthropic.com/en/docs/claude-code/best-practices) |
 
 ---
 
