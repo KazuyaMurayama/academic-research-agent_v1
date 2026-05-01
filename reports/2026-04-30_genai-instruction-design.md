@@ -221,13 +221,140 @@ format_examples = """
 
 ### M-03 Hybrid Retrieval + Reranking
 
-<!-- CARD_03_HYBRID_RAG_PLACEHOLDER -->
+> Dense（意味検索）とBM25（キーワード検索）を組み合わせ、その後Rerankerで精度を二段階で上げるRAGの基本構成。
+> **効果**: RAG精度 +15〜48% | **証拠** ★★★ | **コスト** ×1.5〜2 | **実装** ★★
+
+#### いつ使うか
+
+**使うべき場面**:
+- RAGパイプラインを新規構築する（まずこれを使う）
+- Dense単体で「明らかに関連するのにヒットしない」症状が出ている
+- 固有名詞・型番・専門用語の完全一致検索が必要なドキュメント
+
+**効果が薄い場面**:
+- ドキュメント数が1,000件未満（シンプルなDenseで十分）
+- リアルタイム（<100ms）が必要な場合（Rerankerは計算コスト増）
+
+#### 実装（コピペ即使用）
+
+```python
+# ── ステップ1: Hybrid検索（Dense + BM25のRRF融合）──
+def rrf_merge(dense_results: list, sparse_results: list, k: int = 60) -> list:
+    """Reciprocal Rank Fusion で2つの検索結果を統合する"""
+    scores: dict = {}
+    for rank, doc_id in enumerate(dense_results):
+        scores[doc_id] = scores.get(doc_id, 0) + 1 / (k + rank + 1)
+    for rank, doc_id in enumerate(sparse_results):
+        scores[doc_id] = scores.get(doc_id, 0) + 1 / (k + rank + 1)
+    return sorted(scores.items(), key=lambda x: x[1], reverse=True)
+
+# 使い方
+dense_hits = dense_index.search(query, top_k=50)   # embedding検索
+sparse_hits = bm25_index.search(query, top_k=50)   # BM25検索
+merged = rrf_merge(dense_hits, sparse_hits)[:20]    # 上位20件に絞る
+
+# ── ステップ2: Cross-Encoder Reranking（上位20→上位5に精緻化）──
+from sentence_transformers import CrossEncoder
+
+reranker = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2")
+pairs = [(query, doc.text) for doc in merged]
+scores = reranker.predict(pairs)
+reranked = sorted(zip(merged, scores), key=lambda x: x[1], reverse=True)
+top5 = [doc for doc, _ in reranked[:5]]  # RAGに渡す最終ドキュメント
+```
+
+#### 改善のコツ
+
+- **第一段階（Hybrid）でRecall@100を最大化、第二段階（Reranker）でPrecision@5を最大化**という役割分担を意識する
+- Rerankerのモデルは `cross-encoder/ms-marco-MiniLM-L-6-v2`（軽量・高速）から始め、必要なら `zerank-1` 等の高精度モデルに差し替える
+- BM25は `rank_bm25`（Python）または `Elasticsearch` / `OpenSearch` で実装可
+
+#### 落とし穴
+
+- ⚠️ **第一段階のRecallが低い場合、Rerankerは補えない**。まずHybrid検索でRecall@100 > 90%を目指す
+- ⚠️ **チャンクサイズが大きすぎるとRerankerのスコアが不安定**。512トークン前後が目安
+
+#### 出典
+
+[From BM25 to Corrective RAG (arXiv:2604.01733)](https://arxiv.org/html/2604.01733v1)、
+[RAGBench (arXiv:2407.11005)](https://arxiv.org/abs/2407.11005)
 
 ---
 
 ### M-04 Contextual Retrieval
 
-<!-- CARD_04_CONTEXTUAL_PLACEHOLDER -->
+> チャンクを埋め込む前に「このチャンクは文書全体でどこに位置するか」の文脈説明をLLMで自動生成し、検索精度を大幅に上げる手法。
+> **効果**: 検索失敗率 −67%（Hybrid + Reranking併用時） | **証拠** ★★★ | **コスト** ×1.3 | **実装** ★★
+
+#### いつ使うか
+
+**使うべき場面**:
+- 長い文書（契約書・マニュアル・論文）を細かくチャンク分割しているRAG
+- 「関連する文書はあるはずなのに回答に反映されない」症状
+- 文書の一部だけ読んでも意味が通じないドキュメント（箇条書き・表が多い）
+
+**効果が薄い場面**:
+- 各チャンクが自己完結している場合（FAQ・ニュース記事など）
+
+#### 実装（コピペ即使用）
+
+```python
+import anthropic
+
+client = anthropic.Anthropic()
+
+CONTEXTUAL_PROMPT = """\
+以下の文書全体を参照して、チャンクが文書のどの部分に位置するかを
+1〜2文で簡潔に説明してください。チャンクの内容は繰り返さないこと。
+
+<document>
+{full_document}
+</document>
+
+<chunk>
+{chunk_content}
+</chunk>
+
+説明（1〜2文）:"""
+
+def add_context_to_chunk(full_doc: str, chunk: str) -> str:
+    """チャンクに文脈説明を付与し、検索精度を向上させる"""
+    response = client.messages.create(
+        model="claude-haiku-4-5-20251001",   # Haiku推奨（速度・コスト重視）
+        max_tokens=200,
+        messages=[{
+            "role": "user",
+            "content": CONTEXTUAL_PROMPT.format(
+                full_document=full_doc,
+                chunk_content=chunk
+            )
+        }]
+    )
+    context = response.content[0].text.strip()
+    return f"{context}\n\n{chunk}"   # 文脈説明 + 元チャンクを結合して埋め込む
+
+# インデックス構築時に全チャンクに適用
+enhanced_chunks = [
+    add_context_to_chunk(full_doc, chunk)
+    for chunk in original_chunks
+]
+# enhanced_chunksをembeddingしてベクトルDBに保存
+```
+
+#### 改善のコツ
+
+- **コンテキスト付与のLLMはHaikuで十分**（速度・コスト最適。Opusは不要）
+- M-03のHybrid検索と組み合わせると効果が最大化（単独より−67%改善）
+- バッチ処理でAPI呼び出しをまとめると構築コスト削減。`prompt caching`を使うと文書全体の繰り返し送信コストが大幅削減
+
+#### 落とし穴
+
+- ⚠️ **インデックス構築時のみのコスト**（検索時は通常と同じ）。一度構築すれば追加コストなし
+- ⚠️ **文書が短すぎる（<500トークン）と効果が薄い**。短い文書はチャンク分割自体不要な場合も
+
+#### 出典
+
+[Contextual Retrieval — Anthropic 2024](https://www.anthropic.com/news/contextual-retrieval)
 
 ---
 
