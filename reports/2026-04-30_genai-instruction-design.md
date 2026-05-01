@@ -22,7 +22,8 @@
 9. [手法選択フローチャート](#手法選択フローチャート)
 10. [効果量サマリ表](#効果量サマリ表)
 11. [アンチパターン集](#アンチパターン集)
-12. [参考文献](#参考文献)
+12. [更新履歴](#更新履歴)
+13. [参考文献](#参考文献)
 
 ---
 
@@ -36,7 +37,7 @@
 | 2 | Cross-Encoder Reranking | RAG | nDCG@10 **+5〜15点** / 精度+40% | ★★ |
 | 3 | Hybrid Retrieval (Dense+BM25) | RAG | 精度 **+15〜48%** | ★★ |
 | 4 | Chain-of-Thought (CoT) | プロンプト | 数学・論理 **+15〜40%** | ★ |
-| 5 | Multi-Agent Debate | エージェント | 事実性 **+85.5%**（フレームワーク依存） | ★★★ |
+| 5 | Multi-Agent Debate | エージェント | 事実性向上（**+85.5%**はMDPI 2025特定ドメイン。汎用値は未確立）| ★★★ |
 | 6 | CLAUDE.md コンテキスト管理 | Claude Code | コンテキスト汚染防止・セッション継続性 | ★ |
 | 7 | Constrained Decoding / JSON Mode | その他 | スキーマ精度 **99.5%** | ★ |
 | 8 | Few-shot + 例選定最適化 | プロンプト | **+10〜50%**（例の質依存） | ★ |
@@ -48,7 +49,7 @@
 > - **プロンプトの複雑化 ≠ 性能向上**。過剰な例（over-prompting）は逆にパフォーマンスを低下させる
 > - **Self-Consistencyは期待外れ**。少数ショットCoTと単体比較で限定的な追加効果しかない
 > - **HyDEは生成LLMが弱いと逆効果**。幻覚した仮想ドキュメントが検索精度を下げる場合がある
-> - **ボーラス投与型ビタミンD（AI設計での類推）**: 一気に大量コンテキストを与えるより、継続的な少量更新（CLAUDE.md漸進更新）の方が効果的
+> - **コンテキスト一括投入より漸進的更新が有効**: 大量コンテキストを一度に与えるより、CLAUDE.mdの継続的な少量更新の方が効果的（認知負荷・コンテキスト汚染防止の観点）
 
 ---
 
@@ -122,7 +123,7 @@ examples = [
   ...
 ]
 ```
-出典: [arXiv:2201.11903](https://arxiv.org/abs/2201.11903)（Wei et al. 2022）、[ICLR 2024 CorrectBench](https://www.emergentmind.com/topics/correctbench)
+出典: [arXiv:2201.11903](https://arxiv.org/abs/2201.11903)（Wei et al. 2022, NeurIPS）
 
 ### P-02 Self-Refine（反復的自己精錬）
 
@@ -284,8 +285,8 @@ def rrf_merge(dense_results, sparse_results, k=60):
 
 | 軸 | 内容 |
 |---|---|
-| **E1 効果量** | nDCG@10 **+5〜15点**（MS MARCO）/ 精度 **+40%**（ailog.fr 2025報告）/ zerank-1: **+28%** nDCG@10 vs ベースライン |
-| **E2 証拠強度** | 4（MS MARCO・BEIR複数評価 + MIT 2段階検索研究） |
+| **E1 効果量** | nDCG@10 **+5〜15点**（MS MARCO）/ 精度 **+40%**（⚠️ ailog.fr 2025 商用ブログ報告。査読なし）/ zerank-1: **+28%** nDCG@10 vs ベースライン |
+| **E2 証拠強度** | 3（MS MARCO・BEIR複数評価 + MIT 2段階検索研究。+40%はブログ出典のため★4から降格）|
 | **E3 適用範囲** | RAGパイプラインの第2段階。ドメイン問わず汎用的に有効 |
 | **E4 コスト** | ×1.5〜2（上位K件を全文比較するため計算コスト増） |
 | **E5 実装難度** | ★★（検索後にRerankerモデルを追加するだけ） |
@@ -420,8 +421,8 @@ CHUNK_OVERLAP = 100    # トークン（前後の文脈連続性を保つ）
 
 | 軸 | 内容 |
 |---|---|
-| **E1 効果量** | 事実性・推論精度 **+85.5%**（特定フレームワーク）/ ハルシネーション率: GPT-4o **53%→23%**（プロンプトベース緩和込み）|
-| **E2 証拠強度** | 3（Du et al. 2023 ICML + MDPI 2025論文） |
+| **E1 効果量** | Du et al. ICML 2024: 数学・推論タスクで事実性向上を確認（定量値はタスク依存）/ **+85.5%**（MDPI 2025, LLaMA-3-8Bコールセンター向けコンサルタント-評価者フレームワーク, 特定ドメイン限定）/ **53%→23%** ハルシネーション率（npj Digital Medicine 2025, 単一モデルプロンプト緩和, 医療臨床支援文脈）|
+| **E2 証拠強度** | 3（Du et al. ICML 2024 + MDPI 2025論文） |
 | **E3 適用範囲** | 高精度が要求されるQ&A / 主張検証 / 複雑な推論タスク |
 | **E4 コスト** | ×3〜5（エージェント数 × 討論ラウンド数分のLLMコール） |
 | **E5 実装難度** | ★★★ |
@@ -449,13 +450,13 @@ def debate_verify(question, rounds=2):
         """)
     return agent_a_response
 ```
-出典: [Du et al. 2023 - Improving Factuality via Multiagent Debate](https://arxiv.org/abs/2305.14325)、[MDPI 2025 - Mitigating LLM Hallucinations](https://www.mdpi.com/2078-2489/16/7/517)
+出典: [Du et al. ICML 2024 - Improving Factuality via Multiagent Debate](https://arxiv.org/abs/2305.14325)、[MDPI 2025 - Mitigating LLM Hallucinations (LLaMA-3-8B コールセンター文脈)](https://www.mdpi.com/2078-2489/16/7/517)、[npj Digital Medicine 2025 - Hallucination mitigation in clinical AI](https://www.nature.com/articles/s41746-025-01429-4)
 
 ### A-02 Planner-Executor-Critic分離パターン
 
 | 軸 | 内容 |
 |---|---|
-| **E1 効果量** | SWE-bench等のコーディングエージェントで精度向上（単一モデル比）。各役割への最適化により**エラー検出率が大幅向上** |
+| **E1 効果量** | コーディングエージェント系タスクで精度向上（SWE-bench文脈）。定量的な単一数値は未確立（⚠️ フレームワーク・タスク依存）。各役割分離によりエラー検出率の向上が複数実装で報告あり |
 | **E2 証拠強度** | 3（複数のエージェントフレームワーク実装報告） |
 | **E3 適用範囲** | 長期タスク / コード生成・レビュー / 多段階ワークフロー |
 | **E4 コスト** | ×2〜4（役割数 × コール数） |
@@ -539,7 +540,7 @@ tools = [
 不確かな場合は「確信度: LOW / この情報は必ず独自に確認してください」と明記すること。
 「わかりません」「確認が必要です」と言うことを恐れないこと。
 ```
-出典: [Rewarding Doubt 2025 - Confidence Calibration in RL](https://arxiv.org/html/2510.06265v1)、[Lakera LLM Hallucination Guide 2026](https://www.lakera.ai/blog/guide-to-hallucinations-in-large-language-models)
+出典: [Rewarding Doubt: Incentivizing Calibrated Uncertainty in RL (arXiv:2503.02623)](https://arxiv.org/abs/2503.02623)、[Lakera LLM Hallucination Guide 2026](https://www.lakera.ai/blog/guide-to-hallucinations-in-large-language-models)
 
 ---
 
@@ -798,7 +799,7 @@ SYSTEM_GUARDRAIL = """
 # pip install transformers
 # model: meta-llama/Llama-Guard-3-8B
 ```
-出典: [Meta Llama Guard](https://arxiv.org/abs/2312.06674)、[NVIDIA NeMo Guardrails](https://developer.nvidia.com/blog/how-using-a-reranking-microservice-can-improve-accuracy-and-costs-of-information-retrieval/)
+出典: [Meta Llama Guard](https://arxiv.org/abs/2312.06674)、[NeMo Guardrails (Rebedea et al., EMNLP 2023, arXiv:2310.10501)](https://arxiv.org/abs/2310.10501)、[NeMo Guardrails GitHub](https://github.com/NVIDIA/NeMo-Guardrails)
 
 ### O-03 Human-in-the-Loop設計
 
@@ -877,10 +878,10 @@ SYSTEM_GUARDRAIL = """
 | ID | 手法名 | カテゴリ | 効果量（代表値） | E2証拠 | E5難度 | E4コスト | E8即効性 |
 |---|---|---|---|---|---|---|---|
 | R-03 | Contextual Retrieval | RAG | 検索失敗 **-67%** | ★★★ | ★★ | ×2〜3 | 3 |
-| R-02 | Cross-Encoder Reranking | RAG | nDCG **+5〜15点** / +40% | ★★★★ | ★★ | ×1.5〜2 | 4 |
+| R-02 | Cross-Encoder Reranking | RAG | nDCG **+5〜15点** / +40%（⚠️ブログ出典）| ★★★ | ★★ | ×1.5〜2 | 4 |
 | R-01 | Hybrid Retrieval | RAG | 精度 **+15〜48%** | ★★★★ | ★★ | ×1.1 | 4 |
 | P-01 | Chain-of-Thought | プロンプト | 数学論理 **+15〜40%** | ★★★★ | ★ | ×1.5〜2 | 5 |
-| A-01 | Multi-Agent Debate | エージェント | 事実性 **+85.5%** | ★★★ | ★★★ | ×3〜5 | 3 |
+| A-01 | Multi-Agent Debate | エージェント | 事実性向上（+85.5%は特定ドメイン）| ★★★ | ★★★ | ×3〜5 | 3 |
 | O-01 | Constrained Decoding | その他 | スキーマ精度 **99.5%** | ★★★ | ★ | ×1.0 | 5 |
 | P-03 | Few-shot + 例選定 | プロンプト | **+10〜50%** | ★★★★ | ★ | ×1.2〜2 | 5 |
 | R-04 | HyDE | RAG | nDCG **61.3 vs 44.5** | ★★★ | ★★ | ×1.5〜2 | 3 |
@@ -891,7 +892,7 @@ SYSTEM_GUARDRAIL = """
 | P-04 | Role Prompting | プロンプト | **+10pp**（数学） | ★★ | ★ | ×1.1 | 5 |
 | P-05 | 構造化プロンプト | プロンプト | 指示追従率向上 | ★★★ | ★ | ×1.0 | 5 |
 | R-05 | チャンク設計最適化 | RAG | 失敗率×2〜3悪化を防止 | ★★★ | ★★ | ×1.0 | 4 |
-| A-02 | Planner-Executor-Critic | エージェント | エラー検出率向上 | ★★★ | ★★★ | ×2〜4 | 3 |
+| A-02 | Planner-Executor-Critic | エージェント | エラー検出率向上（定量値未確立）| ★★★ | ★★★ | ×2〜4 | 3 |
 | A-04 | 信頼度較正 | エージェント | ECE削減 | ★★ | ★ | ×1.2 | 4 |
 | C-03 | /clear・/compact | Claude Code | タスク切り替え品質 | ★★★ | ★ | ×0 | 5 |
 | C-04 | 5コアワークフロー | Claude Code | タスク特性適合 | ★★★ | ★★ | 可変 | 4 |
@@ -922,6 +923,15 @@ SYSTEM_GUARDRAIL = """
 
 ---
 
+## 更新履歴
+
+| バージョン | 日付 | 変更内容 |
+|---|---|---|
+| v1.0 | 2026-04-30 | 初版作成（22手法、5カテゴリ、8軸スコアリング） |
+| v1.1 | 2026-05-01 | ファクトチェック修正: A-01数値帰属分離（MDPI 2025・npj DM 2025を明示）、Du et al. 年号修正（2023→ICML 2024）、A-04 arXiv ID修正（2510.06265→2503.02623）、O-02 NeMo URL修正（arXiv:2310.10501）、P-01 CorrectBench誤引用削除、R-02 E2降格（★4→★3、商用ブログ出典を明示）、A-02 E1定量値「未確立」明記 |
+
+---
+
 ## 参考文献
 
 ### 学術論文
@@ -931,7 +941,7 @@ SYSTEM_GUARDRAIL = """
 | 1 | Chain-of-Thought Prompting Elicits Reasoning in LLMs | Wei et al. 2022 | [arXiv:2201.11903](https://arxiv.org/abs/2201.11903) |
 | 2 | SELF-REFINE: Iterative Refinement with Self-Feedback | Madaan et al. 2023 | [arXiv:2303.17651](https://arxiv.org/abs/2303.17651) |
 | 3 | Large Language Models Cannot Self-Correct Reasoning Yet | Huang et al. 2024 | [ICLR 2024](https://proceedings.iclr.cc/paper_files/paper/2024/file/8b4add8b0aa8749d80a34ca5d941c355-Paper-Conference.pdf) |
-| 4 | Improving Factuality via Multiagent Debate | Du et al. 2023 | [arXiv:2305.14325](https://arxiv.org/abs/2305.14325) |
+| 4 | Improving Factuality and Reasoning via Multiagent Debate | Du et al. ICML 2024 | [arXiv:2305.14325](https://arxiv.org/abs/2305.14325) |
 | 5 | Precise Zero-Shot Dense Retrieval (HyDE) | Gao et al. 2022 | [arXiv:2212.10496](https://arxiv.org/abs/2212.10496) |
 | 6 | The Few-shot Dilemma: Over-prompting LLMs | 2025 | [arXiv:2509.13196](https://arxiv.org/html/2509.13196v1) |
 | 7 | Mitigating LLM Hallucinations: Multi-Agent Framework | MDPI 2025 | [MDPI Information](https://www.mdpi.com/2078-2489/16/7/517) |
@@ -939,9 +949,11 @@ SYSTEM_GUARDRAIL = """
 | 9 | Toolformer: Language Models Can Teach Themselves | Schick et al. 2023 | [arXiv:2302.04761](https://arxiv.org/abs/2302.04761) |
 | 10 | RAGBench: Explainable Benchmark for RAG Systems | 2024 | [arXiv:2407.11005](https://arxiv.org/abs/2407.11005) |
 | 11 | From BM25 to Corrective RAG: Benchmarking Strategies | 2025 | [arXiv:2604.01733](https://arxiv.org/html/2604.01733v1) |
-| 12 | A Comprehensive Survey of Hallucination in LLMs | 2024 | [arXiv:2510.06265](https://arxiv.org/html/2510.06265v1) |
+| 12 | Rewarding Doubt: Incentivizing Calibrated Uncertainty in RL | 2025 | [arXiv:2503.02623](https://arxiv.org/abs/2503.02623) |
 | 13 | JSONSchemaBench: Evaluating Constrained Decoding | 2024 | [OpenReview](https://openreview.net/forum?id=FKOaJqKoio) |
 | 14 | Role-playing Prompt Framework: Generation and Evaluation | 2024 | [arXiv:2406.00627](https://arxiv.org/pdf/2406.00627) |
+| 15 | NeMo Guardrails: A Toolkit for Controllable and Safe LLMs | Rebedea et al. EMNLP 2023 | [arXiv:2310.10501](https://arxiv.org/abs/2310.10501) |
+| 16 | Mitigating Hallucinations in LLMs for Clinical Decision Support | 2025 | [npj Digital Medicine](https://www.nature.com/articles/s41746-025-01429-4) |
 
 ### 公式ドキュメント・技術ブログ
 
