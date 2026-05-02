@@ -1,0 +1,10 @@
+{
+  "session_id": "20260401_235409_diabetes_drugs_healthy_nondiabetic",
+  "theme": "糖尿病薬（GLP-1受容体作動薬・SGLT2阻害薬・メトホルミン等）の健常者（非糖尿病者）への使用効果：内臓脂肪減少・長期疾患リスク・アンチエイジング・寿命延伸",
+  "personas": [
+    {"age": 30, "sex": "female", "body_fat_pct": 30, "bmi": 22},
+    {"age": 40, "sex": "male", "body_fat_pct": 15, "bmi": 21}
+  ],
+  "created_at": "2026-04-01",
+  "model": "claude-sonnet-4-6"
+}
