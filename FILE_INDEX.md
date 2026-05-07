@@ -1,6 +1,6 @@
 # FILE INDEX - academic-research-agent_v1
 
-> 最終更新: 2026-05-06 | ファイル数: 192
+> 最終更新: 2026-05-07 | ファイル数: 193
 
 ## ディレクトリ構造 (depth=5)
 
@@ -209,6 +209,7 @@
 │   ├── 2026-04-30_cold-remedy-evidence.md
 │   ├── 2026-04-30_genai-instruction-design.md
 │   ├── 2026-05-05_soy-intake-health-effects-men.md
+│   ├── 2026-05-07_hq-vs-niacinamide-concentration-efficacy.md
 │   └── INDEX.md
 ├── requirements.txt
 ├── src/
@@ -237,9 +238,9 @@
 
 ## カテゴリ別ファイル一覧
 
-### Documentation (138件)
+### Documentation (139件)
 
-<details><summary>138件（クリックして展開）</summary>
+<details><summary>139件</summary>
 
 | ファイルパス | サイズ(bytes) | SHA |
 |---|---|---|
@@ -251,7 +252,7 @@
 | `.claude/skills/research/SKILL.md` | 8279 | e256698 |
 | `.claude/skills/search-only/SKILL.md` | 433 | da13274 |
 | `CLAUDE.md` | 4695 | b73c6fd |
-| `FILE_INDEX.md` | 28693 | 7a21a04 |
+| `FILE_INDEX.md` | 24196 | a944e44 |
 | `outputs/20260228_100714_vision_loss_prevention_dry_eye/01_search_plan.md` | 2248 | a099016 |
 | `outputs/20260228_100714_vision_loss_prevention_dry_eye/03_screening.md` | 8144 | 3a9f6ea |
 | `outputs/20260228_100714_vision_loss_prevention_dry_eye/04_synthesis.md` | 13232 | 9dfa415 |
@@ -376,6 +377,7 @@
 | `reports/2026-04-30_cold-remedy-evidence.md` | 49306 | ddf21be |
 | `reports/2026-04-30_genai-instruction-design.md` | 30493 | dc77e2f |
 | `reports/2026-05-05_soy-intake-health-effects-men.md` | 19961 | 9c81ff3 |
+| `reports/2026-05-07_hq-vs-niacinamide-concentration-efficacy.md` | 49357 | 1414a11 |
 | `reports/INDEX.md` | 44169 | 2644b3b |
 | `requirements.txt` | 53 | b89f5a6 |
 | `tasks.md` | 3371 | 0fcd446 |
