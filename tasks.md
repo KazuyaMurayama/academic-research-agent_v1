@@ -32,6 +32,7 @@
 | T009 | 免疫力強化v2レポート作成（R027）: 16介入定量スコアリング、Opus計画+Sonnet実行 | 2026-04-28 | Opus+Sonnet | `reports/2026-04-28_immunity-boost-v2.md` |
 | T010 | R028: 風邪介入エビデンス評価レポート作成 | 2026-04-30 | Opus+Sonnet | `reports/2026-04-30_cold-remedy-evidence.md` |
 | T011 | R029: 生成AIツール活用・指示設計手法カタログ（22手法・8軸スコアリング） | 2026-04-30 | Opus計画+Sonnet実行 | `reports/2026-04-30_genai-instruction-design.md` |
+| T012 | R032: 小児便秘PDX vs マクロゴール vs ラクツロース 3軸スコアリング比較レポート | 2026-05-09 | Opus計画+Sonnet実行 | `reports/2026-05-09_pediatric-constipation-pdx-vs-peg-vs-lactulose.md` |
 
 ---
 
@@ -44,7 +45,7 @@
 4. `reports/INDEX.md` を Read → 既存レポートを確認
 
 ### タスク追加時
-- 「未着手」セクションに追加（ID: T001〜連番、次は `T010`）
+- 「未着手」セクションに追加（ID: T001〜連番、次は `T013`）
 - 担当モデル（Opus/Sonnet）を明記
 - 期待成果物を具体的に記述
 
@@ -63,6 +64,6 @@
 
 | 業務 | タイミング | 方法 |
 |---|---|---|
-| `reports/INDEX.md` 更新 | 新レポート作成時 | 次のIDは `R026` |
+| `reports/INDEX.md` 更新 | 新レポート作成時 | 次のIDは `R033` |
 | `FILE_INDEX.md` 更新 | 新ファイル追加時 | ファイル種別・説明を追記 |
 | masterへのpush | 全コミット後 | `git push origin HEAD:master` |
