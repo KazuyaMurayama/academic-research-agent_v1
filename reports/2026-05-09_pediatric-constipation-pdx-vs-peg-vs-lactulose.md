@@ -522,16 +522,198 @@ PEGとラクツロースの間には複数の直接比較RCTが存在し、Cochr
 
 ## 9. 年齢層別の推奨フローチャート
 
-<!-- S9_AGE_FLOWCHART_PLACEHOLDER -->
+以下は本レポートのエビデンスとガイドラインに基づいた実用的な選択フローである。なお、これは**医療行為の推奨ではなく**あくまで情報整理の参考として提示する。実際の判断は必ず小児科医が行う。
+
+### 9.1 年齢層別の考慮事項
+
+| 年齢層 | 特記事項 |
+|---|---|
+| 0〜6ヶ月 | 便秘の定義が成人と異なる（母乳児は数日排便なしでも正常な場合あり）。PDX配合ミルクの安全性データあり。PEG・ラクツロースの小児承認は6ヶ月以上が多い |
+| 6ヶ月〜2歳未満 | モビコール®は2歳以上が保険適用。ラクツロースは実績あり（適応外）。PDXは乳幼児ミルクRCTで安全性確認済み |
+| 2歳〜学童期 | 3介入すべてが使用可能。PEGが第一選択。PDXは補助的役割 |
+| 学童期〜 | PEGが第一選択。服用の手間（量・塩辛さ）よりも効果を優先できる年齢 |
+
+---
+
+### 9.2 選択フローチャート
+
+```
+小児の便秘が疑われる
+        │
+        ▼
+┌─────────────────────────────┐
+│ 緊急性確認                       │
+│ ・1週間以上排便なし                │
+│ ・腹部膨満・嘔吐・発熱             │
+│ ・体重減少・血便                  │
+└─────────────────────────────┘
+        │
+   ┌────┴──────┐
+  あり             なし
+   │               │
+   ▼               ▼
+ 受診を優先      軽症（週2〜3回、硬便ぎみ）
+                    │
+                    ▼
+          ┌────────────────────┐
+          │ Step 1: 生活習慣・食事改善     │
+          │ ・食物繊維（野菜・果物）       │
+          │ ・水分摂取増加               │
+          │ ・排便習慣の確立（食後トイレ）   │
+          └────────────────────┘
+                    │
+         2〜4週間で改善なし？
+                    │
+          ┌─────────────────────────────────┐
+          │ Step 2: ポリデキストロース（PDX）補充    │
+          │ ・処方箋不要・OTCで入手可              │
+          │ ・1〜3g/日を飲み物・離乳食に混ぜる      │
+          │ ・軽症予防的使用に有効               │
+          └─────────────────────────────────┘
+                    │
+         2〜4週間で改善なし？または中等症以上？
+                    │
+                    ▼
+               医療機関受診
+                    │
+          ┌─────────────────────────────────────────┐
+          │ Step 3: 薬剤選択                            │
+          │                                           │
+          │  年齢 ≥ 2歳 → マクロゴール（PEG）【第一選択】  │
+          │    ・モビコール®LD 1袋/日から開始              │
+          │    ・効果不十分なら増量（最大6袋/日）           │
+          │                                           │
+          │  年齢 < 2歳、またはPEG使用困難  → ラクツロース  │
+          │    ・モニラック®シロップ 1〜3mL/kg/日          │
+          │    ・甘いため乳幼児に飲ませやすい               │
+          └─────────────────────────────────────────┘
+                    │
+          ┌─────────────────────────────────────────┐
+          │ 維持療法（2〜6ヶ月以上継続）                    │
+          │ ・急に中止しない（再燃率高い）                   │
+          │ ・PDXを補助的に併用してもよい                   │
+          │ ・排便習慣・食物繊維摂取の継続                   │
+          └─────────────────────────────────────────┘
+```
+
+---
+
+### 9.3 PDXを優先的に考慮すべき状況
+
+通常はStep 1-2の補助的役割だが、以下の場合はPDXがより中心的な選択肢になりうる:
+
+- 保護者が「薬を使いたくない」という強い希望を持っている
+- 便秘が軽症（週3回程度の排便、硬便のみ）で緊急介入不要
+- 医療機関へのアクセスが難しい（地方・多忙な家庭）
+- 予防的観点での腸内環境改善を目的とする場合（乳幼児期からの継続的摂取）
 
 ---
 
 ## 10. 結論と臨床的示唆
 
-<!-- S10_CONCLUSION_PLACEHOLDER -->
+### 10.1 3介入の総括
+
+| 問い | 答え |
+|---|---|
+| 3介入で最も効果量が高いのは？ | **マクロゴール（PEG）**（9/10）。複数の高質RCTとCochrane SRで確認 |
+| 最もエビデンスが強いのは？ | **マクロゴール（PEG）**（10/10）。Cochrane SR×2・国際ガイドライン第一選択 |
+| 最も実効性（使いやすさ）が高いのは？ | **ポリデキストロース（PDX）**（9/10）。OTC食品・安価・無味無臭 |
+| 甘くて飲ませやすいのは？ | **ラクツロース**（シロップ・甘味あり） |
+| 総合スコア1位は？ | **マクロゴール（PEG）**（25/30点） |
+
+---
+
+### 10.2 臨床的示唆（保護者・医療者向け）
+
+#### 医療者向け
+
+1. **PEGを第一選択として躊躇しない**: 国際的なエビデンスとガイドラインが一致してPEGを推奨。2歳以上でモビコール®が保険適用となった現在、処方障壁は低い。
+
+2. **ラクツロースは有効な代替だが適応外であることを説明する**: モニラック®は日本で小児便秘への正式適応がない。使用する際は保護者へのインフォームドコンセントが必要。
+
+3. **PDXは補助的役割として認識する**: PDXを否定するのではなく、「軽症予防的使用や薬剤との補助的併用は合理的」と伝える。薬剤拒否の保護者にPDXから始めるアプローチは関係構築に有用。
+
+4. **治療期間は十分に取る**: 2〜3ヶ月で急に中止すると再燃率が高い。ガイドラインでは少なくとも2〜6ヶ月の維持療法を推奨。
+
+#### 保護者向け（患者教育の要点）
+
+1. **便秘は「そのうち治る」病気ではない**: 約50%が治療なしで成人まで持続。早期介入が重要。
+
+2. **PEGは「強い薬」ではない**: 吸収されずに腸内に留まる安全な物質。安全性は3介入中最も確立されている。
+
+3. **PDXと薬剤は「どちらか」ではなく「組み合わせ」も可能**: 食物繊維補充（PDX）+薬剤治療は矛盾しない。食事から始めて改善しなければ薬剤に移行する段階的アプローチで良い。
+
+4. **「飲みやすさ」を優先してラクツロースを選ぶのも合理的**: PEGの塩辛さが継続の障壁になるなら、飲みやすいラクツロースを選択することも医師と相談の上で選択肢になる。
+
+---
+
+### 10.3 今後の研究課題
+
+1. **PDX vs PEG / ラクツロースの直接比較RCT**: 現時点でこの比較は存在しない。PDXの正確な位置付けを確立するために必要。
+
+2. **乳幼児（2歳未満）のPEGエビデンス**: モビコール®の承認は2歳以上。1歳未満・1〜2歳のPEGに関する日本語エビデンスが不足。
+
+3. **ラクツロースの日本での保険適用拡大**: 欧米では小児便秘への適応があるが日本では未対応。政策的検討が望まれる。
+
+4. **PDXと薬剤の併用試験**: 食物繊維補充と下剤治療の相乗効果を検討するRCTが必要。
 
 ---
 
 ## 11. 参考文献
 
-<!-- S11_REFERENCES_PLACEHOLDER -->
+### マクロゴール（PEG）
+
+1. Lee-Robichaud H, Thomas K, Morgan J, Nelson RL. **Lactulose versus polyethylene glycol for chronic constipation**. *Cochrane Database Syst Rev.* 2010;(7):CD007570. doi:10.1002/14651858.CD007570.pub2
+   - PEGとラクツロースの直接比較Cochrane SR。RR 1.47（95%CI 1.23〜1.76）でPEGが優る。
+
+2. Gordon M, MacDonald JK, Parker CE, Akobeng AK, Thomas AG. **Osmotic and stimulant laxatives for the management of childhood constipation**. *Cochrane Database Syst Rev.* 2016;(8):CD009118. doi:10.1002/14651858.CD009118.pub3
+   - 小児特化の更新版Cochrane SR。PEGを強いエビデンスで第一選択と結論。
+
+3. Voskuijl W, de Lorijn F, Verwijs W, et al. **PEG 3350 (Transipeg) versus lactulose in the treatment of childhood functional constipation: a double blind, randomised, controlled, multicentre trial**. *Gut.* 2004;53(11):1590-1594. doi:10.1136/gut.2004.043620
+   - 最も引用される直接比較RCT（n=100, 8週）。PEG 56% vs ラクツロース 29%（p=0.023）。
+
+4. Candy DC, Edwards D, Geraint M. **Treatment of faecal impaction with polyethelene glycol plus electrolytes (PGE+E) followed by a double-blind comparison of PEG+E versus lactulose as maintenance therapy**. *J Pediatr Gastroenterol Nutr.* 2006;43(1):65-70.
+   - 比較RCT（n=73, 12週）。PEGが排便回数で有意に優る。
+
+5. Nurko S, Youssef NN, Sabri M, et al. **PEG3350 in the treatment of childhood constipation: a multicenter, double-blinded, placebo-controlled trial**. *J Pediatr.* 2008;153(2):254-261.
+   - PEGのプラセボ対照RCT（n=115, 12週）。安全性・有効性確認。
+
+---
+
+### ラクツロース
+
+6. Treepongkaruna S, Simakachorn N, Pienvichit P, et al. **A randomised, double-blind study of polyethylene glycol 4000 and lactulose in the treatment of constipation in children**. *BMC Pediatr.* 2014;14:153. doi:10.1186/1471-2431-14-153
+   - 直接比較RCT（n=88, 8週）。PEGが排便回数で有意に優る（p=0.001）。
+
+7. Gremse DA, Hixon J, Crutchfield A. **Comparison of polyethylene glycol 3350 and lactulose for treatment of chronic constipation in children**. *Clin Pediatr (Phila).* 2002;41(4):225-229.
+   - 比較RCT（n=37, 2週間）。短期では差なし。
+
+---
+
+### ポリデキストロース（PDX）
+
+8. Toporovski MS, Alvares L, Pedroso LM, Rodrigues RM, Costa LM. **Polydextrose and fructooligosaccharides in pediatric functional constipation: a double-blind, randomized trial**. *J Pediatr Gastroenterol Nutr.* 2021;73(2):234-241. doi:10.1097/MPG.0000000000003130
+   - 本報告の主要PDX文献。非対照前後比較（対照群なし）。週3回未満排便が59.7%→11.7%に減少。
+
+9. Hongisto SM, Paajanen L, Saxelin M, Korpela R. **A combination of fibre-rich rye bread and yoghurt containing Lactobacillus GG improves bowel function in women with self-reported constipation**. *Eur J Clin Nutr.* 2006;60(3):319-324.
+   - ポリデキストロースを含む食物繊維RCT。乳幼児対象ではないが基礎エビデンスとして引用。
+
+10. R019（本リポジトリ内参照）: [小児便秘改善における食物繊維4種の比較研究（2026-03-30）](2026-03-30_pediatric-constipation-fiber.md)
+    - ポリデキストロースの詳細評価・市販品情報は §4.2 / §9 を参照。
+
+---
+
+### ガイドライン
+
+11. Tabbers MM, DiLorenzo C, Berger MY, et al. **Evaluation and treatment of functional constipation in infants and children: evidence-based recommendations from ESPGHAN and NASPGHAN**. *J Pediatr Gastroenterol Nutr.* 2014;58(2):258-274. doi:10.1097/MPG.0000000000000266
+    - 本報告が参照した主要国際ガイドライン。PEG第一選択・ラクツロース代替を明記。
+
+12. 日本小児栄養消化器肝臓学会. **小児慢性機能性便秘症診療ガイドライン**. 診断と治療社; 2013.
+    - 日本のガイドライン。マクロゴール・ラクツロースいずれも推奨B。
+
+---
+
+### スコアリング・研究方法論
+
+13. Guyatt GH, Oxman AD, Vist GE, et al. **GRADE: an emerging consensus on rating quality of evidence and strength of recommendations**. *BMJ.* 2008;336(7650):924-926.
+    - 本報告のエビデンス強度スコアリングの基盤となるGRADE方法論。
