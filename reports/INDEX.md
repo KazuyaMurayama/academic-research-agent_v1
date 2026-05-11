@@ -532,3 +532,11 @@ AI・技術:           AI, LLM, ハルシネーション → R001, R029
 - フォーマット: 一覧テーブルに1行追加 → 詳細セクションに1ブロック追加 → タグ索引を更新
 - `reports/` に保存したレポートのみ登録する（`outputs/` は対象外）
 - 次のIDは `R033` から連番で付与する
+
+<!-- ブランチマージで追加 2026-05-11 -->
+- reports/2026-05-05_soy-intake-health-effects-men.md
+- reports/2026-05-07_gachirack-dokkatsu-kakkonto-evidence.md
+- reports/2026-05-07_hq-vs-niacinamide-concentration-efficacy.md
+- reports/2026-05-07_neck-shoulder-stiffness-ingredients-comprehensive.md
+- reports/2026-05-08_cooking-oils-5way-comparison.md
+- reports/2026-05-09_loxoprofen-LX-tape-evaluation.md
