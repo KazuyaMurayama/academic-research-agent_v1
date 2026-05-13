@@ -251,28 +251,188 @@
 
 ### C8. MITの研究：40Hz音・光刺激がアミロイドベータ除去やミクログリア活性化に寄与
 
-<!-- C8_40HZ_PLACEHOLDER -->
+**エビデンス強度: C（マウスはS、ヒトはC・再現性に疑問あり）**
+
+#### 主張の要約
+MIT・Tsaiラボの研究により、40Hzのガンマ波周波数に同調した光や音の刺激（GENUS: Gamma ENtrainment Using Sensory Stimuli）がアミロイドβの除去を促進し、ミクログリアを活性化し、アルツハイマー病の予防・治療に寄与するという主張。
+
+#### ✅ 肯定的証拠（マウス）
+- **Iaccarino et al. 2016, *Nature*（Tsaiラボ）**: 40Hzの光刺激（フリッカー）でアルツハイマーモデルマウス（5xFAD）の視覚皮質のアミロイドβが有意減少。ミクログリアがアミロイドβを取り込む様子を観察。
+- **Martorell et al. 2019, *Cell*（Tsaiラボ）**: 40Hz音刺激（クリック音）で同モデルマウスの聴覚皮質・海馬のアミロイドβ減少。光+音の複合刺激でより広い脳領域に効果。
+- **Murdock et al. 2024, *Nature***: 多感覚（光+音）の40Hz刺激でグリンパティック流れが増加しアミロイドβ・タウ蛋白の除去が促進（マウス）。
+
+#### ❌ 否定的証拠・限界
+- **⚠️ 他研究室での再現失敗（重要）**: Soula et al.（2023, *Nature Neuroscience*）はTsaiラボと同様の実験を3つの異なるアルツハイマーモデルマウスで行い、40Hz刺激によるアミロイドβ減少を**再現できなかった**。アミロイドベータへの効果がMouse strainやAD model固有の現象の可能性を指摘。
+- **ヒト臨床試験は初期段階**: Cognito Therapeutics社のPhase 2試験（OVERTURE試験）で軽度・中等度アルツハイマー患者（n=76）に6ヶ月間の光+音40Hz刺激を実施。認知機能低下速度の有意な抑制は確認されず（2023年）。ただし安全性・忍容性は確認。同社のPhase 3が進行中（2025年時点）。
+- **ヒト脳でのガンマ同調の確認が困難**: EEGでの40Hzガンマ波同調はノイズが多く測定精度に限界がある。
+- **「家庭で40Hzを聴けばアルツハイマー予防」という解釈は完全に時期尚早**: 現時点ではマウスモデルでの実験的知見にとどまり、ヒトへの適用は未証明。
+
+#### 現在の科学的コンセンサス
+40Hz刺激によるアミロイド除去・ミクログリア活性化はTsaiラボのマウス研究では印象的な結果を示したが、独立した他ラボでの再現性に問題があり（Soula 2023）、ヒトでの有効性は現時点で未確立。ただし機序の独自性と可能性から複数の臨床試験が進行中であり、今後最も注目すべき分野の一つ。「MITが証明した」という紹介は不正確であり、現段階では「有望な仮説」の位置付け。
+
+| 研究 | デザイン | 対象 | 主要結果 |
+|---|---|---|---|
+| Iaccarino et al. 2016, *Nature* | 動物実験 | 5xFADマウス | 40Hz光でAβ減少・ミクログリア活性化 |
+| Soula et al. 2023, *Nat. Neurosci.* | 動物実験（再現試験） | 3種ADマウス | 40Hz刺激でAβ減少を再現できず |
+| Murdock et al. 2024, *Nature* | 動物実験 | マウス | 多感覚40HzでGlymphatic↑・Aβ・タウ除去 |
+| OVERTURE Trial 2023 | Phase 2 RCT | n=76（ヒトAD） | 認知低下速度に有意差なし（安全性は確認） |
 
 ---
 
 ### C9. 外国語学習・小説読書が認知予備能を高め認知症リスクを低減させるメカニズム
 
-<!-- C9_BILINGUAL_PLACEHOLDER -->
+**エビデンス強度: B（認知活動全般の効果）/ 外国語・読書の独自効果はC**
+
+#### 主張の要約
+外国語学習や小説の読書が「認知予備能（Cognitive Reserve）」を高め、脳が損傷を受けても代償できる能力を構築し、認知症の発症を遅らせるというメカニズム。
+
+#### ✅ 肯定的証拠
+
+**認知予備能の概念（確立）**:
+- 認知予備能（CR）は脳病理と認知機能の解離を説明する概念として確立しており、教育・職業的複雑性・余暇活動が指標となる（Stern 2012, *Lancet Neurology*）。
+- Livingston et al.（2024, *Lancet*「認知症予防の12リスク因子」）で、低教育（小学校レベル）は認知症リスクを有意に増加させることが確認。
+
+**外国語バイリンガリズムと認知症遅延（観察研究）**:
+- Bak et al.（2016, *Neuropsychologia*）でバイリンガル使用が認知症症状の出現を**平均4〜5年遅延**する可能性（回顧的研究）。
+- Craik et al.（2010, *Neuropsychologia*）でトロント研究において、バイリンガルは認知症診断が平均5年遅かった。
+
+**読書・知的活動の保護効果**:
+- Wilson et al.（2013, *Neurology*）でシカゴ健康・老化プロジェクト（n=294）において、高齢期の読書習慣が認知機能低下速度を有意に緩和。
+- 知的余暇活動（読書・ゲーム・社会活動）が認知症リスクを15〜30%低下させるとする複数のコホート研究がある（Verghese et al. 2003, *NEJM*）。
+
+#### ❌ 否定的証拠・限界
+
+**⚠️ バイリンガル効果の出版バイアス（重大問題）**:
+- de Bruin et al.（2015, *Psychological Science*）が出版バイアスを実証。バイリンガル効果を示さなかった研究が刊行されにくい傾向を示した。
+- Mukadam et al.（2017, *JAMDA*）の前向きコホート研究のみに限ったメタ分析では、バイリンガルの認知症リスク低下は**OR=0.96（95%CI: 0.74–1.23）で有意でなかった**。
+
+**RCT介入でのエビデンスは限定的**:
+- 外国語学習RCT（Bender et al. 2024）では3ヶ月間で注意切り替え・記憶の改善が見られたが、他の認知課題（クロスワード等）と比較しての優位性は限定的。「言語学習固有の効果」かどうかは不明。
+- 読書の無作為化試験は倫理的・方法論的困難から少なく、観察研究の交絡（健康・教育水準の高い人ほど読む）の排除が困難。
+
+**「遅延」≠「予防」**: 認知予備能が高い場合、認知症の発症を遅らせる（症状出現を遅延）が、病理そのものの蓄積速度を変えるわけではない可能性がある（病理-症状解離モデル）。
+
+#### 現在の科学的コンセンサス
+認知予備能を高める知的活動（読書・学習・社会参加）が認知症の発症遅延に貢献するという観察研究のエビデンスは蓄積しているが、外国語学習や読書「固有」の効果はRCTで確立されていない。最重要なのは「脳を使い続けること全般」であり、特定の活動（外国語学習・読書）のみに過剰な効果を帰属させるのは根拠が薄い。
+
+| 研究 | デザイン | 対象 | 主要結果 |
+|---|---|---|---|
+| Mukadam et al. 2017 | 前向きメタ分析 | コホート研究 | バイリンガル認知症リスクOR=0.96（有意でない） |
+| de Bruin 2015, *Psych Sci* | 出版バイアス分析 | 文献 | バイリンガル肯定論文のみ刊行される偏り |
+| Verghese 2003, *NEJM* | コホート n=469 | 高齢者 | 知的活動（読書含む）で認知症リスク-47% |
 
 ---
 
 ### C10. フィンランドのサウナ研究：頻繁なサウナ利用が認知症・脳卒中リスクを50〜60%低減
 
-<!-- C10_SAUNA_PLACEHOLDER -->
+**エビデンス強度: B（関連性）/ C（因果・外挿可能性）**
+
+#### 主張の要約
+フィンランドのKIHD（Kuopio Ischaemic Heart Disease）コホートに基づき、週4〜7回のサウナ利用が認知症リスクを65%、脳卒中リスクを61%低減するというデータの妥当性。
+
+#### ✅ 肯定的証拠
+- **Laukkanen et al. 2017, *Age and Ageing*（KIHDコホート）**: フィンランド人中年男性（n=2,315、平均追跡20.7年）でサウナ週4〜7回利用群は週1回群と比較して認知症リスクHR=0.34（66%低減）、アルツハイマー病HR=0.35（65%低減）。
+- **Laukkanen et al. 2018, *Neurology***: 同コホートで脳卒中リスクHR=0.39（週4〜7回利用者、週1回比）。
+- **生理学的機序の妥当性**: サウナ→体温上昇→心拍増加→心機能負荷（中等度有酸素運動相当）→血管内皮機能改善・炎症抑制・熱ショックタンパク質誘導という機序は生物学的に妥当。
+- **その後の研究**: 受動的熱療法（サウナ）が心血管リスク低減を介して脳血管性認知症リスクを下げる機序を支持するレビューが複数（Laukkanen et al. 2024, *GeroScience*）。
+
+#### ❌ 否定的証拠・限界
+- **⚠️ 単一コホートへの依存**: 「50〜60%低減」というデータはKIHDコホート**1研究のみ**から来ており、独立した前向きコホートでの再現はない（2026年時点）。
+- **⚠️ 残余交絡（健康者バイアス）**: 週4〜7回サウナに行ける人は、そもそも健康状態・社会経済的地位・フィンランドの伝統的生活習慣を維持していることを意味する可能性が高い。交絡因子の調整が完全でない。
+- **集団特異性**: 対象はフィンランド中年男性のみ。日本人・女性・高齢者・異なるサウナ形式（遠赤外線サウナ等）への外挿は不明。
+- **RCTがない**: サウナの認知症予防効果をRCTで検証した研究は存在しない。
+- **脳卒中61%低減の信頼区間の広さ**: HR=0.39（95%CI: 0.18–0.85）と信頼区間が広く、点推定値の信頼度は限定的。
+
+#### 現在の科学的コンセンサス
+フィンランドのサウナ文化と認知症・脳卒中リスク低減の**関連性**は1つの強力なコホートデータで示されているが、因果関係の証明には至っていない。「50〜60%低減」という数字を単独の研究から普遍的事実として提示するのは過剰。生物学的機序は妥当性があり、心血管リスク低減を介した保護効果という仮説は合理的だが、サウナ固有の効果である証明はない。週2〜3回程度の定期的サウナ利用は健康習慣として有害ではなく、心血管健康への効果は比較的エビデンスがある。
+
+| 研究 | デザイン | 対象 | 主要結果 |
+|---|---|---|---|
+| Laukkanen et al. 2017, *Age Ageing* | 前向きコホート n=2,315 | フィンランド男性 | 週4-7回サウナで認知症HR=0.34（65%低減） |
+| Laukkanen et al. 2018, *Neurology* | 同コホート | フィンランド男性 | 週4-7回で脳卒中HR=0.39（61%低減） |
+| Laukkanen et al. 2024, *GeroScience* | レビュー | 文献総括 | 熱療法の心血管・脳への保護機序をまとめ |
 
 ---
 
 ## 📊 総合評価表
 
-<!-- S_SUMMARY_TABLE_PLACEHOLDER -->
+| # | 主張 | エビデンス強度 | 主張の妥当性 | 科学的コンセンサス一言 |
+|---|---|---|---|---|
+| A1 | 脳細胞は1,000億個・数千年分リソースあり | **A** | ⚠️ **数値誤り** | 正確には860億個（Herculano-Houzel 2009）。「1,000億」は旧説 |
+| A2 | 刺激・ときめきが睡眠の代わりに脳を休める | **S（否定）** | ❌ **重大な誤り** | 睡眠はグリンパティック・記憶固定に必須。ときめきで代替不可 |
+| A3 | 3日で脳の構造的変化が始まる | **B** | ⚠️ **時間スケール誇張** | シナプス可塑性は数時間。MRI可視の構造変化は数週間〜数ヶ月 |
+| B4 | 有酸素運動でBDNF↑・海馬体積増加 | **A** | ✅ **ほぼ妥当** | 最も確立された脳健康介入の一つ（特に高齢者） |
+| B5 | ジャンプ→オステオカルシン→記憶改善 | **C** | ⚠️ **ヒット未確立** | マウスでは強力なエビデンス。ヒトRCTは存在しない |
+| B6 | 16時間断食で脳内老廃物デトックス | **D（ヒト脳）** | ❌ **証拠なし** | 脳デトックスはグリンパティック（睡眠）の役割。断食とは別機序 |
+| B7 | 砂糖が糖化・ドーパミン依存・認知低下 | **B（認知低下）/D（依存）** | ⚠️ **一部根拠あり・一部過剰** | 高糖質食→認知低下の関連はあり。「砂糖依存症」はヒトで非確立 |
+| C8 | 40Hz光・音でアミロイドβ除去 | **C（ヒット）** | ⚠️ **マウスのみ・再現性に疑問** | Tsaiラボのマウス研究は印象的だが他ラボで再現失敗（Soula 2023） |
+| C9 | 外国語学習・読書が認知予備能を高め認知症予防 | **B（認知活動全般）/C（言語固有）** | ⚠️ **部分的に根拠あり** | 知的活動全般の保護効果あり。外国語・読書固有の効果はRCT未確立 |
+| C10 | サウナ週4〜7回で認知症65%・脳卒中61%低減 | **B（関連）/C（因果）** | ⚠️ **単一コホート・交絡あり** | KIHDコホート1本のデータ。独立した再現なし。因果未証明 |
+
+### 実践的示唆（エビデンスに基づく優先順位）
+
+**最優先（エビデンスS・A）**:
+1. **十分な睡眠確保（7〜9時間）**: グリンパティック老廃物除去・記憶固定に不可欠。「ときめきで代替」は危険な誤解。
+2. **有酸素運動（週150分以上の中強度）**: BDNF・海馬体積・認知機能への効果が最も確立された介入。
+
+**推奨（エビデンスB）**:
+3. **血糖値管理・砂糖過剰摂取の制限**: 高血糖→認知症リスク増加の一貫したエビデンス。「依存症」論より「血糖管理」として捉える。
+4. **多様な知的活動の継続**: 外国語学習・読書に限らず、知的に刺激的な活動全般が認知予備能に貢献。
+5. **定期的なサウナ（週2〜3回）**: リスク低減の関連は示唆的。心血管健康の観点でも有益。
+
+**可能性があるが過度な期待は禁物（エビデンスC）**:
+6. 骨への衝撃を伴う運動（ジャンプ等）・40Hz音楽鑑賞: 現時点ではヒトでの有効性未確立。有酸素運動の一部として位置づけが現実的。
+
+**現段階では科学的根拠なし（エビデンスD）**:
+7. 16時間断食による「脳のデトックス」: 断食を行うなら代謝・体重管理目的として行い、「脳のデトックス」という文脈での期待は根拠がない。
 
 ---
 
 ## 📚 参考文献
 
-<!-- R1_REFERENCES_PLACEHOLDER -->
+### A1: ニューロン数
+1. Herculano-Houzel, S. (2009). The human brain in numbers: a linearly scaled-up primate brain. *Frontiers in Human Neuroscience*, 3, 31.
+2. Sorrells, S. F. et al. (2018). Human hippocampal neurogenesis drops sharply in children to undetectable levels in adults. *Nature*, 555, 377–381.
+3. Boldrini, M. et al. (2018). Human hippocampal neurogenesis persists throughout aging. *Cell Stem Cell*, 22(4), 589–599.
+
+### A2: 睡眠とグリンパティック系
+4. Xie, L. et al. (2013). Sleep drives metabolite clearance from the adult brain. *Science*, 342(6156), 373–377.
+5. Lucey, B. P. et al. (2021). Effect of sleep on overnight cerebrospinal fluid amyloid β kinetics. *Nature Aging*, 1, 115–123.
+6. Van Dongen, H. P. et al. (2003). The cumulative cost of additional wakefulness. *Sleep*, 26(2), 117–126.
+7. Ma, Y. et al. (2021). Association between sleep duration and cognitive decline. *Nature Communications*, 12, 4889.
+
+### A3: 神経可塑性
+8. Draganski, B. et al. (2004). Neuroplasticity: Changes in grey matter induced by training. *Nature*, 427, 311–312.
+9. Bliss, T. V. P. & Lømo, T. (1973). Long-lasting potentiation of synaptic transmission. *Journal of Physiology*, 232(2), 331–356.
+
+### B4: BDNF・海馬体積
+10. Erickson, K. I. et al. (2011). Exercise training increases size of hippocampus and improves memory. *PNAS*, 108(7), 3017–3022.
+11. Wang, Z. et al. (2022). Effect of exercise on brain-derived neurotrophic factor in depressed patients. *Brain and Behavior*, 12(8), e2544.
+12. Firth, J. et al. (2018). Effect of aerobic exercise on hippocampal volume in humans: A systematic review. *NeuroImage*, 166, 230–238.
+
+### B5: オステオカルシン
+13. Khrimian, L. et al. (2017). Gpr158 mediates osteocalcin's regulation of cognition. *Journal of Experimental Medicine*, 214(10), 2859–2873.
+14. Prado, C. M. et al. (2020). Osteocalcin and cognitive function in adults. *Journal of Clinical Endocrinology & Metabolism*, 105(10).
+
+### B6: 断食とオートファジー
+15. Alirezaei, M. et al. (2010). Short-term fasting induces profound neuronal autophagy. *Autophagy*, 6(6), 702–710.
+16. Bensalem, J. et al. (2025). Intermittent time-restricted eating increases autophagic flux. *Journal of Physiology*.
+
+### B7: 砂糖と認知機能
+17. Westwater, M. L. et al. (2016). Sugar addiction: the state of the science. *European Journal of Nutrition*, 55(Suppl 2), 55–69.
+18. Crane, P. K. et al. (2013). Glucose levels and risk of dementia. *New England Journal of Medicine*, 369, 540–548.
+19. Huang, Y. et al. (2024). Dietary sugar intake and dementia. *BMC Medicine*, 22, 307.
+
+### C8: 40Hz刺激（GENUS）
+20. Iaccarino, H. F. et al. (2016). Gamma frequency entrainment attenuates amyloid load and modifies microglia. *Nature*, 540, 230–235.
+21. Soula, M. et al. (2023). Forty-Hz light flicker does not entrain native gamma oscillations in Alzheimer's disease model mice. *Nature Neuroscience*, 26, 570–578.
+22. Murdock, M. H. et al. (2024). Multisensory gamma stimulation promotes glymphatic clearance of amyloid. *Nature*, 627, 149–156.
+
+### C9: 認知予備能・バイリンガリズム
+23. de Bruin, A. et al. (2015). Cognitive advantages in bilingualism. *Psychological Science*, 26(1), 99–107.
+24. Mukadam, N. et al. (2017). Bilingualism and dementia: Systematic review and meta-analysis. *Journal of the American Medical Directors Association*, 18(4), 305–313.
+25. Verghese, J. et al. (2003). Leisure activities and the risk of dementia in the elderly. *New England Journal of Medicine*, 348, 2508–2516.
+
+### C10: サウナ
+26. Laukkanen, T. et al. (2017). Sauna bathing is inversely associated with dementia and Alzheimer's disease. *Age and Ageing*, 46(2), 245–249.
+27. Laukkanen, T. et al. (2018). Sauna bathing is associated with reduced cardiovascular mortality and improves risk prediction. *Neurology*, 90(22), e1938–e1944.
