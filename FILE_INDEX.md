@@ -1,6 +1,6 @@
 # FILE INDEX - academic-research-agent_v1
 
-> 最終更新: 2026-05-15 | ファイル数: 198（reports/7本追加、REPORT_INDEX.md・Timeout_Prevention.md削除）
+> 最終更新: 2026-05-15 | ファイル数: 207（reports/9本追加 R032-R040）
 
 ## ディレクトリ構造 (depth=5)
 
@@ -207,7 +207,16 @@
 │   ├── 2026-04-30_cold-remedy-evidence.md
 │   ├── 2026-04-30_genai-instruction-design.md
 │   ├── 2026-05-05_soy-intake-health-effects-men.md
+│   ├── 2026-05-07_gachirack-dokkatsu-kakkonto-evidence.md
 │   ├── 2026-05-07_hq-vs-niacinamide-concentration-efficacy.md
+│   ├── 2026-05-07_neck-shoulder-stiffness-ingredients-comprehensive.md
+│   ├── 2026-05-08_cooking-oils-5way-comparison.md
+│   ├── 2026-05-09_loxoprofen-LX-tape-evaluation.md
+│   ├── 2026-05-09_pediatric-constipation-pdx-vs-peg-vs-lactulose.md
+│   ├── 2026-05-13_brain-health-factcheck.md
+│   ├── 2026-05-14_tetris-effects-comparison.md
+│   ├── 2026-05-15_adult-constipation-interventions.md
+│   ├── 2026-05-15_cbt-effects.md
 │   └── INDEX.md
 ├── requirements.txt
 ├── src/
@@ -375,7 +384,16 @@
 | `reports/2026-04-30_cold-remedy-evidence.md` | 49306 | ddf21be |
 | `reports/2026-04-30_genai-instruction-design.md` | 30493 | dc77e2f |
 | `reports/2026-05-05_soy-intake-health-effects-men.md` | 19961 | 9c81ff3 |
+| `reports/2026-05-07_gachirack-dokkatsu-kakkonto-evidence.md` | 36203 | ab1e589 |
 | `reports/2026-05-07_hq-vs-niacinamide-concentration-efficacy.md` | 49357 | 1414a11 |
+| `reports/2026-05-07_neck-shoulder-stiffness-ingredients-comprehensive.md` | 75805 | c7ab044 |
+| `reports/2026-05-08_cooking-oils-5way-comparison.md` | 58054 | d656e23 |
+| `reports/2026-05-09_loxoprofen-LX-tape-evaluation.md` | 19976 | 55926c1 |
+| `reports/2026-05-09_pediatric-constipation-pdx-vs-peg-vs-lactulose.md` | 46225 | e12a812 |
+| `reports/2026-05-13_brain-health-factcheck.md` | 42057 | ba52b9e |
+| `reports/2026-05-14_tetris-effects-comparison.md` | 62379 | 4dc2d59 |
+| `reports/2026-05-15_adult-constipation-interventions.md` | 103311 | eb3b910 |
+| `reports/2026-05-15_cbt-effects.md` | 61931 | 329f5d8 |
 | `reports/INDEX.md` | 44169 | 2644b3b |
 | `requirements.txt` | 53 | b89f5a6 |
 | `tasks.md` | 3371 | 0fcd446 |
