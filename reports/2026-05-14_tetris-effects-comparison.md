@@ -497,7 +497,7 @@ Pennebaker（1986）が開発した表現的筆記（Expressive Writing: EW）�
 
 テトリス特異的な創造性研究が今後公表された場合は本推奨を更新する必要がある。
 
-### 10.1 限界と注意事項
+### 10.2 限界と注意事項
 
 1. **テトリスは医療行為・心理療法の代替にならない**: 急性期の補助ツールとしての根拠はあるが、PTSDの確定診断例・複雑性PTSD・自傷リスクのある患者には必ず専門家介入が優先される。テトリスの自己完結的実施が専門家受診の遅延・回避につながるリスクに注意が必要だ。
 
@@ -514,7 +514,9 @@ Pennebaker（1986）が開発した表現的筆記（Expressive Writing: EW）�
 ### Tetris — PTSD・侵入記憶
 - Iyadurai, L., Blackwell, S. E., Meiser-Stedman, R., Watson, P. C., Bonsall, M. B., Geddes, J. R., Nobre, A. C., & Holmes, E. A. (2018). Preventing intrusive memories after trauma via a brief intervention involving Tetris computer game play in the emergency department: A proof-of-concept randomized controlled trial. *Molecular Psychiatry, 23*(3), 674–682. https://doi.org/10.1038/mp.2017.23
 - Holmes, E. A., James, E. L., Coode-Bate, T., & Deeprose, C. (2009). Can playing the computer game "Tetris" reduce the build-up of flashbacks for trauma? A proposal based on information processing theory. *PLOS ONE, 4*(1), e4153. https://doi.org/10.1371/journal.pone.0004153
+- Holmes, E. A., James, E. L., Kilford, E. J., & Deeprose, C. (2010). Key steps in developing a cognitive vaccine against traumatic flashbacks: Visuospatial Tetris versus verbal Pub Quiz. *PLOS ONE, 5*(11), e13706. https://doi.org/10.1371/journal.pone.0013706
 - James, E. L., Bonsall, M. B., Hoppitt, L., Tunbridge, E. M., Geddes, J. R., Milton, A. L., & Holmes, E. A. (2015). Computer game play reduces intrusive memories of experimental trauma via reconsolidation-update mechanisms. *Psychological Science, 26*(8), 1201–1215. https://doi.org/10.1177/0956797615583071
+- Kanstrup, M., Singh, L., Göransson, K. E., & Holmes, E. A. (2021). Reducing intrusive memories of trauma using a visuospatial interference intervention with inpatients in acute mental health settings (Tetris study): A randomised controlled experiment. *Translational Psychiatry, 11*, 6. https://doi.org/10.1038/s41398-020-01124-6
 - Hyland, P., Vallières, F., Murphy, J., Fitzgerald, A., Reuveni, I., & Shevlin, M. (2021). Prevention of intrusive traumatic memories using Tetris: A replication. *Cognitive Behaviour Therapy, 50*(3), 177–193. https://doi.org/10.1080/16506073.2020.1808399
 
 ### Tetris — 渇望・嗜癖
@@ -522,7 +524,9 @@ Pennebaker（1986）が開発した表現的筆記（Expressive Writing: EW）�
 - Skorka-Brown, J., Andrade, J., & May, J. (2014). Playing 'Tetris' reduces the strength, frequency and vividness of naturally occurring cravings. *Appetite, 76*, 161–165. https://doi.org/10.1016/j.appet.2014.01.073
 
 ### Tetris — 認知機能・脳可塑性
+- Lau-Zhu, A., Holmes, E. A., Butterfield, S., & Holmes, J. (2017). Selective Association Between Tetris Game Play and Visuospatial Working Memory: A Preliminary Investigation. *Applied Cognitive Psychology, 31*(4), 438–445. https://doi.org/10.1002/acp.3339
 - Haier, R. J., Karama, S., Leyba, L., & Jung, R. E. (2009). MRI assessment of cortical thickness and functional activity changes in adolescent girls following three months of practice on a visual-spatial task. *BMC Research Notes, 2*, 174. https://doi.org/10.1186/1756-0500-2-174
+- Butler, O., Herr, K., Willmund, G., Gallinat, J., Kühn, S., & Zimmermann, P. (2020). Combat-related posttraumatic stress disorder is associated with smaller hippocampal volume and larger amygdala volume: findings from a large study. *Journal of Psychiatry and Neuroscience, 45*(3), 168–176. https://doi.org/10.1503/jpn.190016
 
 ### HIIT — ストレス・認知
 - Ai, J. Y., Chen, F. T., Hsieh, S. S., Kao, S. C., Chen, A. G., Hung, T. M., & Chang, Y. K. (2021). The effect of acute high-intensity interval training on executive function: A systematic review. *International Journal of Environmental Research and Public Health, 18*(7), 3593. https://doi.org/10.3390/ijerph18073593
@@ -547,6 +551,7 @@ Pennebaker（1986）が開発した表現的筆記（Expressive Writing: EW）�
 
 ### 理論的背景
 - Brewin, C. R., Dalgleish, T., & Joseph, S. (2003). A dual representation theory of posttraumatic stress disorder. *Psychological Review, 103*(4), 670–686. https://doi.org/10.1037/0033-295X.103.4.670
+- Kavanagh, D. J., Andrade, J., & May, J. (2005). Imaginary relish and exquisite torture: The elaborated intrusion theory of desire. *Psychological Review, 112*(2), 446–467. https://doi.org/10.1037/0033-295X.112.2.446
 - May, J., Andrade, J., Kavanagh, D. J., & Hetherington, M. (2012). Elaborated intrusion theory: A cognitive-emotional theory of food craving. *Current Obesity Reports, 1*(3), 114–121. https://doi.org/10.1007/s13679-012-0016-y
 
 ---
