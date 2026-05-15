@@ -43,6 +43,7 @@
 | T020 | R033: 脳神経科学ファクトチェック：『不夜脳』主張＋脳健康介入10項目エビデンス評価 | 2026-05-13 | Opus計画+Sonnet実行 | `reports/2026-05-13_brain-health-factcheck.md` |
 | T021 | R034: 認知行動療法（CBT）の効果に関するエビデンスベース・レビュー | 2026-05-15 | Opus計画+Sonnet実行 | `reports/2026-05-15_cbt-effects.md` |
 | T022 | プロジェクト品質向上（QI-01〜09）: メタデータ修復・ルール整合・スキル更新 | 2026-05-15 | Opus計画+Sonnet実行 | `CLAUDE.md`, `git-rules.md`, `SKILL.md`, `tasks.md`, `INDEX.md`, `FILE_INDEX.md` |
+| T023 | R040: 成人便秘解消の打ち手 — 16介入・4軸100点スコアリング比較レポート | 2026-05-15 | Opus計画+Sonnet実行 | `reports/2026-05-15_adult-constipation-interventions.md` |
 
 ---
 
@@ -74,6 +75,6 @@
 
 | 業務 | タイミング | 方法 |
 |---|---|---|
-| `reports/INDEX.md` 更新 | 新レポート作成時 | 次のIDは `R040` |
+| `reports/INDEX.md` 更新 | 新レポート作成時 | 次のIDは `R041` |
 | `FILE_INDEX.md` 更新 | 新ファイル追加時 | ファイル種別・説明を追記 |
 | masterへのpush | 全コミット後 | `git push origin HEAD:master` |
