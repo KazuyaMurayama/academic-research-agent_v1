@@ -80,8 +80,9 @@ description: >
 3. outputs/{session_id}/05_report.md に保存
 4. **【毎回必須】reports/ へコピーして git push する**:
    - ファイル名: `reports/YYYY-MM-DD_{テーマの短い英語スラグ}.md`（例: `reports/2026-04-06_four-hour-workday.md`）
-   - `git add reports/{filename}` → `git commit -m "research: {テーマ} レポート"` → `git push -u origin {current-branch}`
-   - GitHub URL を生成: `https://github.com/KazuyaMurayama/academic-research-agent_v1/blob/{branch}/reports/{filename}`
+   - `git add reports/{filename}` → `git commit -m "research: {テーマ} レポート"` → `git push origin master`（403時はCLAUDE.mdの自動フローに従う）
+   - GitHub URL を生成: `https://github.com/KazuyaMurayama/academic-research-agent_v1/blob/master/reports/{filename}`
+   - **⚠️ 推定30,000文字超の場合は1回のWriteで生成せず、`.claude/rules/timeout-prevention.md` の Option C（スケルトン先出し → バッチEdit置換）に従うこと**
    - この手順を省略してはならない。レポートはGitHubからワンクリックで開けることが必須条件。
 5. **【毎回必須】`reports/INDEX.md` を更新する**:
    - 次のIDを確認（既存の最大ID + 1）

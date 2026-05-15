@@ -64,7 +64,7 @@
 - 大JSON（500KB超）はReadせず、Bashで事前抽出してインライン埋め込み
 - 1エージェント = 1セクション（max 3,000字・max 3ファイルRead）が上限
 - レポートはセクション単位で `outputs/` に中間保存 → 最後に `cat` で結合
-- 詳細 → `Timeout_Prevention.md`
+- 詳細 → `.claude/rules/timeout-prevention.md`
 
 ---
 

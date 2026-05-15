@@ -1,6 +1,6 @@
 # FILE INDEX - academic-research-agent_v1
 
-> 最終更新: 2026-05-07 | ファイル数: 193
+> 最終更新: 2026-05-15 | ファイル数: 198（reports/7本追加、REPORT_INDEX.md・Timeout_Prevention.md削除）
 
 ## ディレクトリ構造 (depth=5)
 
@@ -25,8 +25,6 @@
 ├── CLAUDE.md
 ├── FILE_INDEX.md
 ├── README.md
-├── REPORT_INDEX.md
-├── Timeout_Prevention.md
 ├── collect_no_ss.py
 ├── outputs/
 │   ├── .gitkeep
