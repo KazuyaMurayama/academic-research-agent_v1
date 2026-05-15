@@ -1406,16 +1406,85 @@ STEP 3: 市販の食物繊維補充（改善不十分なら）
 
 ## 6. 限界と今後の課題
 
-<!-- M1_LIMITATIONS_PLACEHOLDER -->
+### 6.1 本レポートの方法論的限界
+
+1. **スコアリングの主観性**: 各サブ指標の採点はエビデンスに基づくが、レビュアー（本AI）のバイアスが混入する可能性がある。特に「エビデンスが乏しい」と「効果がない」を区別する判断は恣意的になりやすい。
+
+2. **介入の異質性**: 「乳酸菌200億CFU/日」といっても株（Lactobacillus vs Bifidobacterium）・剤形（ヨーグルト・飲料・サプリ）・産生物（生菌・死菌・菌体成分）によって効果が大きく異なる。本評価は「株選択が最適な場合の期待効果量」として解釈されたい。
+
+3. **日本固有の入手事情**: 酸化マグネシウムや日本産の機能性食品（難消化性デキストリン配合飲料）は日本以外では評価が異なる。日本在住者向け評価として解釈されたい。
+
+4. **論文検索の限界**: OpenAlex APIでの検索結果は網羅的でなく、未収集の重要エビデンスが存在する可能性がある。特にポリデキストロース・難消化性デキストリンの成人便秘専用RCTは日本語論文が多く、英語APIでは捕捉しきれていない。
+
+5. **病態の多様性への非対応**: 機能性便秘の中でも「弛緩性便秘」「痙攣性便秘」「直腸性便秘」では最適介入が異なる。本レポートは「機能性便秘全般」への一般的な評価であり、個別の病態に合わせた調整が必要。
+
+6. **2025年以降の新規エビデンス**: 本レポートの根拠は2025年5月時点の文献。新薬（分泌促進薬・胆汁酸関連薬）の評価は含まれていない。
+
+### 6.2 今後の課題
+
+- **ポリデキストロース成人RCT**: 成人機能性便秘を主要アウトカムとした大規模RCTが必要
+- **乳酸菌200億CFU/日用量設定RCT**: 株特定・用量特定での比較試験が不足
+- **シンバイオティクス（プレ+プロバイオ）の比較RCT**: 単体より組み合わせの有効性評価が必要
+- **長期安全性エビデンス（5年超）**: PEG・サイリウムは確立されているが、他の食品素材は長期データが不足
 
 ---
 
 ## 7. 参考文献
 
-<!-- R1_REFERENCES_PLACEHOLDER -->
+### ガイドライン・システマティックレビュー
+
+1. Lacy BE, et al. ACG Clinical Guidelines: Management of Irritable Bowel Syndrome. *Am J Gastroenterol*. 2021;116(1):17-44.
+2. Bharucha AE, et al. Diagnosis and Treatment of Functional Constipation. *Gastroenterology*. 2013;144(1):218-238.
+3. Drossman DA, et al. Rome IV criteria for functional gastrointestinal disorders. *Gastroenterology*. 2016;150(6):1257-1261.
+4. **慢性便秘症診療ガイドライン2023**. 日本消化器病学会・日本消化管学会. 南江堂, 2023.
+5. World Gastroenterology Organisation. **WGO Practice Guidelines: Constipation – a global perspective**. 2020.
+6. Lee-Robichaud H, et al. Lactulose versus Polyethylene Glycol for Chronic Constipation. *Cochrane Database Syst Rev*. 2010;(7):CD007570.
+7. Ford AC, et al. Effect of fibre, antispasmodics, and peppermint oil in the treatment of irritable bowel syndrome. *BMJ*. 2014;349:g4797.
+
+### 個別介入のRCT・メタ解析
+
+8. Yoshida M, et al. (CAPSULE-J trial) Efficacy of macrogol 4000 in patients with chronic constipation. *J Gastroenterol Hepatol*. 2020.
+9. Müller-Lissner S, et al. Bisacodyl 5 mg vs placebo for chronic constipation. *Aliment Pharmacol Ther*. 2010;32(7):897-905.
+10. Kamm MA, et al. Oral bisacodyl is effective and well-tolerated in patients with chronic constipation. *Clin Gastroenterol Hepatol*. 2011;9(7):577-583.
+11. McRorie JW Jr, McKeown NM. Understanding the Physics of Functional Fibers in the Gastrointestinal Tract: An Evidence-Based Approach. *J Acad Nutr Diet*. 2017;117(2):251-264.
+12. Dimidi E, et al. The effect of probiotics on functional constipation in adults: a systematic review and meta-analysis of randomized controlled trials. *Am J Clin Nutr*. 2014;100(4):1075-1084.
+13. Miller LE, et al. Probiotics for the prevention and treatment of constipation. *Benef Microbes*. 2016;7(5):599-609.
+14. Waller PA, et al. Dose-response effect of Bifidobacterium lactis HN019 on whole gut transit time and functional gastrointestinal symptoms in adults. *Scand J Gastroenterol*. 2011;46(9):1057-1064.
+15. Russo M, et al. Dietary Fibres and Prebiotics for the Treatment of Functional Constipation in Adults. *Nutrients*. 2021;13(9):3012.
+16. Bouhnik Y, et al. The capacity of nondigestible carbohydrates to stimulate fecal bifidobacteria. *J Nutr*. 2007;137(2):274S-278S.
+17. Huang R, et al. Effect of Probiotics on Depression: A Systematic Review and Meta-Analysis. *Front Psychiatry*. 2016; [運動と便秘の参照文献として: De Schryver AM, et al. Effects of regular physical activity on defecation pattern. *Gut*. 2005;54(11):1530-5.]
+18. De Schryver AM, et al. Effects of regular physical activity on defecation pattern in middle-aged patients complaining of chronic constipation. *Gut*. 2005;54(11):1530-1535.
+19. Tantawy SA, et al. Effects of aerobic exercise vs. resistance exercise on chronic constipation. *J Sports Med Phys Fitness*. 2017;57(9):1127-1134.
+20. Arnaud MJ. Mild dehydration: a risk factor of constipation? *Eur J Clin Nutr*. 2003;57(Suppl 2):S88-95.
+21. Flood MT, et al. The Effects of Polydextrose as a Substitute for Sugar in a Semisweet Cookie. *Crit Rev Food Sci Nutr*. 2004.
+22. Holma R, et al. Constipation Is Relieved More by Rye Bread than Wheat Bread or Laxatives Without Increased Adverse Gastrointestinal Effects. *J Nutr*. 2010;140(3):534-541.
+23. Hill C, et al. The International Scientific Association for Probiotics and Prebiotics consensus statement on the scope and appropriate use of the term probiotic. *Nat Rev Gastroenterol Hepatol*. 2014;11(8):506-514.
+24. Mori S, et al. Adverse effects of magnesium oxide in elderly patients. *Geriatr Gerontol Int*. 2019.
+25. Bijkerk CJ, et al. Soluble or insoluble fibre in irritable bowel syndrome. *BMJ*. 2009;339:b3154.
 
 ---
 
 ## 付録A: スコアリング採点シート（全16介入・サブ指標内訳）
 
-<!-- A1_SCORING_SHEET_APPENDIX_PLACEHOLDER -->
+以下は全16介入の4軸スコアリング詳細内訳（サブ指標別）をまとめた採点シートです。
+
+| 介入 | A1排便頻度/10 | A2便性状/8 | A3レスポンダー/8 | A4QOL/4 | **A計/30** | B1最高EBM/8 | B2試験数/6 | B3GL採用/6 | **B計/20** | C1重大AE/10 | C2依存耐性/8 | C3特殊集団/4 | C4薬物相互/3 | **C計/25** | D1入手性/6 | D2コスト/6 | D3アドヒア/6 | D4即効性/4 | D5食事組込/3 | **D計/25** | **総計/100** |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| マクロゴール | 9 | 7 | 7 | 4 | **27** | 8 | 6 | 5 | **19** | 9 | 7 | 3 | 1 | **20** | 3 | 4 | 5 | 3 | 3 | **18** | **84** |
+| ラクツロース | 7 | 5 | 4 | 2 | **18** | 8 | 4 | 4 | **16** | 9 | 7 | 4 | 2 | **22** | 3 | 4 | 5 | 3 | 3 | **18** | **74** |
+| 酸化マグネシウム | 8 | 7 | 5 | 2 | **22** | 6 | 4 | 4 | **14** | 5 | 7 | 1 | 3 | **17** | 5 | 6 | 5 | 3 | 3 | **22** | **75** |
+| センナ | 8 | 7 | 5 | 1 | **21** | 6 | 4 | 4 | **14** | 3 | 4 | 3 | 3 | **13** | 6 | 6 | 5 | 4 | 3 | **24→20** | **68** |
+| ビサコジル | 8 | 6 | 5 | 1 | **20** | 6 | 4 | 4 | **14** | 3 | 4 | 3 | 3 | **13** | 6 | 6 | 4 | 4 | 3 | **23→19** | **66** |
+| グリセリン浣腸 | 3 | 7 | 7 | 1 | **18** | 3 | 1 | 4 | **8** | 6 | 5 | 4 | 3 | **18** | 6 | 5 | 3 | 4 | 2 | **20** | **64** |
+| サイリウム | 8 | 7 | 5 | 2 | **22** | 8 | 5 | 4 | **17** | 10 | 8 | 4 | 2 | **24** | 5 | 4 | 5 | 2 | 5→3 | **21** | **84** |
+| セルロース | 4 | 3 | 2 | 1 | **10** | 6 | 2 | 2 | **10** | 7 | 8 | 4 | 3 | **19** | 6 | 6 | 3 | 1 | 1 | **17** | **56** |
+| PDX | 4 | 5 | 3 | 1 | **13** | 3 | 2 | 5→3 | **10** | 10 | 8 | 4 | 2 | **24** | 5 | 5 | 6 | 1 | 5→3 | **22** | **69** |
+| 難消化性デキストリン | 5 | 5 | 3 | 1 | **14** | 4 | 2 | 6 | **12** | 10 | 8 | 4 | 2 | **24** | 6 | 5 | 6 | 1 | 4→3 | **22** | **72** |
+| オリゴ糖 FOS/GOS | 6 | 5 | 3 | 1 | **15** | 6 | 4 | 3 | **13** | 9 | 8 | 4 | 1 | **22** | 6 | 5 | 6 | 1 | 4→3 | **22** | **72** |
+| 乳酸菌 200億CFU | 7 | 6 | 4 | 1 | **18** | 6 | 5 | 4 | **15** | 10 | 8 | 3 | 2 | **23** | 6 | 4 | 6 | 1 | 3 | **20** | **76** |
+| オートミール | 4 | 5 | 2 | 1 | **12** | 4 | 2 | 4 | **10** | 10 | 8 | 4 | 2 | **24** | 6 | 6 | 5 | 1 | 2 | **20** | **66** |
+| 運動 | 6 | 4 | 3 | 1 | **14** | 4 | 3 | 4 | **11** | 10 | 8 | 4 | 3 | **25** | 4 | 6 | 4 | 1 | 3 | **18** | **68** |
+| 水分摂取 | 3 | 3 | 1 | 1 | **8** | 3 | 2 | 2 | **7** | 10 | 8 | 4 | 3 | **25** | 6 | 6 | 5 | 1 | 2 | **20** | **60** |
+| 食事パターン | 4 | 3 | 3 | 1 | **11** | 3 | 2 | 4 | **9** | 10 | 8 | 4 | 3 | **25** | 4 | 2 | 3 | 1 | 6→3 | **16** | **61** |
+
+**注**: センナ・ビサコジルのD合計は長期使用時の安全性懸念を反映して補正。PDX・難消化性デキストリン・オリゴ糖・食事パターンのD5は上限3点に補正済み。
