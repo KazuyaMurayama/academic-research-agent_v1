@@ -3,3 +3,4 @@ __pycache__/
 .env
 outputs/
 .claude/settings.local.json
+!.claude/cross-repo.md
