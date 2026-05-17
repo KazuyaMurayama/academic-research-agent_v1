@@ -1,6 +1,6 @@
 # FILE INDEX - academic-research-agent_v1
 
-> 最終更新: 2026-05-16 | ファイル数: 208（reports/ R041追加）
+> 最終更新: 2026-05-17 | ファイル数: 207（R041をR040に統合・削除）
 
 ## ディレクトリ構造 (depth=5)
 
@@ -217,7 +217,6 @@
 │   ├── 2026-05-14_tetris-effects-comparison.md
 │   ├── 2026-05-15_adult-constipation-interventions.md
 │   ├── 2026-05-15_cbt-effects.md
-│   ├── 2026-05-16_ny1301-lactobacillus-evaluation.md
 │   └── INDEX.md
 ├── requirements.txt
 ├── src/
@@ -395,7 +394,6 @@
 | `reports/2026-05-14_tetris-effects-comparison.md` | 62379 | 4dc2d59 |
 | `reports/2026-05-15_adult-constipation-interventions.md` | 103311 | eb3b910 |
 | `reports/2026-05-15_cbt-effects.md` | 61931 | 329f5d8 |
-| `reports/2026-05-16_ny1301-lactobacillus-evaluation.md` | 11156 | e0d874e |
 | `reports/INDEX.md` | 44169 | 2644b3b |
 | `requirements.txt` | 53 | b89f5a6 |
 | `tasks.md` | 3371 | 0fcd446 |

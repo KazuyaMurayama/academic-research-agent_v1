@@ -45,7 +45,7 @@
 | T022 | プロジェクト品質向上（QI-01〜09）: メタデータ修復・ルール整合・スキル更新 | 2026-05-15 | Opus計画+Sonnet実行 | `CLAUDE.md`, `git-rules.md`, `SKILL.md`, `tasks.md`, `INDEX.md`, `FILE_INDEX.md` |
 | T023 | R040: 成人便秘解消の打ち手 — 16介入・4軸100点スコアリング比較レポート | 2026-05-15 | Opus計画+Sonnet実行 | `reports/2026-05-15_adult-constipation-interventions.md` |
 | T024 | R040品質向上（QI-R040）: ファクトチェック・スコア修正・ランキング再採番・FILE_INDEX補完 | 2026-05-15 | Opus計画+Sonnet実行 | `reports/2026-05-15_adult-constipation-interventions.md`, `FILE_INDEX.md`, `reports/INDEX.md` |
-| T025 | R041: NY1301乳酸菌（ピルクルミラクルケア）4軸100点スコアリング評価レポート | 2026-05-16 | Sonnet | `reports/2026-05-16_ny1301-lactobacillus-evaluation.md` |
+| T025 | R041削除・R040統合: NY1301（ピルクルミラクルケア）をR040 Section 3.12.1として統合。単独レポートR041は削除（欠番）。 | 2026-05-17 | Opus計画+Sonnet実行 | `reports/2026-05-15_adult-constipation-interventions.md`（更新） |
 
 ---
 
