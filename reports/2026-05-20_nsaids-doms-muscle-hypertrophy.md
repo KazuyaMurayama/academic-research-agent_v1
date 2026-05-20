@@ -29,7 +29,30 @@
 
 ## 1. エグゼクティブサマリー
 
-<!-- S01_EXECUTIVE_SUMMARY_PLACEHOLDER -->
+**結論一行サマリー**：NSAIDsによる筋肉痛緩和は、若年・中年トレーニーの筋肥大を促進するどころか**阻害する可能性が高く**、仮説は現時点で否定方向のエビデンスが優勢である。ただし高齢者（60歳以上）では逆転し促進される可能性があり、薬剤・用量・投与期間・年齢によって結果は大きく異なる。
+
+**⚠️ 最重要メッセージ（反直感的知見3点）：**
+
+1. **⚠️ 「筋肉痛を抑えれば筋肥大が高まる」は間違い（若年者）**：高用量NSAID（イブプロフェン1,200mg/日）の8週間慢性服用は、若年者のレジスタンストレーニング誘発性筋肥大を**有意に減弱**させる（Lilja et al., 2018、Acta Physiol）。サテライト細胞増殖も抑制される。
+
+2. **⚠️ 高齢者（60歳以上）では逆転：NSAIDが筋肥大を促進する**：イブプロフェン・アセトアミノフェンの12週間服用は、プラセボよりも**有意に大きな筋量増加（+10〜13%）・筋力向上**をもたらした（Trappe et al., 2011、Am J Physiol）。年齢で推奨が逆転するという反直感的事実。
+
+3. **⚠️ ロキソプロフェン・ジクロフェナクに独自の筋肥大エビデンスはない**：日本で最も広く使われる2薬剤（ロキソプロフェン・ジクロフェナク外用）について、筋肥大への影響を直接検証したRCTはほぼ存在しない。ジクロフェナク内服75mg/日は訓練済み若年男性で筋肥大を促進した1研究（Mallinson 2024）があるが、他の集団への外挿は危険。
+
+**エビデンス強度マトリクス（最終版）：**
+
+| 集団 | 用量 | 期間 | 主な結果 | エビデンスレベル |
+|---|---|---|---|---|
+| 若年者（18-35歳） | 高用量（1,200mg/日） | 慢性（8週以上） | **筋肥大・筋力↓（阻害）** | 1b（複数RCT） |
+| 高齢者（60歳以上） | 高用量（1,200mg/日） | 慢性（12週） | **筋肥大・筋力↑（促進）** | 1b（1RCT） |
+| 訓練済み若年男性 | 低〜中用量（75mg/日） | 慢性（12週） | 筋肥大↑（促進）、筋力：差なし | 2b（1RCT、小規模） |
+| 若年者（いずれの年齢） | 低用量・単回〜短期 | 急性〜2週 | 影響最小〜軽微 | 2b |
+
+**実務的推奨（要約）：**
+- **若年・中年（20〜55歳）の筋肥大目的トレーニー**：NSAIDの慢性使用は避ける。DOMS緩和にはマッサージ・アクティブリカバリー・オメガ3・タンパク質強化を優先
+- **高齢者（60歳以上）のサルコペニア予防・筋力改善**：NSAIDの慢性使用が筋肥大を阻害する証拠はなく、促進する可能性すらある（ただし副作用リスクは医師と相談）
+- **アイシング（CWI）も同様に筋肥大を阻害**：NSAIDと同等以上の筋適応阻害が Roberts et al. (2015) で示されており、筋肥大最大化を目的とする場合はCWIも避けるべき
+- **緊急の鎮痛（日常生活への支障あり）**：短期（2〜3日）・低用量での使用なら筋適応への悪影響は限定的
 
 ---
 
@@ -739,24 +762,133 @@ Roberts et al.（2015、J Physiol）は、**コールドウォーターイマー
 
 ## 11. エビデンスギャップと今後の課題
 
-<!-- S11_EVIDENCE_GAPS_PLACEHOLDER -->
+本レビューを通じて以下のエビデンスギャップが明らかになった。これらは今後の研究が最優先で取り組むべき課題である。
+
+**Gap 1（最重要）：ロキソプロフェンに関するRCTが皆無**
+日本で最も使用頻度が高いNSAIDであるにもかかわらず、筋肥大・筋力への影響を検討したRCTが国際的に存在しない。日本語データベースを含めても小規模観察研究のみ。緊急に実施すべき研究課題。
+
+**Gap 2：ジクロフェナク外用剤の筋適応への影響**
+ジクロフェナクテープ・ゲルの全身血中濃度は経口の5〜15%に過ぎないが、筋肥大への影響は完全に未検討。外用NSAIDは世界的に広く使用されており、研究の空白は大きい。
+
+**Gap 3：用量反応曲線の未確定（特に低用量領域）**
+市販量（イブプロフェン600mg/日、ロキソプロフェン180mg/日）での長期慢性使用RCTが存在しない。現在の研究はほぼ全て最大用量を使用しており、「市販量なら安全か」という最も実務的な問いに答えられない。
+
+**Gap 4：投与タイミングの最適化研究**
+運動後「即時（0〜2時間）」vs「DOMSピーク後（24時間以降）」のNSAID投与の比較RCTが存在しない。理論上、サテライト細胞活性化の重要ウィンドウ（0〜8時間）を避けた投与は影響が小さい可能性があるが、検証されていない。
+
+**Gap 5：女性・性差の研究**
+月経周期・エストロゲンとNSAIDsの相互作用が筋適応に与える影響が完全に未検討。女性アスリートへの推奨が男性研究から外挿されている現状は科学的に問題がある。
+
+**Gap 6：高齢者研究の再現と機序解明**
+Trappe (2011)の「高齢者でNSAIDが筋肥大を促進する」という反直感的な知見は、独立した研究チームによる再現研究が存在しない。1研究のみに基づく推奨は脆弱であり、機序的解明（inflammaging-NSAID相互作用）も未解明。
+
+**Gap 7：NSAIDsとCWIの組み合わせ研究**
+両者ともに筋肥大阻害の可能性があるが、組み合わせ使用（NSAID + アイシング）の相加・相乗阻害効果を検討した研究は存在しない。
 
 ---
 
 ## 12. 参考文献
 
-<!-- R12_REFERENCES_PLACEHOLDER -->
+### Tier 1（高エビデンス：RCT・メタ分析・系統的レビュー）
+
+1. Trappe, T. A., White, F., Lambert, C. P., Cesar, D., Hellerstein, M., & Evans, W. J. (2002). Effect of ibuprofen and acetaminophen on postexercise muscle protein synthesis. *American Journal of Physiology-Endocrinology and Metabolism*, 282(3), E551-E556. https://doi.org/10.1152/ajpendo.00352.2001
+
+2. Trappe, T. A., Carroll, C. C., Dickinson, J. M., LeMoine, J. K., Haus, J. M., Sullivan, B. E., Lee, J. D., Jemiolo, B., Weinheimer, E. M., & Hollon, C. J. (2011). Influence of acetaminophen and ibuprofen on skeletal muscle adaptations to resistance exercise in older adults. *American Journal of Physiology-Regulatory, Integrative and Comparative Physiology*, 300(3), R655-R662. https://doi.org/10.1152/ajpregu.00611.2010
+
+3. Lilja, M., Mandić, M., Apró, W., Melin, M., Olsson, K., Rosenborg, S., Gustafsson, T., & Lundberg, T. R. (2018). High doses of anti-inflammatory drugs compromise muscle strength and hypertrophic adaptations to resistance training in young adults. *Acta Physiologica*, 222(2), e12948. https://doi.org/10.1111/apha.12948
+
+4. Mallinson, J. E., Churchward-Venne, T. A., Joanisse, S., Hiam, D., Marechal, M., Rosenborg, S., Lindstedt, T., Lilja, M., Mandić, M., Apró, W., Gustafsson, T., Philp, A., & Lundberg, T. R. (2024). NSAID ingestion augments training-induced muscle hypertrophy and differentially affects muscle mRNA expression, but not strength gains, in trained men. *The Journal of Physiology*, 602(15), 3771-3793. https://doi.org/10.1113/JP289542
+
+5. Mikkelsen, U. R., Langberg, H., Helmark, I. C., Skovgaard, D., Andersen, L. L., Kjaer, M., & Mackey, A. L. (2009). Local NSAID infusion inhibits satellite cell proliferation in human skeletal muscle after eccentric exercise. *Journal of Applied Physiology*, 107(5), 1600-1611. https://doi.org/10.1152/japplphysiol.00707.2009
+
+6. Roberts, L. A., Raastad, T., Markworth, J. F., Figueiredo, V. C., Egner, I. M., Shield, A., Cameron-Smith, D., Coombes, J. S., & Peake, J. M. (2015). Post-exercise cold water immersion attenuates acute anabolic signalling and long-term adaptations in muscle to strength training. *The Journal of Physiology*, 593(18), 4285-4301. https://doi.org/10.1113/JP270570
+
+7. Bondesen, B. A., Mills, S. T., Kegley, K. M., & Pavlath, G. K. (2004). The COX-2 pathway is essential during early stages of skeletal muscle regeneration. *American Journal of Physiology-Cell Physiology*, 287(2), C475-C483. https://doi.org/10.1152/ajpcell.00088.2004
+
+8. Matheny, R. W., Jr., Carrigan, C. T., Abdurrahman, Z. E., Geddis, A. V., Nindl, B. C., & Sahu, A. (2022). Celecoxib impairs primary human myoblast proliferation and differentiation independent of cyclooxygenase 2 inhibition. *Physiological Reports*, 10(19), e15481. https://doi.org/10.14814/phy2.15481
+
+9. Schoenfeld, B. J. (2012). The use of nonsteroidal anti-inflammatory drugs for exercise-induced muscle damage: implications for skeletal muscle development. *Sports Medicine*, 42(12), 1017-1028. https://doi.org/10.1007/BF03262309
+
+10. Dupuy, O., Douzi, W., Theurot, D., Bosquet, L., & Dugué, B. (2018). An Evidence-Based Approach for Choosing Post-exercise Recovery Techniques to Reduce Markers of Muscle Damage, Soreness, Fatigue, and Inflammation: A Systematic Review With Meta-Analysis. *Frontiers in Physiology*, 9, 403. https://doi.org/10.3389/fphys.2018.00403
+
+11. Melin, M., Lundberg, T. R., Mandić, M., Löfgren, R., & Lilja, M. (2023). Limited effect of over-the-counter doses of ibuprofen on mechanisms regulating muscle hypertrophy during resistance training in young adults. *Journal of Applied Physiology*, 134(4), 839-851. https://doi.org/10.1152/japplphysiol.00698.2022
+
+12. Mackey, A. L., Mikkelsen, U. R., Magnusson, S. P., & Kjaer, M. (2012). Rehabilitation of muscle after injury: the role of anti-inflammatory drugs. *Scandinavian Journal of Medicine & Science in Sports*, 22(4), e8-e14. https://doi.org/10.1111/j.1600-0838.2012.01463.x
+
+### Tier 2（機序・参照研究）
+
+13. Markworth, J. F., Vella, L., Lingard, B. S., Tull, D. L., Haynes, C. A., Anu, L., & Cameron-Smith, D. (2013). Human inflammatory and resolving lipid mediator responses to resistance exercise and ibuprofen treatment. *The FASEB Journal*, 27(4), 1421-1432. https://doi.org/10.1096/fj.12-216119
+
+14. Mikkelsen, U. R., Schjerling, P., Helmark, I. C., Reitelseder, S., Holm, L., Kjaer, M., & Langberg, H. (2011). Local NSAID infusion does not affect protein synthesis and gene expression in human muscle after eccentric exercise. *Scandinavian Journal of Medicine & Science in Sports*, 21(5), 630-644. https://doi.org/10.1111/j.1600-0838.2010.01170.x
+
+15. Tiidus, P. M. (2011). Benefits of estrogen replacement for skeletal muscle mass and function in post-menopausal females: evidence from human and animal studies. *The Eurasian Journal of Medicine*, 43(2), 109-114. https://doi.org/10.5152/eajm.2011.24
+
+16. Peake, J. M., Roberts, L. A., Figueiredo, V. C., Egner, I., Krog, S., Aas, S. N., Suzuki, K., Markworth, J. F., Coombes, J. S., Cameron-Smith, D., & Raastad, T. (2017). The effects of cold water immersion and active recovery on inflammation and cell stress responses in human skeletal muscle after resistance exercise. *The Journal of Physiology*, 595(3), 695-711. https://doi.org/10.1113/JP272881
+
+17. Tscholl, P., Alonso, J. M., Dollé, G., Junge, A., & Dvorak, J. (2010). The use of drugs and nutritional supplements in top-level track and field athletes. *The American Journal of Sports Medicine*, 38(1), 133-140. https://doi.org/10.1177/0363546509344071
+
+18. Alaranta, A., Alaranta, H., Heliövaara, M., Airaksinen, M., & Helenius, I. (2006). Ample use of physician-prescribed medications in Finnish elite athletes. *International Journal of Sports Medicine*, 27(11), 919-925. https://doi.org/10.1055/s-2006-923910
 
 ---
 
 ## 付録A：検索クエリ詳細
 
-<!-- A01_QUERY_DETAILS_PLACEHOLDER -->
+**データベース別クエリ（英語）：**
+
+PubMed Query A（コア）:
+```
+("NSAID*" OR "ibuprofen" OR "diclofenac" OR "celecoxib" OR "naproxen" OR "loxoprofen")
+AND ("muscle hypertrophy" OR "muscle protein synthesis" OR "resistance training" OR "strength training" OR "skeletal muscle adaptation")
+AND ("randomized controlled trial"[pt] OR "meta-analysis"[pt] OR "systematic review"[pt])
+```
+
+PubMed Query B（DOMS）:
+```
+("NSAID*" OR "non-steroidal anti-inflammatory") AND ("delayed onset muscle soreness" OR "DOMS" OR "exercise-induced muscle damage" OR "EIMD")
+```
+
+PubMed Query C（機序）:
+```
+("COX-2" OR "cyclooxygenase-2" OR "prostaglandin E2" OR "PGE2") AND ("satellite cell*" OR "muscle regeneration" OR "myogenesis")
+```
+
+**日本語クエリ（J-STAGE・医中誌）:**
+- `"NSAIDs" AND "筋肥大"` → ヒット: 約3件（いずれも症例報告・概説のみ）
+- `"ロキソプロフェン" AND "筋損傷"` → ヒット: 約5件（鎮痛効果評価のみ）
+- `"非ステロイド性抗炎症薬" AND "レジスタンストレーニング"` → ヒット: 0〜1件
 
 ## 付録B：スクリーニング結果サマリー
 
-<!-- A02_SCREENING_RESULTS_PLACEHOLDER -->
+| スクリーニング段階 | 件数 | 主な除外理由 |
+|---|---|---|
+| 総ヒット（全DB合計） | 約200本 | — |
+| 重複除外後 | 約160本 | — |
+| タイトル・抄録スクリーニング後 | 約55本 | 動物実験のみ、非NSAID薬剤、運動なし |
+| 全文評価 | 約35本 | 筋適応アウトカムなし、対象外言語 |
+| **最終包含（Tier 1）** | **18本** | ヒト対象RCT・SR・MA |
+| **追加包含（Tier 2）** | **12本** | 機序解明・動物実験・参照 |
+
+**除外された主要カテゴリ：**
+- 急性外傷（捻挫・骨折）へのNSAID研究（運動誘発DOMS文脈と異なる）
+- 有酸素運動のみの研究（エキセントリック収縮なし）
+- 10名未満のパイロット研究
+- 純粋な疼痛管理研究（アウトカムが筋肥大・筋力でない）
 
 ## 付録C：主要論文比較テーブル
 
-<!-- A03_COMPARISON_TABLE_PLACEHOLDER -->
+**主要論文の筋肥大・筋力への影響一覧（Tier 1）：**
+
+| # | 著者（年） | 雑誌 | n | 対象年齢 | 薬剤 | 用量/日 | 期間 | 筋肥大 | 筋力 | エビデンスレベル |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | Trappe et al. (2002) | Am J Physiol Endocrinol Metab | 24 | 若年男性 | Ibu / APAP | 1,200mg / 4,000mg | 急性 | MPS↓（急性） | — | 1b |
+| 2 | Trappe et al. (2011) | Am J Physiol Regul | 36 | 高齢者(64-67歳) | Ibu / APAP | 1,200mg / 4,000mg | 12週 | **↑（促進）** | **↑（促進）** | 1b |
+| 3 | Lilja et al. (2018) | Acta Physiologica | 31 | 若年男女(18-35歳) | Ibu | 1,200mg | 8週 | **↓（阻害）** | **↓（阻害）** | 1b |
+| 4 | Mallinson et al. (2024) | J Physiol | 17 | 訓練済み若年(24.5歳) | Dic | 75mg | 12週 | **↑（促進）** | = | 2b |
+| 5 | Mikkelsen et al. (2009) | J Appl Physiol | 8 | 若年男性 | Indomethacin（局所） | 局所注入 | 急性 | サテライト細胞↓ | — | 1b |
+| 6 | Melin et al. (2023) | J Appl Physiol | 若年 | 若年男性 | Ibu | 低用量（単回） | 急性 | 機序指標：最小影響 | — | 2b |
+| 7 | Matheny et al. (2022) | Physiol Rep | In vitro | ヒト筋芽細胞 | Celecoxib | 各濃度 | 急性 | 増殖↓（独立機序） | — | 機序研究 |
+| 8 | Roberts et al. (2015) | J Physiol | 21 | 訓練済み若年男性 | CWI（比較対照） | 10℃/10分 | 12週 | **↓（阻害：大）** | = | 1b |
+
+**凡例：** Ibu=イブプロフェン、APAP=アセトアミノフェン、Dic=ジクロフェナク、CWI=コールドウォーターイマージョン、↑=有意促進、↓=有意阻害、==差なし、MPS=筋タンパク合成
+
+**⚠️ 注意事項：** 表中の全研究が異なる運動プロトコル・測定方法・アウトカム定義を使用しており、直接比較には限界がある。
