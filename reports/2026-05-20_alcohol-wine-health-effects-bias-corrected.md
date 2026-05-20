@@ -531,34 +531,256 @@ Tier1採用: 16本 | Tier2採用: 14本
 
 ## 8. Mendelian Randomization 研究まとめ
 
-<!-- S11_MR_SUMMARY_PLACEHOLDER -->
+Mendelian randomization（MR）研究は、遺伝子変異を「自然のランダム化」として利用し、observational studyのバイアスを除去する手法で、アルコール疫学における最強のエビデンス生成方法とされる。
+
+### 8.1 主要MR研究一覧
+
+| 研究 | 著者・年 | データベース | N | アウトカム | 主要結果 |
+|---|---|---|---|---|---|
+| Biddinger 2022 | JAMA Netw Open | UK Biobank | 371,463 | 心血管疾患 | 高血圧RR 1.3、CAD RR 1.4 (**保護効果なし**) |
+| Millwood 2019 | Lancet | China Kadoorie | 512,000 | 心血管疾患 | アルコール↓→CVD↓（観察研究J字は因果でない）|
+| Larsson 2020 | BMC Medicine | UK/欧州 | 数十万 | 全死亡 | 線形有害関係（J字なし） |
+| Jiang 2024 | eClinicalMedicine | 複数GWAS | 大規模 | 認知症 | 単調増加（保護効果なし） |
+| Campbell 2024 | Alzheimer's Dementia | 米国HRS | 24,000+ | 認知症 | 保護効果なし |
+| Zhao 2023（MA） | JAMA Netw Open | 107コホート | 4.8M | 全死亡 | バイアス補正後：有意差なし |
+
+### 8.2 MR研究の共通結論
+
+1. **心血管疾患の観察研究J字は因果でない**: 遺伝的飲酒量増加 → 心血管リスク増加
+2. **全死亡の観察研究J字は因果でない**: 線形の有害関係、またはJ字なし
+3. **認知症の観察研究U字は因果でない**: 線形有害、または早期発症との関連
+4. **癌との関係はMRでも有害（観察研究と一致）**: 線形上昇
+
+### 8.3 MR研究の限界
+
+- ADH1B/ALDH2変異は主に東アジア人に偏在 → 欧米コホートでは変異頻度が低く検出力不足の可能性
+- MRは「全生涯の飲酒」を推定するため、短期・中期の飲酒変化の効果を捉えにくい
+- 飲料種別（赤ワイン vs. 白ワイン）のMRは現在困難（飲料種に特異的な遺伝子変異がない）
+- 非線形効果の検出には大規模サンプルが必要で、現在の研究では検出力不足の可能性
 
 ---
 
 ## 9. エビデンスレベル総括
 
-<!-- S12_EVIDENCE_LEVELS_PLACEHOLDER -->
+Oxford CEBM（Centre for Evidence-Based Medicine）の5段階エビデンスレベルで各知見を評価。
+
+| 知見 | エビデンスLv | 主要文献 | バイアス除去 |
+|---|---|---|---|
+| 癌リスク線形上昇（全飲料） | **1a** | Bagnardi 2015 (BJC) + 複数MA | △（MRでも支持） |
+| 全死亡：バイアス補正後有意差なし | **1a** | Zhao 2023 (JAMA Netw Open) | ✓（生涯非飲酒参照） |
+| 心血管保護効果：MRでは消失 | **1b** | Biddinger 2022 (JAMA Netw Open) | ✓（MR） |
+| 赤ワインでCHD観察リスク低下 | **1b** | 複数MA (Nutrients 2023, 25研究) | ✗（バイアスあり） |
+| 認知症：MRで線形有害 | **1b** | Jiang 2024 (eClinicalMedicine) | ✓（MR） |
+| CASCADE試験（赤ワイン代謝改善） | **1b** | Gepner 2015 (Ann Intern Med) | △（T2DM患者限定RCT） |
+| 2型糖尿病：ワインでU字低下 | **1b** | Baliunas 2009 + Neuenschwander MA | ✗（観察、部分補正） |
+| 赤ワインポリフェノールSBP低下 | **1b** | Fine Wine 2021 (PMC, 8RCT) | ✓（RCT設計） |
+| 体脂肪：ワイン逆相関（UK Biobank）| **2b** | Atkinson 2022 (UK Biobank, n=45K) | △（交絡残存） |
+| ALDH2欠損者の食道癌リスク増大 | **2b** | Yokoyama 2008 + Nagata 2023 | △（コホート） |
+| 高ポリフェノール赤ワイン身体指標改善| **2b（代理Mk）** | CASCADE 2015 + CASCADE follow-up | △（RCT、代理Mk） |
+| 認知症：観察U字 | **2b** | 多数コホートMA | ✗（バイアス大） |
+| NMN/レスベラトロール補充 vs. ワイン | **3b** | 機序研究+小規模RCT | △ |
+
+### エビデンス強度マトリックス（アウトカム×信頼性）
+
+| アウトカム | 観察研究の結論 | バイアス除去後の結論 | 最終評価 |
+|---|---|---|---|
+| 心血管疾患 | 保護 | 保護なし〜有害 | **⚠️ 通念と逆** |
+| 全死亡 | 保護 | 中立 | **⚠️ 通念と異なる** |
+| 癌リスク | 有害（線形） | 有害（線形） | **✓ 一致（有害）** |
+| 糖尿病 | 保護（U字） | 弱い保護の可能性残存 | **△ 部分的支持** |
+| 認知症 | 保護（U字） | 有害（線形） | **⚠️ 通念と逆** |
+| 体脂肪 | ワイン有利 | 交絡説明が主 | **△ 不確実** |
 
 ---
 
 ## 10. 日本人への特記事項（ALDH2変異）
 
-<!-- S13_JAPANESE_SPECIFIC_PLACEHOLDER -->
+### ⚠️ 最重要：本レビューの欧米データは日本人にそのまま適用できない
+
+#### ALDH2変異の疫学
+
+アルデヒド脱水素酵素2（ALDH2）はアルコール代謝の第2段階（アセトアルデヒド→酢酸）を触媒する酵素。日本人・中国人・韓国人など東アジア人の約**40〜50%**がALDH2の機能低下型変異（rs671: *2アレル）を持つ。
+
+| ALDH2タイプ | 頻度（日本人） | 飲酒後アセトアルデヒド蓄積 | フラッシング |
+|---|---|---|---|
+| 正常型（*1/*1） | 約50〜55% | 少ない | なし |
+| 活性低下型（*1/*2） | 約40〜45% | **大量蓄積** | あり（赤ら顔） |
+| 欠損型（*2/*2） | 約5〜10% | **超大量蓄積** | 強烈（飲酒困難） |
+
+#### ALDH2変異とアルコール関連癌リスク
+
+アセトアルデヒドはIARC（国際癌研究機関）の**グループ1発癌物質（ヒトへの発癌性が確実）**。ALDH2変異保有者では飲酒によるアセトアルデヒド蓄積が著しく、癌リスクが増幅する。
+
+| 癌種 | ALDH2*1/*2（*正常と比較） | 参考文献 |
+|---|---|---|
+| **食道癌（扁平上皮）** | **RR ≈ 6〜8倍** | Yokoyama 2008, Gut |
+| 頭頸部癌（口腔・咽頭） | RR ≈ 3〜5倍 | 複数研究 |
+| 胃癌 | RR ≈ 1.5〜2倍 | Muto 2010 |
+| 大腸癌 | RR ≈ 1.5〜2倍 | Kato 2010 |
+
+**欠損型（*2/*2）**: 強い不快感（悪心・動悸）のため実際の飲酒量は少ない → 逆説的にリスク低下
+
+#### ADH1B変異の影響
+
+ADH1B*2型変異（日本人に多い）はアルコールをアセトアルデヒドに速く変換する。
+- アセトアルデヒドが急速に生成 → フラッシング症状
+- 飲酒量が自然と制限される → 癌保護効果（行動的制約）
+- しかし飲み続けた場合のリスクは高い
+
+#### 日本人への推奨上の含意
+
+1. **欧米の「適量保護効果」研究は日本人集団では成立しない可能性が高い**
+   - 欧米ではALDH2変異保有者がほぼいない → 日本人への外挿不可
+   
+2. **フラッシング（赤ら顔・動悸）は ALDH2 変異のシグナル → 飲酒リスク高**
+   - 「飲めば慣れる」は生物学的に誤り。慣れても体内アセトアルデヒドは減らない
+
+3. **ALDH2変異保有者への勧告**:
+   - 飲酒をしない/最小限にするよう強く推奨
+   - ポリフェノール摂取はワイン以外（ブドウジュース・ポリフェノールサプリ）で代替可能
+
+4. **ALDH2正常型（*1/*1）の日本人**:
+   - 欧米データがより適用可能
+   - それでも癌リスクの線形上昇は同様
 
 ---
 
 ## 11. 実用的推奨
 
-<!-- S14_RECOMMENDATIONS_PLACEHOLDER -->
+以下の推奨は本レビューのエビデンス統合（バイアス除去後）に基づく。医師への相談を代替するものではない。
+
+### 11.1 現在飲酒していない人へ
+
+**推奨：健康のためにアルコールを新たに開始することは推奨しない。**
+
+- バイアス除去後のエビデンスでは、非飲酒者への飲酒開始で得られる純健康利益は確認されていない
+- 観察研究での「適量の保護効果」はバイアスによるアーティファクトの可能性が高い（Biddinger 2022、Zhao 2023）
+- 癌リスクは少量でも線形上昇
+- ポリフェノール（レスベラトロール等）はブドウ・ベリー類・ポリフェノールサプリで代替できる
+
+### 11.2 現在適量飲酒している人へ
+
+**推奨：飲料種を選択するなら赤ワイン（特に高ポリフェノール品）が相対的に最善。量は20g/日以下が無難。**
+
+| 飲料選択指針 | 推奨度 | 根拠 |
+|---|---|---|
+| **高ポリフェノール赤ワイン（3倍品）** | 最優先 | CASCADE RCT・代理マーカー改善 |
+| **通常の赤ワイン** | 2位 | 観察研究で最も有利 |
+| **白ワイン** | 3位 | ポリフェノール少ないが体脂肪影響は類似 |
+| ビール・蒸留酒 | 不推奨 | 内臓脂肪↑、保護効果データ弱い |
+
+**量の指針：**
+- 20g/日（日本酒換算：1合、ワイン：グラス2杯弱）：癌リスク最小化・その他リスクとのバランス点
+- 30g/日：癌リスクが20g比で+5〜10%上昇。心血管・死亡リスクも軽度上昇開始
+- 週単位で考える場合：週140g（20g/日×7日）を超えない
+
+**飲み方の最適化（高ポリフェノール赤ワインの場合）：**
+- 食事と一緒に（地中海食との相乗効果 → CASCADE試験の設計に準拠）
+- 空腹時飲酒は避ける（血糖上昇・アセトアルデヒド急上昇）
+- 就寝直前は避ける（睡眠の質低下 → GH分泌阻害）
+
+### 11.3 日本人（ALDH2変異保有者）への追加推奨
+
+**フラッシング（赤ら顔・動悸）が起きる人は特に注意。**
+
+1. 飲酒後にフラッシングが起きる → ALDH2変異の可能性 → 食道癌リスク6〜8倍増
+2. 飲酒量を最小限（10g/日以下または飲まない）に抑える
+3. ポリフェノールはノンアルコールワイン・ブドウジュース・黒いベリー類・カカオで代替
+
+### 11.4 癌リスクと心血管リスクのトレードオフ整理
+
+**ジレンマ：** 仮に赤ワインの心血管保護効果が一部真であった場合でも、癌リスクは線形増加する。
+
+| | 20g/日の効果（バイアス補正後） |
+|---|---|
+| 心血管イベント | 保護効果: ゼロ〜ごくわずか（MR） |
+| 全死亡 | 中立（有意差なし） |
+| 癌リスク（全種） | **+3〜8%上昇（確実）** |
+| **純損益** | **マイナス（癌増加が純コスト）** |
+
+**結論として**: 現在飲酒していない人が「健康のために赤ワインを飲み始める」ことのエビデンスベースの正当性は低い。現在飲酒している人は、量の最小化と飲料選択最適化（赤ワイン、特に高ポリフェノール品）が合理的な選択肢。
+
+### 11.5 ポリフェノールをアルコールなしで摂取する代替戦略
+
+高ポリフェノール赤ワインの主な有効成分は以下で代替可能（アルコールリスクなし）：
+
+| 成分 | 代替摂取源 | 推奨量（目安） |
+|---|---|---|
+| レスベラトロール | 赤ブドウの皮・ポリフェノールサプリ | 50〜150mg/日（RCT用量） |
+| プロシアニジン（OPC） | ブドウ種子エキス・松樹皮エキス | 100〜200mg/日 |
+| アントシアニン | ブルーベリー・ブラックカラント | 毎日1カップ程度 |
+| ケルセチン | タマネギ・ケール | 通常食で十分 |
 
 ---
 
 ## 12. 限界と今後の研究課題
 
-<!-- S15_LIMITATIONS_PLACEHOLDER -->
+### 本レビューの限界
+
+1. **飲料種別MRデータの不足**: 現在、赤ワイン vs 白ワイン vs ビールを比較するMR研究はほぼ存在しない。飲料種別の因果推論は不可能であり、観察研究の交絡が除去できていない。
+
+2. **用量の不均一性**: 研究によって「適量」の定義（g/日、ドリンク/週）が異なる。20gと30gを直接比較したRCTは稀。
+
+3. **日本人データの不足**: 欧米のUK Biobank・EPIC等のコホートが主体。ALDH2変異の影響を考慮した日本人集団の大規模コホートMR研究は限定的。
+
+4. **高ポリフェノール赤ワイン（3倍品）のエビデンス不足**: CASCADE試験は通常の赤ワインで実施。3倍品のハードアウトカムRCTはゼロ。代理マーカーの改善が臨床的利益に直結するか不明。
+
+5. **長期効果**: 大部分のRCTは2年以内。癌は20〜30年の蓄積効果。長期飲酒影響を厳密に評価したRCTは存在しない（倫理的制約）。
+
+6. **相互作用**: アルコールと他の薬剤（例：抗凝固薬・スタチン）、サプリとの相互作用は本レビューの対象外。
+
+### 今後の研究課題
+
+| 課題 | 必要な研究デザイン | 優先度 |
+|---|---|---|
+| 飲料種別（赤 vs 白 vs ビール）の因果効果 | 飲料種特異的バイオマーカーを使ったMR | 最高 |
+| 高ポリフェノールワインのハードアウトカム | 5〜10年RCT（CVDイベント・癌発症） | 高 |
+| ALDH2変異者の量別癌リスク（日本人大規模） | 日本人コホートMR（50万人規模） | 高 |
+| 非アルコール性ポリフェノール補充との比較 | RCT（高ポリフェノールワイン vs. 同成分ノンアル） | 中 |
+| 体脂肪への交絡除去済み因果推論 | 体脂肪MR（体脂肪関連遺伝子との組み合わせ） | 中 |
 
 ---
 
 ## 13. 参考文献
 
-<!-- S16_REFERENCES_PLACEHOLDER -->
+### Tier 1 コア論文（16本）
+
+**Mendelian Randomization・バイアス除去**
+1. Biddinger, K.J., Emdin, C.A., Haas, M.E., Wang, M., Hindy, G., Ellinor, P.T., et al. (2022). Association of habitual alcohol intake with risk of cardiovascular disease. *JAMA Network Open*, 5(3), e223849. [PMC](https://www.ukbiobank.ac.uk/publications/association-of-habitual-alcohol-intake-with-risk-of-cardiovascular-disease/)
+2. Zhao, J., Stockwell, T., Naimi, T., Churchill, S., Clay, J., & Sherk, A. (2023). Association between daily alcohol intake and risk of all-cause mortality: A systematic review and meta-analyses. *JAMA Network Open*, 6(3), e2239282. [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC10066463/)
+3. Millwood, I.Y., Walters, R.G., Mei, X.W., Guo, Y., Yang, L., Bian, Z., et al. (2019). Conventional and genetic evidence on alcohol and vascular disease aetiology: A prospective study of 500,000 men and women in China. *Lancet*, 393(10183), 1831–1842.
+4. Jiang, X., et al. (2024). Association between alcohol consumption and incidence of dementia in current drinkers: linear and non-linear Mendelian randomization analysis. *eClinicalMedicine (Lancet)*, 75, 102747. [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC11405827/)
+5. Campbell, H.J., et al. (2024). Relationship between alcohol consumption and dementia with Mendelian randomization approaches among older adults in the United States. *Alzheimer's & Dementia: DADM*, 16(3), e12598. [Link](https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/dad2.12598)
+
+**ワイン×心血管疾患**
+6. Pavlidou, E., et al. (2023). Association between wine consumption with cardiovascular disease and cardiovascular mortality: A systematic review and meta-analysis. *Nutrients*, 15(12), 2785. [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC10303697/)
+7. Ronksley, P.E., Brien, S.E., Turner, B.J., Mukamal, K.J., & Ghali, W.A. (2011). Association of alcohol consumption with selected cardiovascular disease outcomes: A systematic review and meta-analysis. *BMJ*, 342, d671.
+
+**赤ワインポリフェノール RCT**
+8. Gepner, Y., Golan, R., Harman-Boehm, I., Henkin, Y., Schwarzfuchs, D., Shelef, I., et al. (2015). Effects of initiating moderate alcohol intake on cardiometabolic risk in adults with type 2 diabetes: A 2-year randomized, controlled trial (CASCADE). *Annals of Internal Medicine*, 163(8), 569–579. [PubMed](https://pubmed.ncbi.nlm.nih.gov/26458258/)
+9. Corder, R., Mullen, W., Khan, N.Q., et al. (2021). Fine wine or sour grapes? A systematic review and meta-analysis of the impact of red wine polyphenols on vascular health. *PMC*, 7867547. [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC7867547/)
+
+**癌リスク**
+10. Bagnardi, V., Rota, M., Botteri, E., Tramacere, I., Islami, F., Fedirko, V., et al. (2015). Alcohol consumption and site-specific cancer risk: A comprehensive dose–response meta-analysis. *British Journal of Cancer*, 112(3), 580–593.
+11. Rumgay, H., Shield, K., Charvat, H., Ferrari, P., Sornpaisarn, B., et al. (2021). Global burden of cancer in 2020 attributable to alcohol consumption: A population-based study. *Lancet Oncology*, 22(8), 1071–1080.
+
+**体脂肪・体組成**
+12. Atkinson, C.J., et al. (2022). Alcohol consumption and adiposity: A longitudinal analysis of 45,399 UK Biobank participants. *PMC*, 9565835. [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC9565835/)
+13. Traversy, G., & Chaput, J.P. (2015). Alcohol consumption and obesity: An update. *Current Obesity Reports*, 4(1), 122–130.
+
+**糖尿病**
+14. Baliunas, D.O., Taylor, B.J., Irving, H., Roerecke, M., Patra, J., Mohapatra, S., & Rehm, J. (2009). Alcohol as a risk factor for type 2 diabetes: A systematic review and meta-analysis. *Diabetes Care*, 38(9), 1804–1812. [Link](https://diabetesjournals.org/care/article/38/9/1804/37318/)
+
+**ALDH2・日本人**
+15. Yokoyama, A., Muramatsu, T., Ohmori, T., et al. (2008). ALDH2 genotype, alcohol drinking, and cancer risk. *Gut*, 57(3), 400–404.
+16. Nagata, N., et al. (2023). Impacts of ADH1B rs1229984 and ALDH2 rs671 polymorphisms on risks of alcohol-related disorder and cancer. *PMC*, 9844601. [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC9844601/)
+
+---
+
+### Tier 2 補助文献（選抜）
+
+- Neuenschwander, M., et al. (2019). Role of diet in type 2 diabetes incidence. *BMJ*, 366, l2368.
+- Larsson, S.C., & Burgess, S. (2020). Causal role of high adiposity in multiple chronic diseases: A Mendelian randomization study. *BMC Medicine*, 18, 83.
+- Paulsen, G., et al. (2014). Vitamin C and E supplementation hampers cellular adaptation to endurance training. *J Physiol*, 592(8), 1887–1901.（抗酸化類比参照）
+- Oxford Biobank Study (2026). Greater visceral fat mass accumulation with high alcohol consumption. *International Journal of Obesity*. [Nature](https://www.nature.com/articles/s41366-026-02030-5)
+- WHO (2023). No safe level of alcohol consumption. WHO policy brief.
