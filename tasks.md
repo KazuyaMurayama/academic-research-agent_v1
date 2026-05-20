@@ -48,6 +48,7 @@
 | T025 | R041削除・R040統合: NY1301（ピルクルミラクルケア）をR040 Section 3.12.1として統合。単独レポートR041は削除（欠番）。 | 2026-05-17 | Opus計画+Sonnet実行 | `reports/2026-05-15_adult-constipation-interventions.md`（更新） |
 | T026 | R042: NSAIDs（ジクロフェナク・ロキソプロフェン等）による筋肉痛緩和が筋肥大・筋力に与える影響のエビデンスベース系統的レビュー | 2026-05-20 | Opus計画+Sonnet実行 | `reports/2026-05-20_nsaids-doms-muscle-hypertrophy.md` |
 | T027 | R042 Section 13追加: 個人レジメン全成分（22成分）×筋肥大・筋力評価（−5〜+5スコアリング・10項目エビデンス解説・実践推奨） | 2026-05-20 | Opus計画+Sonnet実行 | `reports/2026-05-20_nsaids-doms-muscle-hypertrophy.md`（Section 13追加） |
+| T028 | R043: アルコール・白ワイン・赤ワイン・高ポリフェノール赤ワインの疾患予防・死亡リスク・体脂肪影響（バイアス除去・MR研究優先・4軸比較） | 2026-05-20 | Opus計画+Sonnet実行 | `reports/2026-05-20_alcohol-wine-health-effects-bias-corrected.md` |
 
 ---
 
