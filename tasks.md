@@ -39,7 +39,7 @@
 | T016 | R036: 肩こり・首こり改善成分18種の網羅的評価（3軸100点スコアリング） | 2026-05-07 | Sonnet | `reports/2026-05-07_neck-shoulder-stiffness-ingredients-comprehensive.md` |
 | T017 | R037: 食用油5種の健康効果比較（オリーブ油・キャノーラ・大豆油・ごま油・魚油） | 2026-05-08 | Sonnet | `reports/2026-05-08_cooking-oils-5way-comparison.md` |
 | T018 | R038: リフェンダーLXテープ（ロキソプロフェン5.67%）追加評価（R036アドオン） | 2026-05-09 | Sonnet | `reports/2026-05-09_loxoprofen-LX-tape-evaluation.md` |
-| T019 | R039: テトリスの科学的効果と比較介入マトリックス（PTSD・ストレス・渇望）| 2026-05-14 | Sonnet | `reports/2026-05-14_tetris-effects-comparison.md` |
+| T019 | R039: テトリスの科学的効果と比較介入マトリックス（PTSD・ストレス・渇望・認知機能）| 2026-05-14 | Sonnet | `reports/2026-05-14_tetris-effects-comparison.md` |
 | T020 | R033: 脳神経科学ファクトチェック：『不夜脳』主張＋脳健康介入10項目エビデンス評価 | 2026-05-13 | Opus計画+Sonnet実行 | `reports/2026-05-13_brain-health-factcheck.md` |
 | T021 | R034: 認知行動療法（CBT）の効果に関するエビデンスベース・レビュー | 2026-05-15 | Opus計画+Sonnet実行 | `reports/2026-05-15_cbt-effects.md` |
 | T022 | プロジェクト品質向上（QI-01〜09）: メタデータ修復・ルール整合・スキル更新 | 2026-05-15 | Opus計画+Sonnet実行 | `CLAUDE.md`, `git-rules.md`, `SKILL.md`, `tasks.md`, `INDEX.md`, `FILE_INDEX.md` |
@@ -50,6 +50,7 @@
 | T027 | R042 Section 13追加: 個人レジメン全成分（22成分）×筋肥大・筋力評価（−5〜+5スコアリング・10項目エビデンス解説・実践推奨） | 2026-05-20 | Opus計画+Sonnet実行 | `reports/2026-05-20_nsaids-doms-muscle-hypertrophy.md`（Section 13追加） |
 | T028 | R043: アルコール・白ワイン・赤ワイン・高ポリフェノール赤ワインの疾患予防・死亡リスク・体脂肪影響（バイアス除去・MR研究優先・4軸比較） | 2026-05-20 | Opus計画+Sonnet実行 | `reports/2026-05-20_alcohol-wine-health-effects-bias-corrected.md` |
 | T029 | R044: 髪質改善のための有効成分エビデンスガイド（内服・外用）。内服8成分＋外用9成分×4軸100点スコアリング。ビオチン過大広告検証・縮毛矯正ホルムアルデヒド警告含む | 2026-06-01 | Opus計画+Sonnet実行 | `reports/2026-06-01_hair-quality-improvement-ingredients.md` |
+| T030 | R045: iHerbサプリ4種エビデンスレビュー（メラトニン IR/XR・K2+D3・Ca+Mg+Zn+D3・L-テアニン）。効果量・エビデンスレベル・安全性の3軸100点スコアリング。睡眠改善・ストレス減少・安全性の評価 | 2026-06-04 | Opus計画+Sonnet実行 | `reports/2026-06-04_supplement-evidence-review-sleep-stress-4products.md` |
 
 ---
 
@@ -62,7 +63,7 @@
 4. `reports/INDEX.md` を Read → 既存レポートを確認
 
 ### タスク追加時
-- 「未着手」セクションに追加（ID: T001〜連番、次は `T025`）
+- 「未着手」セクションに追加（ID: T001〜連番、次は `T031`）
 - 担当モデル（Opus/Sonnet）を明記
 - 期待成果物を具体的に記述
 
@@ -81,6 +82,6 @@
 
 | 業務 | タイミング | 方法 |
 |---|---|---|
-| `reports/INDEX.md` 更新 | 新レポート作成時 | 次のIDは `R045` |
+| `reports/INDEX.md` 更新 | 新レポート作成時 | 次のIDは `R046` |
 | `FILE_INDEX.md` 更新 | 新ファイル追加時 | ファイル種別・説明を追記 |
 | masterへのpush | 全コミット後 | `git push origin HEAD:master` |
