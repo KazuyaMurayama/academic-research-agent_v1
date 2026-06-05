@@ -1,322 +1,294 @@
-# R046: サプリメント代替製品サーチ — 用量最適化・コスパ改善版
+# R046: 定期購入サプリメント6製品 — エビデンスベース評価・用量最適化ガイド
 
 **作成日**: 2026-06-04  
+**最終更新**: 2026-06-05  
 **作成者**: Kazuya Oza  
 **関連レポート**: [R045 エビデンスベース評価](2026-06-04_supplement-evidence-review-sleep-stress-4products.md)  
-**調査先**: iHerb, Amazon Japan (Amazon.co.jp), 楽天市場  
-**目的**: R045での問題指摘（過剰用量・低吸収形態・複合製品のリスク）に対し、より適切な用量・形態・コストパフォーマンスの代替製品を特定する
+**対象**: 定期購入中のサプリメント6製品（Amazon・iHerb）の用量適正化・代替品特定・エビデンス整理
 
 ---
 
-## 📌 Quick Reference Card — 推奨製品サマリー
+## 📌 Quick Reference Card — 6製品評価サマリー
 
-| 製品カテゴリ | 現行製品の問題 | 推奨代替製品 | 推定コスト/日 |
+| 製品 | 現在の問題 | 推奨アクション | 推定コスト/日 |
 |---|---|---|---|
-| メラトニン | 1.5mg（最適量0.5mgの3倍） | Swanson 500mcg 60caps (iHerb) | ~¥11/日 |
-| K2+D3 | D3 5000 IU（UL 4000 IU超過） | Carlson D3+K2 2000 IU 120caps (iHerb/Amazon) | ~¥33/日 |
-| マグネシウム | 酸化Mg（吸収率4-16%）+ Ca/Zn複合 | Doctor's Best Mg グリシン酸 240tabs (Amazon.co.jp) | ~¥28/日 |
-| L-テアニン | 用量適切・容量少量（コスパ低） | Nutricost L-Theanine 200mg 240caps (iHerb) | ~¥12/日 |
+| メラトニン 1.5mg | 最適量の3倍過剰 | 0.5mgに変更 | ~¥11/日 |
+| K2+D3 5000 IU | D3がUL超過・K2がMK-4（無効形態） | D3 2000 IU + K2 MK-7に変更 | ~¥33/日 |
+| Ca+Mg+Zn+D3 | 酸化Mg（吸収率4〜16%）+ Ca CVDリスク | Mgグリシン酸単独に変更 | ~¥29/日 |
+| L-テアニン 200mg | 用量適切・容量少量でコスパ低 | 大容量品に変更 | ~¥12/日 |
+| 還元型CoQ10 50mg | **治療閾値以下**（主要適応は100〜300mg必要） | 100mgユビキノールに変更 | ~¥25〜68/日 |
+| NMN 233mg/粒 | 同等品比で約1.5〜2倍割高・効果範囲は限定的 | 同用量で安価な製品に変更 | ~¥37〜55/日 |
 
-**月間コスト概算**: 推奨スタック合計 ≈ **¥2,500〜3,000/月**（現行 ≈ ¥3,500〜5,000/月 と比較）
+**月間コスト概算**: 推奨スタック合計 ≈ **¥4,500〜6,500/月**（現行比 同等〜削減、品質向上）
 
-> ⚠️ 価格はiHerb/Amazon掲載価格（2026年6月時点推定）。為替・送料・セール状況により変動。購入前に実際の価格を確認すること。
+> ⚠️ 価格は2026年6月時点の推定。為替・セール状況により変動。購入前に実際の価格を確認すること。
 
 ---
 
-## 1. 理想スペック定義
+## 1. 製品別エビデンス評価と推奨
 
-R045のエビデンスレビューおよびファクトチェック（v2.0）の推奨に基づき、以下のスペックを選定基準とする。
+### 1.1 メラトニン（現行: 1.5mg/日）
 
-| 製品 | 理想用量 | 形態・品質要件 | R045での根拠 |
+| 項目 | 内容 |
+|---|---|
+| **有効成分** | メラトニン（睡眠相調整ホルモン） |
+| **現行用量** | 1.5 mg/日 |
+| **エビデンス最適用量** | **0.3〜0.5 mg/日** |
+| **問題** | 最適量の3倍過剰。生理的血中濃度を10〜15倍超過。翌日の眠気・朝の体温低下・フィードバック抑制リスク |
+| **主要エビデンス** | Ferracioli-Oda 2013メタ解析（19 RCT）: 入眠短縮WMD −7.06分は0.3〜0.5mgで達成可能 |
+| **GRADEレベル** | Moderate（睡眠潜時改善） |
+
+#### 推奨代替品
+
+| 製品名 | 用量 | 購入先 | 推定コスト/日 |
 |---|---|---|---|
-| メラトニン | **0.3〜0.5 mg/日** | 速放型（IR）、添加物最小 | Ferracioli-Oda 2013: WMD −7.06分は低用量0.3-0.5mgで達成可能 |
-| K2 + D3 | **D3: 2000〜4000 IU / K2 MK-7: 90〜200 mcg** | MK-7（MK-4は避ける）、コレカルシフェロール | D3 UL = 4000 IU（IOM）。MK-4は半減期が短く45 mcgでは無効量 |
-| マグネシウム | **元素Mg: 200〜400 mg/日** | グリシン酸キレート or ビスグリシン酸キレート（Albion TRAACS認証推奨）| 酸化Mg吸収率4-16%に対しグリシン酸キレートは体内保持量が有意に高い |
-| L-テアニン | **200 mg/日（変更なし）** | フリーフォームL-テアニン or 精製品（AlphaWave®等） | Hidese 2019のRCT用量（200mg/日）と完全一致 |
+| **Swanson 500mcg 60caps**（第1推奨） | 0.5 mg | iHerb #118320 | ~¥11 |
+| Life Extension 500mcg 200caps | 0.5 mg | iHerb #24597（⚠️輸入2ヶ月制限注意） | ~¥5〜7 |
 
-> **MK-7 vs MK-4 の重要注意点**: NOW Foods D3+K2（iHerb #10056、$9.17）は「K2 as MK-4 45 mcg」を使用。MK-4は半減期が1〜2時間であり、45 mcgという低用量では骨・血管への生物学的効果は期待できない。**MK-7（メナキノン-7）形態で90 mcg以上**のものを選ぶこと。
+> ⚠️ iHerb→日本へのメラトニン輸入制限: 1回注文につき60粒（2ヶ月分）まで。Swanson 60粒がちょうど適合。
 
 ---
 
-## 2. 製品別推奨
-
-### 2.1 メラトニン 0.5mg
-
-#### 🥇 第1推奨: Swanson Extra Low Dose Melatonin 500mcg
+### 1.2 ビタミンK2+D3（現行: D3 5000 IU + K2 MK-4）
 
 | 項目 | 内容 |
 |---|---|
-| **製品名** | Swanson, Melatonin, Extra Low Dose, 500 mcg, 60 Vegan Caps |
-| **iHerb URL** | https://www.iherb.com/pr/swanson-melatonin-extra-low-dose-500-mcg-60-vegan-caps/118320 |
-| **1粒用量** | 0.5 mg（エビデンス最適量） |
-| **内容量** | 60粒（60日分 = 2ヶ月分）✅ |
-| **推定価格** | ~$3〜5 USD（約¥450〜750） |
-| **推定コスト/日** | ~¥8〜13/日 |
-| **購入チャネル** | iHerb（要確認）, Amazon.com (ASIN: B015SM4ME4) |
-| **特徴** | ベガンカプセル、シンプル処方、過剰用量リスクなし |
-| **適合度** | ✅ 用量 ✅ 形態 ✅ 価格 |
+| **現行用量** | D3: 5,000 IU / K2: MK-4形態 45 mcg |
+| **問題①** | D3 5000 IU > IOM上限（UL）4000 IU。長期使用で高カルシウム血症・腎結石リスク |
+| **問題②** | K2がMK-4形態（半減期1〜2時間）、45 mcgは無効量。**骨・血管への効果は期待できない** |
+| **エビデンス最適用量** | D3: 2000〜4000 IU / K2 MK-7: 90〜200 mcg |
+| **GRADEレベル** | K2+D3複合: Moderate（骨密度・心血管リスク低減） |
 
-**メリット**: 60粒 = ちょうど2ヶ月分で日本の輸入制限（後述）に適合。最安値圏のメラトニン製品。
+#### 推奨代替品
 
-#### 🥈 第2推奨（大容量・コスパ重視）: Life Extension Melatonin 500mcg 200 Vegetarian Caps
-
-| 項目 | 内容 |
-|---|---|
-| **製品名** | Life Extension, Melatonin, 500 mcg, 200 Vegetarian Capsules |
-| **iHerb URL** | https://www.iherb.com/pr/life-extension-melatonin-500-mcg-200-vegetarian-capsules/24597 |
-| **1粒用量** | 0.5 mg |
-| **内容量** | 200粒（200日分） |
-| **推定価格** | ~$7〜10 USD |
-| **推定コスト/日** | ~¥5〜7/日（最安値） |
-| **購入チャネル** | iHerb |
-| **注意点** | ⚠️ 200粒 = 6ヶ月超 → 日本輸入時の**2ヶ月制限**に抵触する可能性あり（後述）。1回注文で1本に留めること |
-| **適合度** | ✅ 用量 ✅ 形態 ⚠️ 輸入制限注意 |
-
-**選択ガイド**: 日本向けiHerb注文では**Swanson 60粒**が安全。Life Extensionは米国内購入または楽天経由の場合に検討。
-
----
-
-### 2.2 ビタミンK2 MK-7 + D3（2000 IU）
-
-#### 🥇 第1推奨: Carlson Vitamin D3 + K2 MK-7, 2000 IU, 120 caps
-
-| 項目 | 内容 |
-|---|---|
-| **製品名** | Carlson, Vitamin D3 + K2, 120 Vegetarian Capsules |
-| **iHerb URL** | https://www.iherb.com/pr/carlson-vitamin-d3-k2-120-vegetarian-capsules/116233 |
-| **Amazon.com** | https://www.amazon.com/dp/B072MKTGFK |
-| **用量** | D3: **2,000 IU**（目標範囲の中央）+ K2 MK-7: **90 mcg** |
-| **内容量** | 120粒（4ヶ月分） |
-| **価格（iHerb）** | **$27.63 USD**（約¥4,000）← ただし2026年6月時点で**在庫切れ**の報告あり |
-| **推定コスト/日** | ~¥33/日 |
-| **購入チャネル** | iHerb（在庫要確認）, Amazon.com/Amazon.co.jp |
-| **K2形態** | ✅ MK-7（メナキノン-7）、半減期72時間 |
-| **認証** | Non-GMO、Gluten Free |
-| **適合度** | ✅ D3用量 ✅ K2形態・用量 △ 価格（現行比1.5〜2倍） |
-
-> ⚠️ iHerbで在庫切れの場合は**Amazon.co.jp**で検索（「Carlson D3 K2 2000IU」）。在庫状況は随時変動。
-
-#### 🥈 代替案: D3とK2を別々に購入（在庫切れ・コスト調整時）
-
-**D3 2000 IU 単独**:
-- Carlson Vitamin D3 2000 IU 120 Soft Gels（iHerb、~$10.97）
-- NOW Foods D3 2000 IU 240 softgels（iHerb）
-- ✅ 低コスト、入手しやすい
-
-**K2 MK-7 100〜180 mcg 単独**:
-- Futurebiotics K2 MK-7 100mcg 100 Veggie Caps（iHerb #108898）
-- NOW Foods MK-7 100mcg 120 Veg Capsules（iHerb #78992）
-- Doctor's Best K2 MK-7 with MenaQ7 180mcg 60 caps（iHerb #66940）
-
-**別々購入の合算コスト**: D3 ~$10 + K2 ~$15〜20 = ~$25〜30 / 120日分 → **Carlson combo とほぼ同等**
-
-> ❌ **推奨しない**: NOW Foods D3+K2 1000 IU / 45 mcg（iHerb #10056, $9.17）— K2はMK-4形態で45 mcgは無効量。D3も1000 IUで不足気味。
-
----
-
-### 2.3 マグネシウム グリシン酸キレート（Ca+Mg+Zn+D3複合品からの置換）
-
-**置換理由（R045 v2.0）**: 現行のCa+Mg+Zn+D3複合品の問題点:
-1. 酸化マグネシウム（吸収率4〜16%、最低形態）
-2. カルシウム補充のCVDリスク（Bolland BMJ 2010）
-3. D3重複（製品2と合算で5300 IU/日超過）
-
-#### 🥇 第1推奨: Doctor's Best High Absorption Magnesium Lysinate Glycinate
-
-| 項目 | 内容 |
-|---|---|
-| **製品名** | Doctor's Best, High Absorption Magnesium Lysinate Glycinate Chelated, Albion® TRAACS®, 240 Tablets |
-| **iHerb URL** | https://www.iherb.com/pr/doctor-s-best-high-absorption-magnesium-lysinate-glycinate-chelated-albion-traacs-240-tablets-100-mg-per-tablet/16567 |
-| **Amazon.co.jp** | 在庫あり、価格 **¥3,432** 前後（直接Amazon出品品）✅ 確認済み |
-| **用量** | 100 mg元素Mg / 錠（2錠 = 200 mg）✅ |
-| **内容量** | 240錠（120日分、200mg/日服用時）= 4ヶ月分 |
-| **推定コスト/日** | ~¥29〜35/日（Amazon.co.jp ¥3,432 ÷ 120日） |
-| **Mg形態** | ✅ **Albion® TRAACS®認証グリシン酸/リジン酸キレート**（最高品質クラス） |
-| **注目点** | 錠剤サイズが大きめとのレビューあり（分割可） |
-| **適合度** | ✅ 形態 ✅ 用量 ✅ 日本Amazon在庫あり |
-
-#### 🥈 第2推奨（iHerb購入・コスパ重視）: California Gold Nutrition Magnesium Bisglycinate Chelate
-
-| 項目 | 内容 |
-|---|---|
-| **製品名** | California Gold Nutrition, Magnesium Bisglycinate Chelate, Albion TRAACS®, 240 Veggie Capsules |
-| **iHerb URL** | https://www.iherb.com/pr/california-gold-nutrition-magnesium-bisglycinate-chelate-albion-traacs-240-veggie-capsules-100-mg-per-capsule/103274 |
-| **用量** | 100 mg元素Mg / カプセル（2cap = 200mg）✅ |
-| **内容量** | 240カプセル（120日分） |
-| **推定価格（iHerb）** | ~$12〜16 USD（CGNブランドはiHerb最安値圏）|
-| **推定コスト/日** | ~¥14〜20/日 |
-| **Mg形態** | ✅ Albion TRAACS®ビスグリシン酸キレート |
-| **特徴** | カプセル（錠剤より飲みやすい）、Doctor's Bestより低コスト |
-| **適合度** | ✅ 形態 ✅ 用量 ✅ 価格 |
-
-> ℹ️ **Albion TRAACS®とは**: NSF International認定のキレート技術。アミノ酸とミネラルを結合し、腸管での吸収率・体内保持率を最大化。Doctor's Best・CGNともにこの認証を持つ。
-
-#### 参考: 楽天市場の選択肢
-楽天市場ではiHerb取扱製品の並行輸入品・正規代理店品が複数出品されているが、**割高になることが多い**（iHerb比 1.3〜2倍程度）。Doctor's Best製品は楽天の「アイハーブ」「ボーテコスメ」等の公認ショップで入手可能。
-
----
-
-### 2.4 L-テアニン 200mg（コスパ改善）
-
-現行製品の用量（200mg）はエビデンスと完全一致のため変更不要。より大容量・低単価への切り替えを推奨。
-
-#### 🥇 第1推奨（最安値）: Nutricost L-Theanine 200mg 240 Capsules
-
-| 項目 | 内容 |
-|---|---|
-| **製品名** | Nutricost, L-Theanine, 200 mg, 240 Capsules |
-| **iHerb URL** | https://www.iherb.com/pr/nutricost-l-theanine-200-mg-240-capsules/140218 |
-| **Amazon.com** | https://www.amazon.com/dp/B0731JC54K |
-| **1粒用量** | 200 mg |
-| **内容量** | 240粒（**8ヶ月分**）✅ |
-| **推定価格** | ~$18〜20 USD（Walmart確認済: $19.95）|
-| **推定コスト/日** | ~¥11〜13/日（60粒製品比で約1/3のコスト）|
-| **購入チャネル** | iHerb, Amazon.com |
-| **形態** | フリーフォームL-テアニン、GMP準拠、3rdパーティテスト済 |
-| **適合度** | ✅ 用量 ✅ 価格 ✅ 大容量 |
-
-#### 🥈 第2推奨（ブランド信頼性重視）: NOW Foods L-Theanine 200mg 120 Capsules
-
-| 項目 | 内容 |
-|---|---|
-| **製品名** | NOW Foods, Double Strength L-Theanine, 200 mg, 120 Veg Capsules |
-| **iHerb URL** | https://www.iherb.com/pr/now-foods-double-strength-l-theanine-200-mg-120-veg-capsules/54096 |
-| **内容量** | 120粒（4ヶ月分） |
-| **推定価格** | ~$12〜16 USD |
-| **推定コスト/日** | ~¥14〜20/日 |
-| **特徴** | NOW Foods は老舗ブランド（1968年創業）、NSFスポーツ認証 |
-| **適合度** | ✅ 用量 ✅ 信頼性 △ 価格（Nutricostより高め） |
-
----
-
-## 3. コスト比較表
-
-### 3.1 製品別コスト比較
-
-| 製品 | 現行品（推定） | → | 推奨代替品 | コスト変化 |
-|---|---|---|---|---|
-| メラトニン | ~¥15〜20/日（1.5mg）| → | Swanson 0.5mg: ~¥11/日 | **▼ 30〜45%削減** + 用量適正化 |
-| K2+D3 | CGN 5000 IU: ~¥13/日 | → | Carlson 2000 IU: ~¥33/日 | **▲ 2.5倍** ← 正しい用量への移行コスト |
-| Mg (Ca+Mg+Zn+D3) | ~¥30〜40/日（推定）| → | Doctor's Best Mg単独: ~¥29/日 | **▼ 5〜30%削減** + 形態大幅改善 |
-| L-テアニン | ~¥25〜30/日（60cap）| → | Nutricost 240cap: ~¥12/日 | **▼ 55〜60%削減** |
-| **合計** | **~¥83〜110/日** | → | **~¥85〜88/日** | ほぼ同等コストで用量・品質を最適化 |
-
-> ℹ️ K2+D3の単価上昇は「5000 IU → 2000 IU」という正確な用量への移行のためのコスト。D3 5000 IUを継続するリスク（高カルシウム血症）を回避するための必要投資。
-
-### 3.2 iHerb vs Amazon Japan 比較
-
-| 製品 | iHerb（USD）| Amazon Japan（JPY）| 推奨購入先 |
+| 製品名 | 用量 | 購入先 | 推定コスト/日 |
 |---|---|---|---|
-| Swanson Melatonin 0.5mg 60caps | ~$3〜5 | 未確認 | **iHerb**（安価） |
-| Carlson D3+K2 2000IU 120caps | $27.63（在庫要確認）| 要検索 | **Amazon.co.jp**（在庫安定）|
-| Doctor's Best Mg Glycinate 240tabs | ~$20〜25 | ¥3,432 ✅確認済 | **Amazon.co.jp**（確実に入手可） |
-| Nutricost L-Theanine 200mg 240caps | ~$18〜20 | 未確認 | **iHerb**（安価） |
+| **Carlson D3+K2 2000 IU 120caps**（第1推奨） | D3 2000 IU + **MK-7** 90 mcg | iHerb #116233 / Amazon.co.jp | ~¥33 |
+| D3 2000 IU + K2 MK-7 別々購入 | 任意調整可 | iHerb各製品 | ~¥30〜40 |
+
+> ❌ **NOW Foods D3+K2（iHerb #10056）は非推奨**: K2がMK-4 45 mcgで無効量。見た目は安くコスパが良さそうに見えるが、実質K2を摂取できていない。
 
 ---
 
-## 4. 日本購入上の注意事項
-
-### 4.1 iHerb → 日本への輸入制限
-
-⚠️ **メラトニンは「2ヶ月分まで」の輸入制限あり**（日本の輸入規制）
-- Swanson 500mcg **60粒** = 1日1粒で**ちょうど2ヶ月分** → ✅ 安全
-- Life Extension 500mcg **200粒** = 6ヶ月超 → ⚠️ 通関トラブルの可能性
-- **1回の注文で1本（60粒）まで**を厳守すること
-
-**輸入制限対象サプリ（2ヶ月分制限）**: メラトニン、ヨヒンベ、ヨウ素カリウム、5-HTP、カフェイン+タウリン、アシュワガンダ
-
-### 4.2 iHerb 日本向け送料・関税
+### 1.3 カルシウム+マグネシウム+亜鉛+D3（現行複合品）
 
 | 項目 | 内容 |
 |---|---|
-| 送料無料閾値 | **¥6,000以上** の注文で送料無料 |
-| 関税無料閾値 | 申告額 **¥16,666未満** で消費税・関税免除 |
-| 配送日数 | 約7〜12日（佐川急便/ヤマト/日本郵便） |
-| 注意 | Rewardsクレジット使用時は注文総額（クレジット適用前）が ¥16,000未満であること |
+| **問題①** | 酸化マグネシウム使用（吸収率4〜16%、サプリ形態の最低クラス） |
+| **問題②** | カルシウム補充によるCVDリスク（Bolland BMJ 2010: 食事由来でないCa補充で心筋梗塞リスク上昇） |
+| **問題③** | D3重複（1.2の製品と合算で5300 IU/日超過） |
+| **推奨** | マグネシウム単独（グリシン酸キレート形態）に置換。Ca・ZnはバランスのよいCa食事から、ZnはMg単独とは別途検討 |
+| **エビデンス最適用量** | 元素Mg: 200〜400 mg/日 |
 
-**最適注文戦略**: 1回の注文を**¥6,000〜16,000**に収める（送料無料 + 関税無料の両方を達成）
+#### 推奨代替品
 
-### 4.3 楽天市場の特徴
+| 製品名 | 用量 | 購入先 | 推定コスト/日 |
+|---|---|---|---|
+| **Doctor's Best Mg グリシン酸 240tabs**（第1推奨） | 200 mg元素Mg（2錠） | **Amazon.co.jp ¥3,432**（在庫確認済） | ~¥29 |
+| CGN Mg Bisglycinate TRAACS 240caps | 200 mg（2cap） | iHerb #103274 | ~¥14〜20 |
 
-- iHerb正規品を扱う並行輸入ショップが多数あるが、**iHerb直接購入の1.3〜2倍**の価格になることが多い
-- 日本語サポート・保証が必要な場合や、まとめ買い特典（SPU・お買い物マラソン）活用時はコストメリットあり
-- **Doctor's Best、NOW Foods、California Gold Nutrition**は楽天でも取扱い多数
-
----
-
-## 5. 購入実施プラン
-
-### フェーズ1（今週中）: 最優先対応
-
-```
-✅ K2+D3対応（血清25(OH)D測定前でも安全なアクション）:
-   → Carlson D3+K2 2000 IU をiHerbまたはAmazon.co.jpで検索・注文
-   → iHerb在庫切れなら Amazon.co.jp「Carlson ビタミンD3 K2 2000IU」で検索
-   → 現行の5000 IU製品は残量を半錠（2500 IU）に分割 or 隔日服用で当座対応
-
-✅ メラトニン対応:
-   → Swanson 500mcg 60caps を次のiHerb注文に追加
-   → 現行1.5mgの残量: 分割（錠剤の場合1/3）または廃棄検討
-```
-
-### フェーズ2（来月中）: 複合製品の置換
-
-```
-✅ マグネシウム:
-   → Amazon.co.jp でDr. Best Mg Glycinate 240tabs（¥3,432）を注文（即配）
-   → 現行Ca+Mg+Zn+D3は D3重複計算後に在庫がなくなり次第中止
-
-✅ L-テアニン:
-   → 現行品の在庫消費後、Nutricost 240caps をiHerbで注文（次回の¥6,000超え注文時に組み合わせ）
-```
-
-### 推奨iHerb注文セット例
-
-```
-[注文1（¥6,000〜15,000以内に調整）]:
- - Swanson Melatonin 500mcg 60caps (#118320): ~$4
- - Carlson D3+K2 2000IU 120caps (#116233): ~$28 ← 在庫確認必須
- - Nutricost L-Theanine 200mg 240caps (#140218): ~$19
-
-[注文2（別注文で送料・関税最適化）]:
- - Ca Gold Nutrition Mg Bisglycinate TRAACS 240caps (#103274): ~$14
-   または → Amazon.co.jpでDr. Best Mg Glycinate ¥3,432で注文（即配可）
-```
+> ✅ Doctor's Best は**Albion® TRAACS®認証**グリシン酸/リジン酸キレート（第三者機関認証の最高品質キレート技術）。Amazon.co.jpで安定入手可能・定期購入割引適用可。
 
 ---
 
-## 6. 製品比較マトリックス（全4カテゴリ）
+### 1.4 L-テアニン 200mg（現行: 適量・コスパ低）
 
-| カテゴリ | 推奨1位 | 推奨2位 | 入手容易度 | K/Q比 |
-|---|---|---|---|---|
-| **メラトニン 0.5mg** | Swanson 60caps（iHerb） | Life Extension 200caps（iHerb） | ★★★ | ★★★★ |
-| **K2 MK-7 + D3 2000IU** | Carlson 120caps（iHerb/Amazon）| D3 + K2 MK-7 別々購入 | ★★（在庫注意） | ★★★ |
-| **Mg グリシン酸** | Doctor's Best 240tabs（Amazon.co.jp） | CGN Bisglycinate 240caps（iHerb）| ★★★★ | ★★★★ |
-| **L-テアニン 200mg** | Nutricost 240caps（iHerb） | NOW Foods 120caps（iHerb） | ★★★★ | ★★★★★ |
+| 項目 | 内容 |
+|---|---|
+| **現行用量** | 200 mg/日（エビデンスと一致・用量変更不要） |
+| **問題** | 小容量製品のため1日あたりコストが高い |
+| **主要エビデンス** | Hidese 2019 RCT（200 mg/日、8週間）: 不安軽減・睡眠質改善 |
+| **GRADEレベル** | Low〜Moderate（ストレス・睡眠補助） |
 
-**K/Q比 = コスパ（Quality/Price Ratio）**: ★1〜★5、高いほど価格当たりの品質が高い
+#### 推奨代替品（大容量・コスパ改善）
+
+| 製品名 | 用量 | 購入先 | 推定コスト/日 |
+|---|---|---|---|
+| **Nutricost L-Theanine 200mg 240caps**（第1推奨） | 200 mg | iHerb #140218（~$19） | ~¥12 |
+| NOW Foods L-Theanine 200mg 120caps | 200 mg | iHerb #54096（~$14） | ~¥14〜20 |
 
 ---
 
-## 7. まとめと次のアクション
+### 1.5 還元型コエンザイムQ10（現行: 50mg/日 — Amazon定期購入中）
 
-### 改善のポイント
+**調査製品**: PURE VITA 還元型コエンザイムQ10（悩み解決ラボ）— 1,500 mg配合/袋（30日分）= **50 mg/日**、60粒
 
-1. **用量適正化（最重要）**: メラトニン1.5mg→0.5mgは安全性と有効性の両方で改善。血中濃度が生理的水準（約3-15倍超過）に戻る。
+#### エビデンスサマリー
 
-2. **吸収率改善（重要）**: 酸化Mg（吸収4-16%）→ グリシン酸キレート（Albion TRAACS）への移行は同用量でも実際の利用可能Mg量が大幅増加。
+| 適応 | 効果量 | GRADEレベル |
+|---|---|---|
+| 心不全（死亡・入院リスク） | RR = 0.64 / 0.50（32 RCT, n=3,763） | **Moderate** |
+| 偏頭痛予防（月間発作回数） | −1.52回/月（6 RCT, n=371） | **Moderate** |
+| 疾患者の疲労軽減 | Hedges' g = −0.398（13 RCT, n=1,126） | **Moderate** |
+| 高血圧補助（収縮期血圧） | −3.48 mmHg（45 RCT） | Low |
+| パーキンソン病 | **効果なし**（5 RCT, n=981） | Moderate（無効） |
+| 運動パフォーマンス | 一致した効果なし | Very Low |
 
-3. **リスク除去**: D3 5000 IU継続によるUL超過リスクを2000 IUへの移行で解消。Ca補充のCVDリスクを除去（Mg単独への置換）。
+#### 用量の問題
 
-4. **コスト最適化**: L-テアニンの60cap→240capへの移行で55〜60%のコスト削減。総スタックコストを維持しながら品質向上。
+⚠️ **50 mg/日は主要適応のいずれにも届かない用量（sub-therapeutic）**
 
-### 次の判断ポイント
+| 適応 | 必要用量 | 現行50mg/日との差 |
+|---|---|---|
+| 心不全（Q-SYMBIO試験） | 300 mg/日 | 1/6 |
+| 偏頭痛予防 | 100〜300 mg/日 | 1/2〜1/6 |
+| 疾患者の疲労軽減 | 60〜200 mg/日（用量依存性あり） | 不十分〜境界 |
+
+**還元型（ユビキノール）の吸収率優位性**: 酸化型（ユビキノン）比でAUC約3.4倍。ただし**形態の優位性だけでは50 mg/日の用量不足は補えない**。同じ50 mgのユビキノールは約170 mgのユビキノンに相当する吸収量になりうるが、それでも主要適応の治療域には届かない。
+
+#### 安全性・薬物相互作用
+
+- 1,200 mg/日まで安全性確認済み（消化器症状 <1%のみ、可逆的）
+- ⚠️ **ワルファリン（抗凝固薬）服用中は必ず医師に相談**: CoQ10はビタミンK構造類似体。PT/INRを低下させ抗凝固効果を減弱する可能性あり
+- スタチン服用者: スタチンがCoQ10合成を阻害するため補充の合理性あり。還元型が変換不要で有利
+
+#### 推奨代替品（100mg以上・Amazon優先）
+
+| 製品名 | 用量 | 購入先 | 推定コスト/日 |
+|---|---|---|---|
+| **Doctor's Best Kaneka Ubiquinol 100mg**（第1推奨） | 100 mg | Amazon.co.jp | ~¥25〜30 |
+| NOW Foods Ubiquinol 100mg 120SG | 100 mg | iHerb #57583（~$54） | ~¥68 |
+| Natural Factors Ubiquinol 100mg 120SG | 100 mg | iHerb（~$36〜44） | ~¥45〜55 |
+
+> ✅ **Kaneka QH®原料使用品が品質保証で最信頼**: KanekaはユビキノールのOEM原料の世界主要サプライヤー。Doctor's Best・Jarrow・NOW Foodsなどが同原料を使用。Amazon.co.jpでDr. Best品を定期購入割引で購入するのが最もコスパが良い。
+
+---
+
+### 1.6 NMN（ニコチンアミドモノヌクレオチド）（現行: 233mg/粒 — Amazon定期購入中）
+
+**調査製品**: PURELAB NMN 21,000 mg / 90粒（233 mg/粒）— 日本製、高純度99%以上、耐酸性カプセル採用
+
+#### エビデンスサマリー
+
+| 適応 | 効果量 | GRADEレベル |
+|---|---|---|
+| 血中NAD+の上昇 | 250 mg/日で約2倍（複数RCT一致・用量依存性あり） | **Moderate** |
+| 筋インスリン感受性改善 | 約25%改善（Yoshino Science 2021, n=25） | Low（対象: 糖前症女性のみ） |
+| 身体パフォーマンス（歩行速度等） | ≥500 mg/日で一部有意（不一致あり） | Low |
+| 睡眠の質 | 改善傾向（65歳以上・1 RCT, n=80） | Very Low |
+| 認知機能 | **効果なし**（人間RCT） | Very Low |
+| 抗老化・寿命延長 | **ヒトデータなし** | 動物実験のみ |
+
+**⚠️ 構造的限界**: 最大試験規模n=108、最長期間12週間、長期安全性データなし。「アンチエイジング」効果はすべて動物モデルからの外挿。
+
+#### 耐酸性カプセル「吸収3倍」の根拠
+
+⚠️ **この主張は査読論文での検証なし**。NMNの腸管吸収機序については、マウスでの専用トランスポーター（Slc12a8）が確認されているが、ヒトでの存在は未確認。耐酸性カプセルの設計自体は合理的だが、「3倍」という数値の根拠は不明。
+
+#### NMN vs NR（ニコチンアミドリボシド）比較
+
+| 指標 | NMN | NR |
+|---|---|---|
+| NAD+上昇効果 | ✅ 実証済み | ✅ 実証済み |
+| ヒトRCT数 | ~25本 | 40本以上（NRが多い） |
+| 高用量時の生体利用率 | NR比でやや劣る可能性（Berven 2026, n=6）| やや優位 |
+| 実用量（250〜500 mg）での差 | 小さく臨床的意義は不明 | |
+| mg単価 | **NMNが大幅に安い** | 2〜4倍高コスト |
+
+#### コスパ問題
+
+| 製品 | 用量 | 価格（推定） | mg単価 |
+|---|---|---|---|
+| **PURELAB NMN（評価製品）** | 233 mg/粒 | ~¥8,000/90粒（約90日分@1粒） | ~¥0.034/mg |
+| Nutricost NMN 250mg（iHerb） | 250 mg/粒 | ~$22/60粒（~¥3,300） | ~¥0.022/mg（**35%安い**） |
+| Nutricost NMN 500mg（Amazon US） | 500 mg/粒 | ~$27/60粒（~¥4,000） | ~¥0.013/mg（**62%安い**） |
+
+PURELABは付属成分（レスベラトロール・アスタキサンチン・クロレラ等）のコストが上乗せされているが、これらはいずれも治療量以下の配合量であり実質的効果は期待しにくい。
+
+#### 推奨代替品
+
+| 製品名 | 用量 | 購入先 | 推定コスト/日 |
+|---|---|---|---|
+| **Nutricost NMN 250mg 60caps**（第1推奨） | 250 mg | iHerb #145577（~$22） | ~¥37（250mg/日） |
+| Nutricost NMN 500mg 60caps | 500 mg | Amazon US（~$27） | ~¥45（500mg/日） |
+| California Gold Nutrition NMN 175mg | 175 mg | iHerb（~$20） | ~¥32（175mg/日） |
+
+#### 安全性
+
+- 12週間まで良好（最大1,250 mg/日で重篤な有害事象なし）
+- 軽度消化器症状のみ（嘔気・腹部不快感、可逆的）
+- ⚠️ **12週超の長期安全性データが存在しない**（継続使用者は年1回の基本血液検査を推奨）
+- ⚠️ **がん既往者・治療中は必ず担当医に相談**: NAD+が腫瘍代謝を促進しうる理論的懸念あり（健常人への明確なリスク証拠は現時点で存在しない）
+
+---
+
+## 2. 全6製品コスト比較
+
+| 製品 | 現行コスト/日（推定） | 推奨代替品コスト/日 | 差分 |
+|---|---|---|---|
+| メラトニン 1.5mg | ~¥15〜20 | ~¥11 | **▼ 30〜45%削減** + 用量適正化 |
+| K2+D3 5000 IU | ~¥13 | ~¥33 | ▲ 2.5倍（正しい用量・形態への移行コスト） |
+| Mg（Ca複合→単独） | ~¥30〜40 | ~¥29 | **▼ 5〜30%削減** + 吸収率大幅改善 |
+| L-テアニン 200mg | ~¥25〜30 | ~¥12 | **▼ 55〜60%削減** |
+| CoQ10 50mg | ~¥20〜25 | ~¥25〜68 | △〜▲（用量2倍への適正化コスト） |
+| NMN 233mg | ~¥90 | ~¥37〜55 | **▼ 40〜60%削減** |
+| **合計** | **~¥193〜228/日** | **~¥147〜208/日** | **▼ 10〜25%削減、品質・用量を改善** |
+
+> ℹ️ K2+D3およびCoQ10のコスト上昇は現行製品の問題（UL超過・治療域以下用量）を解消するための必要投資。NMNとL-テアニンの削減分で十分に相殺される。
+
+---
+
+## 3. 購入戦略
+
+### 3.1 優先度別切り替えスケジュール
+
+| 優先度 | 製品 | 理由 | タイミング |
+|---|---|---|---|
+| 🔴 最優先 | CoQ10 50mg → 100mgユビキノール | 現行品は治療域以下で摂取コストが実質ゼロ効果 | 次回注文で即変更 |
+| 🔴 最優先 | NMN → Nutricost 250mg | 同用量で40〜60%コスト削減、品質差なし | 次回注文で即変更 |
+| 🟡 高優先 | K2+D3 → Carlson 2000 IU MK-7 | D3 UL超過・MK-4無効形態の解消 | 現在在庫消化後に切り替え |
+| 🟡 高優先 | Ca+Mg+Zn+D3 → Dr. Best Mg グリシン酸 | 吸収率・CVDリスクの解消 | 現在在庫消化後に切り替え |
+| 🟢 中優先 | メラトニン → 0.5mg品 | 安全性・用量適正化 | 現在在庫消化後に切り替え |
+| 🟢 中優先 | L-テアニン → 240caps大容量 | コスト最適化 | 現在在庫消化後に切り替え |
+
+### 3.2 Amazon.co.jp 定期購入で対応できる製品
+
+| 製品 | Amazon.co.jp対応 | 備考 |
+|---|---|---|
+| Doctor's Best Mg グリシン酸 240tabs | ✅ ¥3,432（確認済） | 定期購入割引あり |
+| Doctor's Best Kaneka Ubiquinol 100mg | ✅ 在庫あり | Kaneka原料保証品 |
+| Carlson D3+K2 2000 IU | △ 要確認 | iHerb在庫切れ時はAmazon.co.jpを検索 |
+
+### 3.3 iHerb 経由品（¥6,000〜¥16,000 以内で注文最適化）
+
+| 製品 | iHerb商品ID | 推定価格 |
+|---|---|---|
+| Swanson Melatonin 500mcg 60caps | #118320 | ~$4 |
+| Carlson D3+K2 2000 IU 120caps | #116233 | ~$28 |
+| Nutricost L-Theanine 200mg 240caps | #140218 | ~$19 |
+| Nutricost NMN 250mg 60caps | #145577 | ~$22 |
+
+> ℹ️ iHerb日本注文: 送料無料閾値 ¥6,000 / 関税無料閾値 ¥16,666。上記4品を1注文にまとめると合計~$73（~¥11,000）でちょうど最適範囲。
+
+---
+
+## 4. まとめと次のアクション
+
+### 製品別改善の要点（優先度順）
+
+1. **🔴 CoQ10用量が最大の問題**: 50 mg/日は心不全・偏頭痛・疲労のいずれの適応でも治療閾値以下。還元型（ユビキノール）という形態の選択は正しいが、用量が不十分。**Kaneka Ubiquinol 100mg以上への即時変更が最も優先度が高い。**
+
+2. **🔴 NMNはコスパ問題が主**: 用量自体（233 mg/日）は実用的な範囲。ただしPURELABは同等品比で1.5〜2倍割高。「耐酸性カプセル3倍吸収」の根拠なし。次の注文からNutricost NMN 250mgへの変更を推奨。
+
+3. **🟡 K2のMK-4→MK-7移行が本質的改善**: 現行のMK-4 45 mcgは半減期が短く骨・血管への効果を期待できない。Carlson D3+K2 2000 IU（MK-7 90 mcg）への変更は効果面での実質的な改善。
+
+4. **🟡 Mgの形態改善**: 酸化MgからAlbion TRAACS認証グリシン酸キレートへの変更は、同mg摂取でも実際の利用可能Mg量を大幅に増加させる。CVDリスク要因（Ca補充）の除去も重要。
+
+5. **🟢 メラトニン用量適正化**: 安全性向上が主目的。1.5 mg → 0.5 mgで生理的濃度範囲に回帰。
+
+6. **🟢 L-テアニンは用量そのままで大容量品へ**: 現行200 mg/日はエビデンスと一致。単なるコスト最適化。
+
+### 次の確認ポイント
 
 ```
-□ 血清25(OH)D測定結果を確認後 → D3用量を2000 IUで固定 or 3000 IUに調整
-□ メラトニン0.5mgで2〜4週間試行 → 睡眠潜時・睡眠の質を評価
-□ Mg グリシン酸の切り替え後 → 翌朝のだるさ・便通状況を確認
-□ 1〜2ヶ月後に4製品のスタックを総評価 → さらなる中止・継続・変更の判断
+□ 25(OH)D血液検査を実施 → D3用量を2000 IU固定 or 3000 IUに調整（UL内で個別最適化）
+□ CoQ10を100mgユビキノールへ変更（最優先・次回注文で実施）
+□ NMNをNutricost 250mgへ変更（次回注文で実施）
+□ K2+D3をCarlson 2000 IU MK-7に切り替え（現在品消化後）
+□ メラトニン0.5mgで2〜4週間試行 → 入眠時間・翌朝の状態を主観評価
+□ Mg グリシン酸切り替え後 → 翌朝の疲労感・便通状況を確認（グリシン酸は便軟化効果を持つ場合がある）
+□ NMN継続使用の場合は年1回の基本血液検査（肝機能・腎機能・CBC）を推奨
+□ 1〜2ヶ月後に全6製品スタックを総評価 → 継続・中止・増減の判断
 ```
 
 ---
@@ -325,17 +297,19 @@ R045のエビデンスレビューおよびファクトチェック（v2.0）の
 
 | 製品 | URL |
 |---|---|
-| Swanson Melatonin 500mcg 60caps | https://www.iherb.com/pr/swanson-melatonin-extra-low-dose-500-mcg-60-vegan-caps/118320 |
-| Life Extension Melatonin 500mcg 200caps | https://www.iherb.com/pr/life-extension-melatonin-500-mcg-200-vegetarian-capsules/24597 |
-| Carlson D3+K2 2000 IU 120caps (iHerb) | https://www.iherb.com/pr/carlson-vitamin-d3-k2-120-vegetarian-capsules/116233 |
-| Carlson D3+K2 2000 IU 120caps (Amazon.com) | https://www.amazon.com/dp/B072MKTGFK |
-| NOW Foods D3+K2（非推奨：MK-4使用） | https://www.iherb.com/pr/now-foods-vitamin-d3-k2-120-capsules/10056 |
-| Doctor's Best Mg Glycinate 240tabs (iHerb) | https://www.iherb.com/pr/doctor-s-best-high-absorption-magnesium-lysinate-glycinate-chelated-albion-traacs-240-tablets-100-mg-per-tablet/16567 |
-| CGN Mg Bisglycinate TRAACS 240caps (iHerb) | https://www.iherb.com/pr/california-gold-nutrition-magnesium-bisglycinate-chelate-albion-traacs-240-veggie-capsules-100-mg-per-capsule/103274 |
-| Nutricost L-Theanine 200mg 240caps (iHerb) | https://www.iherb.com/pr/nutricost-l-theanine-200-mg-240-capsules/140218 |
-| NOW Foods L-Theanine 200mg 120caps (iHerb) | https://www.iherb.com/pr/now-foods-double-strength-l-theanine-200-mg-120-veg-capsules/54096 |
+| Swanson Melatonin 500mcg 60caps（iHerb） | https://www.iherb.com/pr/swanson-melatonin-extra-low-dose-500-mcg-60-vegan-caps/118320 |
+| Life Extension Melatonin 500mcg 200caps（iHerb） | https://www.iherb.com/pr/life-extension-melatonin-500-mcg-200-vegetarian-capsules/24597 |
+| Carlson D3+K2 2000 IU 120caps（iHerb） | https://www.iherb.com/pr/carlson-vitamin-d3-k2-120-vegetarian-capsules/116233 |
+| Carlson D3+K2 2000 IU（Amazon.com） | https://www.amazon.com/dp/B072MKTGFK |
+| NOW Foods D3+K2（❌非推奨: MK-4使用） | https://www.iherb.com/pr/now-foods-vitamin-d3-k2-120-capsules/10056 |
+| Doctor's Best Mg グリシン酸 240tabs（iHerb） | https://www.iherb.com/pr/doctor-s-best-high-absorption-magnesium-lysinate-glycinate-chelated-albion-traacs-240-tablets-100-mg-per-tablet/16567 |
+| CGN Mg Bisglycinate TRAACS 240caps（iHerb） | https://www.iherb.com/pr/california-gold-nutrition-magnesium-bisglycinate-chelate-albion-traacs-240-veggie-capsules-100-mg-per-capsule/103274 |
+| Nutricost L-Theanine 200mg 240caps（iHerb） | https://www.iherb.com/pr/nutricost-l-theanine-200-mg-240-capsules/140218 |
+| NOW Foods L-Theanine 200mg 120caps（iHerb） | https://www.iherb.com/pr/now-foods-double-strength-l-theanine-200-mg-120-veg-capsules/54096 |
+| NOW Foods Ubiquinol 100mg 120SG（iHerb） | https://www.iherb.com/pr/now-foods-ubiquinol-100-mg-120-softgels/57583 |
+| Nutricost NMN 250mg 60caps（iHerb） | https://www.iherb.com/pr/nutricost-nmn-60-capsules-250-mg-per-capsule/145577 |
 
 ---
 
-*作成: Kazuya Oza / 2026-06-04*  
-*関連: R045（エビデンスレビュー） → R046（本レポート・製品サーチ） → 次回: 効果モニタリング*
+*作成: Kazuya Oza / 2026-06-04（最終版: 2026-06-05）*  
+*関連: R045（エビデンスレビュー） → R046（本レポート: 定期購入スタック最適化ガイド）*
