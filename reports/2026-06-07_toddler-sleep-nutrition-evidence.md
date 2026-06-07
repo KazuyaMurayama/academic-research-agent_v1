@@ -491,16 +491,160 @@ PubMed・主要データベースを横断的に検索したが、**幼児期（
 
 ## 11. 実践的食品推奨
 
-<!-- S5_PRACTICAL_RECS_PLACEHOLDER -->
+### 11.1 2歳幼児への実践的食品推奨（エビデンス強度付き）
+
+#### A. 最優先：避けるべきもの（エビデンス強度：中〜強）
+
+| 推奨 | 詳細 | 根拠強度 |
+|---|---|---|
+| **夕食後の高糖スナック・ジュースを禁止** | アイス・クッキー・果汁ジュース等を夕食（18時以降）以後に与えない | 強（n=6,177・6,288 の複数大規模観察研究） |
+| **カフェインを含む食品・飲料を終日避ける** | 緑茶・ほうじ茶・チョコレート・コーラは0歳〜就学前まで原則禁止 | 中（小児横断研究・AAPガイドライン） |
+| **不規則な間食パターンを排除** | スナックは毎日決まった時刻（例: 午前10時・午後3時）に限定 | 中（COHRA2コホート） |
+
+#### B. 積極的に取り入れるべきもの（エビデンス強度：中）
+
+| 推奨 | 具体的方法 | 根拠強度 |
+|---|---|---|
+| **夕食に野菜を含める** | ほうれん草・にんじん・ブロッコリー等を夕食のメインに | 中（NZコホート n=6,288） |
+| **規則的な食事スケジュール** | 朝食・昼食・夕食・おやつを毎日ほぼ同時刻に | 中（COHRA2コホート） |
+| **タンパク質をバランスよく摂取** | 豆腐・卵・魚・鶏肉を各食事に含める | 中（食事パターン系統的レビュー） |
+
+#### C. 試す価値があるが証拠が限定的（エビデンス強度：低〜弱）
+
+| 推奨 | 具体的方法 | 注意点 |
+|---|---|---|
+| **就寝1〜2時間前に温かいミルク少量（100〜150mL）** | 温めた牛乳をコップ1/2〜2/3杯 | 幼児RCTで有意差なし。行動的関連（就寝ルーティン化）の効果が混在する可能性 |
+| **夕食にバナナを1/2本含める** | トリプトファン+マグネシウム補給 | 糖質も多いため夕食内での量を制限 |
+| **トリプトファン豊富な夕食タンパク（卵・豆腐）** | 卵料理・豆腐メニューを夕食に | 機序的に理論的だが幼児直接データなし |
+| **キウイフルーツをおやつに（午後）** | 1個程度（就寝数時間前のおやつに） | 成人データのみ。幼児での直接証拠なし |
+
+#### D. 現時点で推奨できないもの（エビデン不足またはリスクあり）
+
+| 推奨しない事項 | 理由 |
+|---|---|
+| **メラトニン補充剤の使用** | 2歳幼児では内分泌系への長期影響が未解明。AAP・EFSAが警告。**小児科医の指示なく使用禁止** |
+| **マグネシウムサプリメントの単独追加** | 幼児RCTなし。過剰摂取で下痢・腹痛のリスク。食品からの摂取で十分 |
+| **タートチェリーエキス・ジュース（高濃度）** | 小児データなし。市販品は高糖質 |
+| **プロテインシェイク・アミノ酸サプリ** | 幼児の腎機能への過剰タンパク負荷リスク |
+
+### 11.2 2歳幼児向け「睡眠を助ける夕食例」
+
+**夕食（推奨: 就寝3時間前、18:00〜19:00頃）**:
+- 軟らかい白米または軟飯
+- 豆腐と野菜の味噌汁（ほうれん草・にんじん・豆腐）
+- 卵焼きまたは白身魚（鮭・タラ）の蒸し物
+- 少量のバナナ（デザート）
+
+**就寝前スナック（必要な場合のみ、就寝30〜60分前）**:
+- 温かい牛乳 100〜150mL（低脂肪または全乳）
+- ※ ビスケット・クラッカー等との組み合わせは不要
+
+**翌朝（睡眠の質評価と食事の相関を確認）**:
+- 良好な睡眠（夜間覚醒なし・スムーズ入眠）が続く場合は現在の食事パターンを維持
+- 入眠困難・夜間覚醒が3日以上続く場合は小児科医または小児睡眠専門医に相談
+
+### 11.3 安全性チェックリスト（2歳幼児）
+
+- [ ] 牛乳アレルギーの有無を確認（特に就寝前牛乳を導入する場合）
+- [ ] バナナ・卵・魚などのアレルギー確認済み
+- [ ] ブドウ・チェリー等の丸い果物は4等分以上に切る（窒息防止）
+- [ ] アーモンド・ナッツ類は5歳未満には与えない（窒息リスク）
+- [ ] 新規食品を導入する際は少量から始め、3〜4日様子を見る
+- [ ] マグネシウムサプリ使用前に小児科医に相談
+- [ ] メラトニン補充剤は小児科医の処方・指示なく使用しない
 
 ---
 
 ## 12. 結論とエビデンスギャップ
 
-<!-- S6_CONCLUSION_PLACEHOLDER -->
+### 12.1 主要結論
+
+**1. エビデンスは「促進」より「排除」の方が圧倒的に強い**
+
+2歳幼児に特化した睡眠「促進」食品のRCTはほぼ存在しない。しかし、**睡眠を妨害する食品**（清涼飲料水・高糖スナック・カフェイン・不規則な夜食）に関しては複数の大規模観察研究（n=数千）が一貫した関連を示す。実践的には「何を加えるか」より「何を取り除くか」が優先される。
+
+**2. 牛乳・乳製品の就寝前摂取は過大評価されている**
+
+就寝前牛乳の睡眠改善効果を検証した唯一の幼児RCT（Yee et al. 2015, n=56）では睡眠指標に有意差なし。むしろ大規模コホートでは牛乳高頻度摂取と短い睡眠軌跡の関連が報告されており、「牛乳＝睡眠促進」の固定観念は**過剰な期待**の可能性がある。行動的効果（就寝前ルーティンの安定化）はあるかもしれない。
+
+**3. キウイ・タートチェリーは成人では有望だが小児エビデンスはゼロ**
+
+成人のキウイ研究（入眠潜時 −35%、TST +13%）・タートチェリー研究（RCT で TST +24分）は印象的だが、2歳幼児への直接外挿は不可。食品として与えることは安全だが「睡眠薬的効果」を期待すべきでない。
+
+**4. 規則的な食事スケジュールが単一最強の食事介入である可能性**
+
+毎日同じ時刻の食事・スナックは概日時計の安定化を通じて夜間睡眠時間の延長と関連する（COHRA2コホート）。内容よりもスケジュールの一貫性が重要である。
+
+### 12.2 エビデンスギャップ（今後の研究課題）
+
+| ギャップ | 優先度 |
+|---|---|
+| 2歳幼児を対象としたトリプトファン操作 RCT | 高 |
+| 小児（1〜5歳）を対象としたマグネシウム補充 RCT | 高 |
+| キウイ・タートチェリーの幼児向け安全性・有効性 RCT | 中 |
+| 夕食時刻介入（介入 vs 自然食事）のランダム化試験 | 中 |
+| 食事スケジュール規則性の幼児睡眠への因果効果検証 | 中 |
+| 腸内細菌叢→セロトニン→睡眠の小児における実証 | 中 |
+| 2歳に特化した食事パターン × 睡眠の縦断介入研究 | 高 |
+
+### 12.3 親への実践メッセージ（Evidence-informed）
+
+> **「睡眠を改善する魔法の食べ物はない。しかし、睡眠を妨げる食べ物と習慣は明確に存在し、それを取り除くことが最もエビデンスに基づいた行動である。」**
+
+- 夕方のジュース・高糖菓子・チョコを排除する（エビデンス: 中〜強）
+- 毎日同じ時間に食事・就寝の習慣をつける（エビデンス: 中）
+- 夕食に野菜を含める（エビデンス: 中）
+- 就寝ルーティン（温かい牛乳→絵本→消灯）の行動的一貫性は食品の効果を超える可能性が高い
 
 ---
 
 ## 13. 参考文献
 
-<!-- S7_REFERENCES_PLACEHOLDER -->
+### Tier 1（コア文献）
+
+1. **Yee, A. Z. H. et al. (2015).** A pilot study to determine the short-term effects of milk with differing glycaemic properties on sleep among toddlers: a randomised controlled trial. *BMC Pediatrics*, via PMC4502465. [PubMed](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4502465/)
+
+2. **Smethers, A. D. et al. (2022).** Early Childhood Diet in Relation to Toddler Nighttime Sleep Duration Trajectories. *Nutrients, 14*(15), 3059. [PubMed](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9331722/)
+
+3. **Taylor, R. W. et al. (2022).** The relationship between diet and sleep in 2-y-old children: Results from Growing Up in New Zealand. *Nutrition*, S0899-9007(21)00422-6. [PubMed](https://pubmed.ncbi.nlm.nih.gov/35033740/)
+
+4. **Kanazawa, S. et al. (2024).** Association of Night Snacking and Screen Time on Sleep Behavior in Japanese Toddlers: A Cross-Sectional Study. *Children, 11*(9), 1083. [PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11429619/)
+
+5. **Perrault, A. A. et al. (2021).** The association between dietary patterns and quality and duration of sleep in children and adolescents: A systematic review. *Sleep Medicine Reviews*. [ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S2405457721002631)
+
+6. **Lin, H.-H. et al. (2011).** Effect of Kiwifruit Consumption on Sleep Quality in Adults with Sleep Problems. *Asia Pacific Journal of Clinical Nutrition, 20*(2), 169-174.
+
+7. **Howatson, G. et al. (2012).** Effect of tart cherry juice (*Prunus cerasus*) on melatonin levels and enhanced sleep quality. *European Journal of Nutrition, 51*(8), 909-916. [ResearchGate](https://www.researchgate.net/publication/51753100)
+
+8. **Barforoush, S. et al. (2025).** The Effect of Tart Cherry on Sleep Quality and Sleep Disorders: A Systematic Review. *Food Science & Nutrition*. [Wiley](https://onlinelibrary.wiley.com/doi/10.1002/fsn3.70923); [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC12438961/)
+
+9. **Abbasi, B. et al. (2012).** The effect of magnesium supplementation on primary insomnia in elderly: A double-blind placebo-controlled clinical trial. *Journal of Research in Medical Sciences, 17*(12), 1161-1169.
+
+10. **Peuhkuri, K. et al. (2020).** The Effects of Milk and Dairy Products on Sleep: A Systematic Review. *International Journal of Environmental Research and Public Health, 17*(24), 9440. [MDPI](https://mdpi.com/1660-4601/17/24/9440/htm)
+
+### Tier 2（補助文献）
+
+11. **Cheng, F. W. et al. (2020).** The Relationship Between Caffeine, Sleep, and Behavior in Children. *Journal of Clinical Sleep Medicine*. [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC5359329/)
+
+12. **Meltzer, L. J. & Montgomery-Downs, H. E. (2011).** Circadian Phase and Its Relationship to Nighttime Sleep in Toddlers. *PMC3925345*. [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC3925345/)
+
+13. **Bravo, R. et al. (2020).** PROTMORPHEUS Study: Randomized Double-Blind Controlled Trial on Proteins with Different Tryptophan/LNAA Ratios on Sleep in Adolescents. *Nutrients*. [PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7353359/)
+
+14. **Perez-Piñero, S. et al. (2024).** Effectiveness of Enriched Milk with Ashwagandha Extract and Tryptophan for Improving Subjective Sleep Quality in Adults: RCT. [PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11348217/)
+
+15. **Corbett, S. et al. (2021).** Meal Timing Regulates the Human Circadian System. *Current Biology*. [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC5483233/)
+
+16. **Canapari, C. (2023).** Magnesium for Kids' Sleep: Does It Really Work? [Dr. Craig Canapari Blog](https://drcraigcanapari.com/magnesium-for-kids-sleep/)
+
+17. **Peuhkuri, K. (2012).** Diet promotes sleep duration and quality. *Nutrition Research, 32*(5), 309-319. (Trp/melatonin mechanism review)
+
+18. **PMC12533936 (2025).** The Consumption of Milk or Dairy Products and Sleep Quality: A Systematic Review and Meta-Analysis. [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC12533936/)
+
+19. **Zhang, Y. et al. (2023).** Too Sour to be True? Tart Cherries and Sleep: a Systematic Review and Meta-analysis. *Current Sleep Medicine Reports*. [Springer](https://link.springer.com/article/10.1007/s40675-023-00261-w)
+
+20. **Jansen, E. C. et al. (2021).** Bidirectional associations between sleep quality or quantity, and dietary intakes or eating behaviors in children 6–12 years old. *Nutrition Reviews*. [Oxford Academic](https://academic.oup.com/nutritionreviews/advance-article/doi/10.1093/nutrit/nuaa125/6095735)
+
+---
+
+*未確認情報には本文中「未確認」と明記。効果量が公表されていない研究は「具体値: 原著要参照」と記載。*
+*本レポートは一般向け情報提供を目的としており、医学的診断・治療の代替ではない。睡眠障害が疑われる場合は小児科医に相談すること。*
