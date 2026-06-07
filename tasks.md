@@ -52,6 +52,7 @@
 | T029 | R044: 髪質改善のための有効成分エビデンスガイド（内服・外用）。内服8成分＋外用9成分×4軸100点スコアリング。ビオチン過大広告検証・縮毛矯正ホルムアルデヒド警告含む | 2026-06-01 | Opus計画+Sonnet実行 | `reports/2026-06-01_hair-quality-improvement-ingredients.md` |
 | T030 | R045: iHerbサプリ4種エビデンスレビュー（メラトニン IR/XR・K2+D3・Ca+Mg+Zn+D3・L-テアニン）。効果量・エビデンスレベル・安全性の3軸100点スコアリング。v2.0ファクトチェック7件修正・Quick Reference Card追加 | 2026-06-04 | Opus計画+Sonnet実行 | `reports/2026-06-04_supplement-evidence-review-sleep-stress-4products.md` |
 | T031 | R046: コスパ最適化サプリ代替製品サーチ（用量改善・メラトニン0.5mg・D3 2000IU・グリシン酸Mg・L-テアニン大容量）。iHerb/Amazon.co.jp/楽天比較、日本輸入規制・関税閾値考慮 | 2026-06-04 | Sonnet | `reports/2026-06-04_supplement-product-search-optimized-dose.md` |
+| T032 | R047: 2歳幼児の身体活動・運動が睡眠に与える影響 エビデンスベース系統的レビュー（SOL/TST/SE効果量・WHO2019ガイドライン・戸外遊び・構造化運動・タイミング・概日リズム） | 2026-06-07 | Sonnet | `reports/2026-06-07_toddler-physical-activity-sleep-evidence.md` |
 
 ---
 
@@ -83,6 +84,6 @@
 
 | 業務 | タイミング | 方法 |
 |---|---|---|
-| `reports/INDEX.md` 更新 | 新レポート作成時 | 次のIDは `R047` |
+| `reports/INDEX.md` 更新 | 新レポート作成時 | 次のIDは `R048` |
 | `FILE_INDEX.md` 更新 | 新ファイル追加時 | ファイル種別・説明を追記 |
 | masterへのpush | 全コミット後 | `git push origin HEAD:master` |
