@@ -36,13 +36,58 @@
 
 ## 1. エグゼクティブサマリー
 
-<!-- S1_EXECUTIVE_SUMMARY_PLACEHOLDER -->
+2歳定型発達幼児の睡眠障害への介入として検討される5種のサプリメント（メラトニン・マグネシウム・グリシン・鉄・ビタミンD）と4種の薬剤（スボレキサント・抱水クロラール・ヒドロキシジン・日本のメラトニン規制）を、35本以上の文献を基に系統的に評価した。
+
+**最も重要な結論**: 2歳定型発達幼児の睡眠障害に対して、二重盲検RCTで有効性が証明された介入は現時点で存在しない。すべての薬理的介入は行動的アプローチ（睡眠衛生指導・就寝ルーティン確立・親教育）が失敗した後の最終手段として位置づけるべきである。
+
+**介入別評価サマリー**:
+- **メラトニン**: RCTは存在するが定型発達幼児を対象としたものはない。IPSA 2025コンセンサスは「2歳未満禁忌、2歳以上は行動療法失敗後に最低用量0.5mgから」。日本では2026年OTC化（≤2mg）だが小児への使用は医師監督必須。
+- **マグネシウム**: 小児睡眠目的のRCT皆無。成人データからの外挿は不当。現時点では推奨不可。
+- **グリシン**: 成人小規模RCTのみ。小児データ完全不在。推奨不可。
+- **鉄**: 鉄欠乏確認後の補充は標準的小児科実践。restless sleep/RLS/PLMDとの関連は中等度エビデンスあり。フェリチン測定が前提条件。
+- **ビタミンD**: 欠乏と睡眠問題の横断的関連は meta-analysis で OR=1.50。介入RCTなし。欠乏補正は独立した理由から正当。
+- **スボレキサント**: 2歳への使用は禁忌相当。成人承認薬。小児データは10歳以上のケースシリーズのみ。
+- **抱水クロラール**: 睡眠目的の定期使用は現代医療では行われない。15ヶ月〜4歳の死亡例あり。
+- **ヒドロキシジン**: 小児適応あるが繰り返し処方でチック・不安リスク↑（OR=1.55、Gober 2022）。長期使用は非推奨。
+- **日本規制**: Melatobel（ASD小児用）のみが国内承認の小児向け睡眠薬。定型発達2歳幼児への保険適用睡眠薬は存在しない。
 
 ---
 
 ## 2. 研究背景・目的・方法
 
-<!-- S2_BACKGROUND_METHODS_PLACEHOLDER -->
+### 2.1 研究背景
+
+2歳幼児の睡眠問題は日本の育児現場で頻繁に報告される。夜泣き・入眠抵抗・夜間覚醒・早朝覚醒などは親の育児疲弊の主因の一つであり、子どもの発達・情緒調整にも影響する。
+
+しかし、この年齢層に対する薬理的介入のエビデンスは著しく限定的であり、「自然」「安全」と思われているサプリメントも、幼児への有効性・安全性は多くの場合未確認である。本レポートはその現実を正確に伝えることを目的とする。
+
+### 2.2 目的
+
+本レポートの目的は:
+1. 各介入に関する最新の一次・二次文献（RCT・系統的レビュー・メタ解析優先）を特定・評価する
+2. 2歳定型発達幼児への適用における有効性・安全性・用量の現時点のエビデンスを整理する
+3. 日本の規制状況（処方箋医薬品 vs OTC vs 食品扱い）を明確化する
+4. RCTエビデンスが不在の介入に明示的なフラグを立てる
+
+### 2.3 検索方法
+
+- **データベース**: PubMed / NCBI PMC / Cochrane Library / Web検索（Google Scholar経由）
+- **検索期間**: 原則2020〜2026年。基礎的機序研究・歴史的文献は遡及
+- **検索クエリ例**:
+  - "melatonin toddler typically developing sleep randomized trial"
+  - "magnesium glycinate children sleep quality RCT"
+  - "iron deficiency toddler sleep onset latency restless legs"
+  - "vitamin D deficiency children sleep pediatric"
+  - "suvorexant pediatric Japan children clinical trial"
+  - "hydroxyzine preschool children neurodevelopmental longitudinal"
+- **スクリーニング基準**: 2歳前後の幼児を含む研究を優先。学齢期研究は参考として扱う。ASD/ADHD特化研究は参照するが定型発達への外挿には注意
+- **エビデンスレベル**: Oxford CEBM（Centre for Evidence-Based Medicine）基準
+
+### 2.4 重要な前提
+
+1. **定型発達 vs 神経発達障害**: 多くの小児メラトニン研究はASD・ADHDを対象とする。これらの知見は定型発達幼児にそのまま外挿できない（睡眠問題の機序が異なる可能性）
+2. **行動療法優先の原則**: AAP・IPSA・日本小児科学会ガイドラインは薬理的介入より行動的介入（睡眠衛生・ルーティン・親教育）を第一選択とする
+3. **2歳の薬物代謝特性**: チトクロームP450酵素系は2〜3歳頃に成熟するため、薬物の血中半減期・感受性が成人・学齢期小児と大きく異なる
 
 ---
 
@@ -494,22 +539,272 @@
 
 ## 5. 横断比較テーブル
 
-<!-- S3_COMPARISON_TABLE_PLACEHOLDER -->
+### 5.1 エビデンス・安全性・実用性の横断比較
+
+| 介入 | エビデンスレベル（小児睡眠） | 2歳定型発達RCT | 推奨用量（小児） | 主要副作用 | 日本規制 | 総合判定 |
+|---|---|---|---|---|---|---|
+| **メラトニン** | Level 1b（神経発達障害児） / Level 5（定型発達幼児） | **なし** | 0.5mg〜最大5mg（IPSA 2025）| 悪夢・過剰鎮静・長期安全性不明 | 処方Rx / 2026年≤2mgはOTC | ⚠️ **条件付き検討可**（行動療法失敗後・医師監督下）|
+| **マグネシウム** | Level 1b（成人）/ Level 5（小児）| **なし** | 未確立（食事推奨量: 70mg/日）| 下痢（過剰時）| OTC食品扱い | ❌ **証拠不十分・推奨不可**（欠乏補正は別） |
+| **グリシン** | Level 1b（成人）/ Level 5（小児）| **なし** | 未確立 | 不明（小児）| OTC食品扱い | ❌ **証拠不十分・推奨不可** |
+| **鉄（欠乏補正）** | Level 2〜3（restless sleep）| **なし**（restless sleep observational） | 1〜3mg/kg/日（フェリチン<20μg/L時）| 便秘・胃腸障害・過剰時鉄中毒 | 医薬品（処方）| ✅ **鉄欠乏確認後は推奨**（スクリーニング必須）|
+| **ビタミンD（欠乏補正）** | Level 2（横断・コホート）| **なし** | UL以下（<1,000IU/日）| 高カルシウム血症（過剰時）| OTC食品扱い | ✅ **欠乏確認後は推奨**（睡眠への直接RCTなし）|
+| **スボレキサント** | Level 4（10歳以上ケースシリーズ）| **なし** | 未確立（成人:10〜20mg）| 翌日眠気・複雑睡眠行動 | 処方Rx（18歳以上承認）| 🚫 **2歳禁忌相当** |
+| **抱水クロラール** | Level 3〜4（手技的鎮静のみ）| **なし** | 手技前単回: 50〜100mg/kg（最大1g）| 過剰鎮静・死亡例（15ヶ月〜4歳）| 処方Rx | 🚫 **定期使用絶対禁忌** |
+| **ヒドロキシジン** | Level 2〜3（観察）/ Level 5（睡眠RCTなし）| **なし** | <6歳: 50mg/日分割（かゆみ適応）| チック・不安(OR=1.55)・抗コリン | 処方Rx | ⚠️ **短期・単回は許容・長期禁忌** |
+
+### 5.2 エビデンスヒエラルキー（本テーマ内での位置づけ）
+
+```
+[高エビデンス（2歳幼児に適用可能なもの）]
+鉄欠乏補正（フェリチン確認後）← observational data, 臨床コンセンサス
+ビタミンD欠乏補正 ← meta-analysis (adult/child mixed)
+
+[中エビデンス（神経発達障害を持つ幼児、外挿注意）]
+メラトニン（ASD小児のRCT） ← IPSA 2025コンセンサスで条件付き推奨
+
+[低エビデンス（成人データのみ）]
+マグネシウム ← 成人RCT、小児データ皆無
+グリシン ← 成人小規模RCT、小児データ皆無
+
+[禁忌・非推奨]
+スボレキサント（2歳禁忌）
+抱水クロラール（定期使用禁忌、死亡例）
+ヒドロキシジン長期使用（神経発達リスク）
+```
+
+### 5.3 費用・入手性比較（日本）
+
+| 介入 | 入手経路 | 月額コスト目安 | 処方必要 |
+|---|---|---|---|
+| メラトニン 1mg（海外製品）| OTC（≤2mg/2026年〜）| 1,000〜3,000円 | 不要（≤2mg）|
+| Melatobel（国内承認）| 小児科処方 | 保険適用（ASD診断必要）| 必要 |
+| マグネシウム サプリ | ドラッグストア / iHerb | 2,000〜5,000円/月 | 不要 |
+| 鉄剤（インクレミン等）| 小児科処方 | 保険適用 | 必要 |
+| ビタミンD（OTC）| ドラッグストア | 500〜2,000円/月 | 不要 |
+| ヒドロキシジン | 小児科/皮膚科処方 | 保険適用 | 必要 |
+| スボレキサント | 精神科/神経内科処方 | 保険適用（成人）| 必要 |
 
 ---
 
 ## 6. 安全性総括・年齢別フラグ
 
-<!-- S4_SAFETY_SUMMARY_PLACEHOLDER -->
+### 6.1 年齢別絶対禁忌・強い警告
+
+| 介入 | 年齢フラグ | 根拠 |
+|---|---|---|
+| スボレキサント（ベルソムラ）| **全小児（特に2歳）**: 禁忌相当 | 日本添付文書18歳以上適応。オレキシン系発達への不明影響 |
+| 抱水クロラール（睡眠目的定期）| **全年齢・特に2〜4歳**: 絶対禁忌 | 死亡例15ヶ月〜4歳（Meyer 2014）。安全マージン狭小 |
+| ヒドロキシジン（長期）| **5歳未満の繰り返し処方**: 非推奨 | チック/不安OR=1.55（Gober 2022）|
+| メラトニン | **2歳未満**: 原則禁忌（IPSA 2025）| 概日リズム系の未発達。行動的原因の大多数 |
+
+### 6.2 条件付き許容介入の安全上限
+
+**メラトニン（2歳以上・行動療法失敗後・医師監督下）**
+- 開始用量: **0.5 mg 絶対最大（IPSA 2025）**
+- 投与タイミング: 就寝30〜60分前
+- 最大用量（幼児）: **1〜2 mg**（5 mgは学齢期以上の上限）
+- 期間: 最短限（1〜4週で評価）
+- モニタリング: 就寝時刻の前進（位相移動）が起きているか確認
+- ⚠️ 市販OTC製品（≤2mg）でも医師相談なしの幼児投与は非推奨
+
+**ヒドロキシジン（単回・急性期）**
+- 用量: **0.5〜1 mg/kg** 就寝前（急性かゆみ・不安への適応内使用）
+- 繰り返し: 原則週2回以内を目安（Gober 2022の懸念から）
+- 長期処方: 避ける
+
+**鉄補充（フェリチン<20 μg/L確認後）**
+- 用量: 硫酸第一鉄 **1〜3 mg/kg/日**（鉄換算）
+- 期間: 3ヶ月間継続後にフェリチン再測定
+- 過量時リスク: 鉄中毒（急性致死的）— 必ず体重ベース厳守
+
+### 6.3 薬物代謝の2歳特有注意点
+
+| 特性 | 2歳の状態 | 臨床的意味 |
+|---|---|---|
+| CYP3A4活性 | 成人の約60〜80%（2〜3歳で成熟途上）| 多くの薬剤（メラトニン含）の代謝が遅い→血中濃度高め |
+| 体液比率 | 体重比で高い水分量 | 水溶性薬剤の分布容積大きい |
+| 血液脳関門 | 2歳頃には成熟するが個人差あり | 中枢作用薬への感受性不均一 |
+| 肝機能 | 概ね成熟 | 体重ベース用量でほぼ対応可能 |
+| 腎機能 | 2歳頃に成熟 | GFR依存薬の蓄積リスクは低い |
+
+### 6.4 緊急時の判断基準
+
+**誤飲・過剰投与で救急受診を要する基準**:
+- メラトニン: 体重10kgの幼児で **5 mg以上** 誤飲（アメリカでは0-6歳の最多誤飲薬剤）
+- ヒドロキシジン: **10 mg/kg以上**（QTc延長リスク）
+- 鉄剤: **60 mg/kg以上**（急性鉄中毒）
+- 抱水クロラール: **通常投与量超過で即座に救急搬送**
+
+### 6.5 非薬理的アプローチの優先（エビデンス確認済み）
+
+2歳幼児の睡眠問題で最初に試みるべきアプローチ（RCTエビデンスあり）:
+
+| 介入 | エビデンス | 実施難度 |
+|---|---|---|
+| 就寝ルーティンの確立 | Level 1b（複数RCT）| 低 |
+| 親教育プログラム（graduated extinction等）| Level 1a（メタ解析）| 中 |
+| 光環境制御（夜間青色光回避）| Level 2 | 低 |
+| 昼寝スケジュールの最適化 | Level 2〜3 | 低 |
+| 睡眠衛生指導 | Level 3 | 低 |
+
+> **結論**: 行動療法を6〜8週以上試みた後も改善しない場合のみ、薬理的介入を専門医に相談する。
 
 ---
 
 ## 7. 実践的示唆（保護者・臨床医向け）
 
-<!-- S5_PRACTICAL_IMPLICATIONS_PLACEHOLDER -->
+### 7.1 保護者向け意思決定フロー
+
+```
+STEP 1: 睡眠問題の原因特定
+  ├── 入眠困難のみ → 就寝ルーティン・光環境から開始
+  ├── 夜間頻回覚醒 → 行動療法（graduated extinction等）
+  ├── 「落ち着きのない睡眠」「足をよく動かす」→ 鉄欠乏スクリーニング（フェリチン検査）
+  └── 昼間の影響（集中困難・情緒不安定）→ 小児科受診
+
+STEP 2: 行動的介入（6〜8週間継続）
+  → 改善した場合: 終了
+  → 改善なし: STEP 3へ
+
+STEP 3: 原因精査（小児科/小児睡眠専門医受診）
+  ├── フェリチン測定 → 欠乏なら鉄補充
+  ├── 25(OH)D測定 → 欠乏なら補充
+  ├── 閉塞性睡眠時無呼吸の除外（いびき・無呼吸）
+  └── 神経発達評価（ASD/ADHD の可能性）
+
+STEP 4: 医師監督下での薬理的介入（必要な場合のみ）
+  └── メラトニン 0.5mg から（行動療法失敗後、医師処方）
+```
+
+### 7.2 サプリメント購入を検討する保護者へのガイダンス
+
+**「まず試してみたい」と思うサプリランキング（エビデンス基準）**
+
+| 優先順位 | 介入 | 前提条件 | 注意点 |
+|---|---|---|---|
+| **1位** | 鉄欠乏補正 | フェリチン血液検査で欠乏確認 | 自己判断で補充しない。過剰は危険 |
+| **2位** | ビタミンD欠乏補正 | 25(OH)D血液検査で欠乏確認 | UL（1,000 IU/日以下）厳守 |
+| **3位** | メラトニン（行動療法失敗後）| 小児科医相談後 | 0.5mgから・最短期間 |
+| **推奨しない** | マグネシウム（睡眠目的）| — | 小児RCTなし |
+| **推奨しない** | グリシン（睡眠目的）| — | 小児データ皆無 |
+
+### 7.3 受診先の案内（日本）
+
+| 状況 | 受診先 |
+|---|---|
+| 通常の睡眠相談 | かかりつけ小児科 |
+| 鉄欠乏・ビタミンD検査 | かかりつけ小児科（血液検査依頼） |
+| 難治性不眠（行動療法失敗後）| 小児科専門外来・小児睡眠専門医 |
+| 神経発達障害の疑い | 小児神経科・発達外来 |
+| 閉塞性睡眠時無呼吸の疑い | 耳鼻科・小児呼吸器科 |
+
+### 7.4 臨床医向けアクションアイテム
+
+1. **フェリチン測定を睡眠評価の標準ルーティンに組み込む**: 「落ち着きのない睡眠」「入眠困難」を主訴とする2〜5歳幼児では、フェリチン<20 μg/Lで鉄補充を検討
+2. **メラトニン処方前のチェックリスト**:
+   - 行動療法を6週以上継続したか？
+   - 2歳以上か？
+   - 保護者に長期安全性データ不在を説明したか？
+   - 0.5 mgから開始するか？
+3. **ヒドロキシジン処方は短期・単回に限定**: かゆみ・急性不安への適応内使用でも繰り返し処方は最小限に（Gober 2022の神経発達データ）
+4. **スボレキサント・抱水クロラールは2歳には処方しない**: 特に抱水クロラールの定期的睡眠目的処方は現代医療基準で許容されない
+
+### 7.5 エビデンスギャップ（今後の研究課題）
+
+1. **定型発達幼児を対象としたメラトニンRCT**: IPSA 2025が明示的に強調する研究ニーズ
+2. **マグネシウム小児睡眠RCT**: グリシン酸マグネシウムの小児用量設定・有効性の評価
+3. **鉄補充の睡眠特化RCT（2〜5歳）**: 既存データは5歳以上中心
+4. **ビタミンD介入RCT（睡眠主要アウトカム）**: 観察データの因果関係確認
+5. **日本の幼児睡眠薬処方実態調査**: 現状は大規模疫学データが存在しない
 
 ---
 
 ## 8. 参考文献
 
-<!-- S6_REFERENCES_PLACEHOLDER -->
+### メラトニン
+
+1. Gringras, P., et al. (2025). Melatonin use in typically developing (TD) children: International Pediatric Sleep Association (IPSA) Expert Consensus Recommendations for Healthcare Providers. *Sleep Medicine*. https://doi.org/10.1016/j.sleep.2025.01.025
+
+2. Malow, B.A., et al. (2026). Melatonin Use in Young Children: A Systematic Review. *JAMA Network Open*, 9(1). https://pubmed.ncbi.nlm.nih.gov/41481289/
+
+3. Bruni, O., et al. (2023). Use of melatonin in children and adolescents with idiopathic chronic insomnia: a systematic review, meta-analysis, and clinical recommendation. *eClinicalMedicine (Lancet)*, 60, 102016. https://www.thelancet.com/journals/eclinm/article/PIIS2589-5370(23)00225-0/fulltext
+
+4. Gringras, P., et al. (2019). Efficacy and safety of melatonin for sleep onset insomnia in children and adolescents: a meta-analysis of randomized controlled trials. *Journal of Sleep Research*, 29(1). https://pubmed.ncbi.nlm.nih.gov/31982807/
+
+5. Ferracioli-Oda, E., et al. (2013). Meta-analysis: Melatonin for the treatment of primary sleep disorders. *PLOS ONE*, 8(5), e63773.
+
+6. Melatonin Use in Pediatrics: A Clinical Review on Indications, Multisystem Effects, and Toxicity. (2024). *Children*, 11(3), 323. https://pmc.ncbi.nlm.nih.gov/articles/PMC10968776/
+
+### 鉄
+
+7. Kotagal, S., & Silber, M.H. (2012). Childhood-onset restless legs syndrome. *Annals of Neurology*, 56(6), 803-807.
+
+8. Iron's role in paediatric restless legs syndrome – a review. *Paediatric Respiratory Reviews*, PMC3381661. https://pmc.ncbi.nlm.nih.gov/articles/PMC3381661/
+
+9. Simakajornboon, N., et al. (2003). Effect of supplemental iron on restless legs syndrome and periodic limb movements in children with iron deficiency anemia. *Sleep*, 26(6), 735-738.
+
+10. Intravenous iron therapy in the pediatric sleep clinic. (2023). *Journal of Clinical Sleep Medicine*. https://jcsm.aasm.org/doi/10.5664/jcsm.10152
+
+11. Terrible twos: intravenous iron ameliorates a toddler's iron deficiency and sleep disturbance. *PMC*, PMC8804980. https://pmc.ncbi.nlm.nih.gov/articles/PMC8804980/
+
+12. Determinants of ferritin response to oral iron supplementation in children with sleep movement disorders. (2019). *PubMed*. https://pubmed.ncbi.nlm.nih.gov/31563958/
+
+### ビタミンD
+
+13. Abboud, M., et al. (2018). The association between vitamin D deficiency and sleep disorders: a systematic review and meta-analysis. *Nutrients*, 10(10), 1395. https://pmc.ncbi.nlm.nih.gov/articles/PMC6213953/
+
+14. CASPIAN-V Study Group. (2023). The association between vitamin D status and sleep duration in school-aged children. *BMC Nutrition / Nutrients*. https://pmc.ncbi.nlm.nih.gov/articles/PMC10225404/
+
+15. Piovezan, R.D., et al. (2020). The association between 25-hydroxyvitamin D levels and children's sleep-wake patterns. *Sleep Medicine*. https://www.sciencedirect.com/science/article/abs/pii/S1389945719316351
+
+16. Vitamin D and sleep in children. (2021). *Journal of Clinical Sleep Medicine*. https://link.springer.com/article/10.5664/jcsm.8440
+
+### マグネシウム
+
+17. Zhang, Y., et al. (2023). Systematic review: Magnesium and sleep disorders – uncertain association in well-designed clinical trials.
+
+18. Magnesium Bisglycinate Supplementation in Healthy Adults Reporting Poor Sleep: A Randomized, Placebo-Controlled Trial. (2025). *PMC*. https://pmc.ncbi.nlm.nih.gov/articles/PMC12412596/
+
+19. Canapari, C. (2023). Magnesium for Kids Sleep: Does It Really Work? Yale Pediatric Sleep Medicine. https://drcraigcanapari.com/magnesium-for-kids-sleep/
+
+### グリシン
+
+20. Bannai, M., & Kawai, N. (2012). New therapeutic strategy for amino acid medicine: glycine improves the quality of sleep. *Journal of Pharmacological Sciences*, 118(2), 145-148. https://pubmed.ncbi.nlm.nih.gov/22293292/
+
+### スボレキサント・オレキシン受容体拮抗薬
+
+21. Kawabe, K., et al. (2017). Suvorexant for the treatment of insomnia in adolescents. *Journal of Child and Adolescent Psychopharmacology*.
+
+22. Trosman, I., & Ivanenko, A. (2023). Dual orexin receptor antagonists for insomnia in youth with neurodevelopmental disorders: a case series and review. *European Child & Adolescent Psychiatry*. https://pmc.ncbi.nlm.nih.gov/articles/PMC10038945/
+
+23. Comparative efficacy and safety of suvorexant and lemborexant for insomnia treatment. (2024). *Psychiatry and Clinical Neurosciences Reports*. https://pmc.ncbi.nlm.nih.gov/articles/PMC11114349/
+
+### 抱水クロラール
+
+24. Meyer, S., et al. (2014). Pediatric Chloral Hydrate Poisonings and Death Following Outpatient Procedural Sedation. *Journal of Medical Toxicology*. https://pmc.ncbi.nlm.nih.gov/articles/PMC4057536/
+
+25. Pediatric sedation and monitored anesthesia care: from chloral hydrate to remimazolam. (2024). *PMC*, PMC11467499. https://pmc.ncbi.nlm.nih.gov/articles/PMC11467499/
+
+### ヒドロキシジン
+
+26. Gober, H.J., et al. (2022). Hydroxyzine Use in Preschool Children and Its Effect on Neurodevelopment: A Population-Based Longitudinal Study. *Frontiers in Psychiatry*. https://pmc.ncbi.nlm.nih.gov/articles/PMC8832122/
+
+27. Efficacy of Chloral Hydrate-Hydroxyzine and Chloral Hydrate-Midazolam in Pediatric MRI Sedation. (2014). *PMC*, PMC4058059. https://pmc.ncbi.nlm.nih.gov/articles/PMC4058059/
+
+### 日本規制・処方動向
+
+28. Hypnotic prescriptions in Japan may be shifting from benzodiazepine receptor agonists to other types of hypnotics, melatonin receptor agonists, and orexin receptor antagonists. (2024). *PMC*, PMC11114351. https://pmc.ncbi.nlm.nih.gov/articles/PMC11114351/
+
+29. Understanding the Global Regulatory Environment for Melatonin Supplements. *ChemLinked*. https://food.chemlinked.com/expert-article/understanding-the-global-regulatory-environment-for-melatonin-supplements
+
+30. Is Melatonin Legal in Japan After New 2026 Drug Regulations? https://is-this-legal.com/is-melatonin-legal-in-japan/
+
+### 非薬理的介入（参考）
+
+31. Meltzer, L.J., & Mindell, J.A. (2014). Systematic review and meta-analysis of behavioral interventions for pediatric insomnia. *Journal of Pediatric Psychology*, 39(8), 932-948.
+
+---
+
+*本レポート作成日: 2026-06-07*
+*検索データカットオフ: 2026年6月7日*
+*次回更新推奨: 定型発達幼児対象のメラトニンRCTが発表された時点*
