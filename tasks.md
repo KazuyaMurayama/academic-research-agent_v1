@@ -54,6 +54,7 @@
 | T031 | R046: コスパ最適化サプリ代替製品サーチ（用量改善・メラトニン0.5mg・D3 2000IU・グリシン酸Mg・L-テアニン大容量）。iHerb/Amazon.co.jp/楽天比較、日本輸入規制・関税閾値考慮 | 2026-06-04 | Sonnet | `reports/2026-06-04_supplement-product-search-optimized-dose.md` |
 | T032 | R047: 2歳幼児の睡眠改善食品・栄養エビデンス系統的レビュー（トリプトファン・Mg・メラトニン食品・食事タイミング・避けるべき食品） | 2026-06-07 | Sonnet | `reports/2026-06-07_toddler-sleep-nutrition-evidence.md` |
 | T032 | R047: 2歳幼児の身体活動・運動が睡眠に与える影響 エビデンスベース系統的レビュー（SOL/TST/SE効果量・WHO2019ガイドライン・戸外遊び・構造化運動・タイミング・概日リズム） | 2026-06-07 | Sonnet | `reports/2026-06-07_toddler-physical-activity-sleep-evidence.md` |
+| T033 | R048: 2歳幼児の睡眠改善サプリメント・薬剤エビデンスベース評価（メラトニン・Mg・グリシン・鉄・VitD・スボレキサント・抱水クロラール・ヒドロキシジン・日本規制）安全性重視 | 2026-06-07 | Sonnet | `reports/2026-06-07_toddler-sleep-supplements-medications.md` |
 
 ---
 
