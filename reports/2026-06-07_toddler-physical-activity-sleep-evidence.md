@@ -465,22 +465,188 @@ SCN（体内時計）の同調信号が強化
 
 ## 10. エビデンスギャップと今後の研究課題
 
-<!-- S10_GAPS_PLACEHOLDER -->
+### 10.1 最大のエビデンスギャップ：2歳限定RCTの不在
+
+本テーマの最大の問題は、**「2歳幼児の身体活動介入が睡眠を改善する」ことを直接示したRCTが存在しない**ことである。既存の研究は：
+
+1. **観察研究・横断研究**が中心（因果推論不可）
+2. **混合年齢集団**（0〜5歳未満、または3〜5歳）での分析
+3. **アウトカムが体力・運動発達**であり睡眠は副次評価項目または非測定
+4. **縦断研究でも「PA→睡眠改善」の因果性は未確立**（逆因果の可能性：良眠→活発）
+
+### 10.2 具体的な未解明事項
+
+| エビデンスギャップ | 詳細 |
+|---|---|
+| 2歳限定RCT | 身体活動介入（種類・量・タイミング別）×睡眠アウトカム（SOL/TST/SE）の定量評価 |
+| 戸外遊び量の閾値効果 | 「何分の戸外遊びから睡眠改善効果が出るか」の用量反応関係 |
+| 朝vs.午後の比較 | 活動タイミングの睡眠への差異的影響（2歳向けRCT） |
+| 光曝露単独効果 | 運動と光曝露を切り分けた研究（戸外遊びは運動+光の複合介入） |
+| 日本の幼児データ | 日本の2歳児の身体活動量・睡眠時間の実態値（大規模疫学データ未確認） |
+| 昼寝との相互作用 | 日中の身体活動増加が昼寝→夜間睡眠の移行に与える影響 |
+| 文化的差異 | アジア・日本の幼児に西洋研究の知見が適用可能かの検証 |
+
+### 10.3 進行中・最近の研究
+
+- **MOVE ARound And Get Active（MARAGA）**: 24時間ムーブメント行動最適化のためのプレスクール介入RCT（ClinicalTrials.gov: NCT06171191）。2歳前後の幼児を対象としているが、主要アウトカムに睡眠が含まれているかは未確認。
+- **Community Partnership for Healthy Sleep（NCT05130229）**: 就学前児を対象とした睡眠改善介入RCT。身体活動を組み込んでいるが詳細は未確認。
 
 ---
 
 ## 11. 実践的推奨事項（保護者向け）
 
-<!-- S11_RECOMMENDATIONS_PLACEHOLDER -->
+### 11.1 総合推奨（エビデンスレベルを添付）
+
+以下の推奨は、WHOガイドライン（2019）、Janssen et al. (2020)のメタアナリシス、概日リズム研究の知見を統合して作成した。**RCTによる直接的な根拠は乏しいため、エビデンスの強さは低い**。
+
+---
+
+**推奨1: 1日の身体活動量を確保する（WHOガイドライン準拠）**
+
+- **目標**: 合計180分/日以上（中〜高強度を含む）
+- **根拠**: WHO 2019 Conditional推奨（GRADE: Low）
+- **実践**: 戸外遊び60〜90分 + 屋内自由遊び90〜120分が目安
+- **注意**: 「睡眠改善のため」に活動量を増やすRCTエビデンスはなく、「総合的な発達・健康」への推奨
+
+---
+
+**推奨2: 午前中の戸外遊びを優先する**
+
+- **目標**: 午前10時〜12時の戸外遊び 30〜60分以上
+- **根拠**: 概日リズム研究（Level 2b）から推論。戸外の自然光がメラトニンリズムを同調させる
+- **実践**: 近くの公園・園庭での自由遊び、散歩で十分。天候不良時は窓際での遊び（ただし効果減）
+- **効果量の確実性**: 低（未確認：幼児向けRCTなし）
+
+---
+
+**推奨3: 就寝2時間前からの活動を静穏にする**
+
+- **目標**: 18〜19時以降は高強度運動を避け、絵本・積み木・入浴等への移行
+- **根拠**: 睡眠衛生の原則（Level 4）＋成人研究（90分超の強度運動は夜間睡眠に悪影響）から推論
+- **実践**: 19〜20時の就寝を目標に、18時以降は「寝る準備モード」の活動に限定
+- **効果量の確実性**: 低（幼児向け直接研究なし）
+
+---
+
+**推奨4: 夕方以降の照明を暗くしスクリーンを避ける**
+
+- **目標**: 就寝2時間前からブルーライト削減（TV・タブレット・スマホ消灯）
+- **根拠**: 就学前児の光感受性研究（Hartstein et al., 2022: Level 2b）+ Janssen et al. (2020)のスクリーン時間×睡眠悪化関連
+- **実践**: 電球色照明に切り替え、TV・動画は就寝2時間前に終了
+- **効果量の確実性**: 中（スクリーン制限の効果はエビデンスが最も一貫）
+
+---
+
+**推奨5: 生活リズムの規則性を活動量よりも優先する**
+
+- **目標**: 起床・食事・昼寝・戸外遊び・就寝の時刻を毎日一定に保つ
+- **根拠**: Finne et al. (2017)の身体活動規則性×睡眠規則性の相関（Level 2b）
+- **実践**: 起床7〜8時、昼食12時、昼寝13〜15時、戸外遊び10時&16時、就寝19〜20時のルーティン化
+- **効果量の確実性**: 中（規則性の重要性は複数研究で一致）
+
+---
+
+### 11.2 活動別・タイミング別 推奨まとめ表
+
+| 活動 | 推奨時間帯 | 目標時間 | 睡眠への期待効果 | エビデンス |
+|---|---|---|---|---|
+| 戸外遊び（自然光あり） | 午前（10〜12時）優先 | 30〜90分/日 | SOL短縮・就寝時刻前進 | Very Low（推論） |
+| 活発な室内遊び | 日中（午後14〜16時） | 60〜90分/日 | 睡眠圧向上 | Very Low |
+| 静穏な遊び | 夕方（18時〜） | 就寝まで | 覚醒系の鎮静 | Low（睡眠衛生） |
+| 入浴 | 就寝40〜60分前 | 15〜20分 | 深部体温低下→入眠促進 | Low（成人研究） |
+| スクリーン時間 | 就寝2時間前に終了 | 0分（理想） | メラトニン抑制予防 | Low〜Moderate |
+
+### 11.3 「やってはいけない」行動
+
+| 行動 | 理由 |
+|---|---|
+| 就寝直前（30分以内）に激しく走り回る | 交感神経活性化→入眠遅延（理論的） |
+| 昼寝を無理に廃止する | 2歳は生理的に昼寝が必要。廃止で夕方の疲弊・夜泣き増加 |
+| 就寝前にTV・タブレットで落ち着かせる | ブルーライトがメラトニン分泌を抑制 |
+| 雨の日・寒い日に戸外遊びを完全にゼロにする | 代替（室内の活発な遊び）を確保する |
 
 ---
 
 ## 12. 安全上の注意点
 
-<!-- S12_SAFETY_PLACEHOLDER -->
+### 12.1 身体活動における安全上の基本原則
+
+2歳児の身体活動介入にあたって、睡眠改善以前に安全性の確保が最優先である。
+
+| リスク | 具体的注意点 |
+|---|---|
+| 転倒・外傷 | 公園遊具の対象年齢確認。砂地・芝生等の柔らかい地面を優先 |
+| 熱中症 | 夏季：気温が高い日中（10〜15時）の戸外遊びは短時間に留める。水分補給必須 |
+| 日焼け | 日焼け止め（SPF30以上）の使用。帽子・UVカット素材の着用 |
+| 溺水 | 水遊びは常に大人が1対1で監視 |
+| 過活動 | 幼児自身が活動を止めたがるサインを尊重。無理な長時間活動は禁止 |
+
+### 12.2 睡眠改善目的での「過度な活動」のリスク
+
+**⚠️ 重要警告**: 「もっと動かせば眠れる」と信じて2歳児に過度な身体活動を強いることは逆効果になる可能性がある。
+
+- **過活動→過覚醒**: 高強度活動の直後は交感神経が活性化し、皮質覚醒が高まる。就寝直前の激しい遊びは入眠を妨げる
+- **過疲労**: 身体的に過度に疲弊した幼児は、かえって夜泣き・覚醒が増加することがある（「オーバータイアード」状態）
+- **食欲低下・水分不足**: 激しい活動後の脱水や食欲抑制が睡眠の質を低下させる
+
+### 12.3 睡眠問題の鑑別
+
+身体活動を増やしても睡眠問題が改善しない場合、以下の鑑別を検討すること：
+
+| 状態 | 特徴 | 対応 |
+|---|---|---|
+| 睡眠関連運動障害（PLMD） | 夜間の反復的な脚の動き | 小児科・睡眠専門医への相談 |
+| 閉塞性睡眠時無呼吸（OSA） | いびき・口呼吸・無呼吸エピソード | 耳鼻科・小児科受診 |
+| 夜驚症（Night Terror） | 深夜の突然の覚醒・泣き叫び | 多くは2〜6歳で自然軽快。医師相談 |
+| 発達的な睡眠変化 | 2歳前後の睡眠退行（sleep regression）| 一時的。ルーティン継続で対応 |
+| 感覚処理の問題 | 過剰刺激への感受性の高さ | 作業療法士・小児神経科への相談 |
+
+### 12.4 「身体活動が睡眠を改善する」という過信への警告
+
+エビデンスの質が全体的にVery Lowであることを保護者に伝えることが重要である。身体活動は幼児の総合的な発達にとって必須であるが、睡眠改善への効果は「確実」ではなく「可能性がある」レベルに留まる。
+
+**重篤な睡眠問題（入眠まで1時間以上、夜間5回以上の覚醒、昼間の活動に支障など）は、身体活動の増加だけでは解決しない可能性が高く、小児科または睡眠専門家への相談を優先すること。**
 
 ---
 
 ## 13. 参考文献
 
-<!-- S13_REFERENCES_PLACEHOLDER -->
+### Tier 1（コア文献）
+
+1. **World Health Organization. (2019).** *Guidelines on physical activity, sedentary behaviour and sleep for children under 5 years of age.* Geneva: WHO. ISBN: 9789241550536. [https://www.who.int/publications/i/item/9789241550536](https://www.who.int/publications/i/item/9789241550536)
+
+2. **Janssen, X., Martin, A., Hughes, A.R., et al. (2020).** Associations of screen time, sedentary time and physical activity with sleep in under 5s: A systematic review and meta-analysis. *Sleep Medicine Reviews*, 49, 101226. PMC7034412. [https://pmc.ncbi.nlm.nih.gov/articles/PMC7034412/](https://pmc.ncbi.nlm.nih.gov/articles/PMC7034412/)
+
+3. **Bianconi, S., et al. (2024).** How strong is the evidence supporting the WHO guidelines on physical activity, sedentary behaviour and sleep in early childhood? *European Journal of Clinical Investigation*, e14294. PMID: 39086022. doi: 10.1111/eci.14294. [https://onlinelibrary.wiley.com/doi/10.1111/eci.14294](https://onlinelibrary.wiley.com/doi/10.1111/eci.14294)
+
+4. **Clin, G., et al. (2024).** Longitudinal associations between physical activity and sleep duration in infants and toddlers. *Pediatric Exercise Science*, 37(3), 295–302. PMID: 39255962. [https://pubmed.ncbi.nlm.nih.gov/39255962/](https://pubmed.ncbi.nlm.nih.gov/39255962/)
+
+5. **Carson, V., et al. (2020).** Development of WHO guidelines on physical activity, sedentary behavior, and sleep for children less than 5 years of age. *Journal of Physical Activity and Health*, 17(1), 96–100. PMID: 31877559. [https://pubmed.ncbi.nlm.nih.gov/31877559/](https://pubmed.ncbi.nlm.nih.gov/31877559/)
+
+6. **Hartstein, L.E., et al. (2022).** High sensitivity of melatonin suppression response to evening light in preschool-aged children. *Journal of Pineal Research*, 72(4), e12780. PMC8933063. [https://pmc.ncbi.nlm.nih.gov/articles/PMC8933063/](https://pmc.ncbi.nlm.nih.gov/articles/PMC8933063/)
+
+7. **Jenni, O.G., et al. (2004).** Circadian phase and its relationship to nighttime sleep in toddlers. *Journal of Biological Rhythms*. PMC3925345. [https://pmc.ncbi.nlm.nih.gov/articles/PMC3925345/](https://pmc.ncbi.nlm.nih.gov/articles/PMC3925345/)
+
+8. **Brooks, A., et al. (2011).** Temporal associations between daytime physical activity and sleep in children. *Journal of Sleep Research*. PMC3160292. [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3160292/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3160292/)
+
+### Tier 2（補助文献・ガイドライン）
+
+9. **Galland, B.C., et al. (2018).** Establishing normal values for pediatric nighttime sleep measured by actigraphy: a systematic review and meta-analysis. *SLEEP*, 41(4), zsy017. doi: 10.1093/sleep/zsy017. [https://academic.oup.com/sleep/article/41/4/zsy017/4954015](https://academic.oup.com/sleep/article/41/4/zsy017/4954015)
+
+10. **Finne, E., et al. (2017).** Associations between physical and sedentary activity regularity and sleep in preschoolers and kindergartners. PMID: 28709513. [https://pubmed.ncbi.nlm.nih.gov/28709513/](https://pubmed.ncbi.nlm.nih.gov/28709513/)
+
+11. **Burghard, M., et al. (2015).** Associations of outdoor play and screen time with nocturnal sleep duration and pattern among young children. PMID: 26607843. [https://pubmed.ncbi.nlm.nih.gov/26607843/](https://pubmed.ncbi.nlm.nih.gov/26607843/)
+
+12. **Self, nature play systematic review (2023).** P030: A systematic review of the influence of nature play and exposure on sleep measures in children aged 3-13 years old. PMC10109832. [https://pmc.ncbi.nlm.nih.gov/articles/PMC10109832/](https://pmc.ncbi.nlm.nih.gov/articles/PMC10109832/)
+
+13. **Tammelin, T., et al. (2021).** Associations between parent-child nature visits and sleep, physical activity and weight status among Finnish 3–6-year-olds. *International Journal of Environmental Research and Public Health*. PMC8657378. [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8657378/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8657378/)
+
+14. **Patel, N., et al. (2024).** The role of light exposure in infant circadian rhythm establishment: a scoping review perspective. *European Journal of Pediatrics*. PMC11685245. [https://pmc.ncbi.nlm.nih.gov/articles/PMC11685245/](https://pmc.ncbi.nlm.nih.gov/articles/PMC11685245/)
+
+15. **Zheng, R., et al. (2024).** The impact of the physical activity intervention on sleep in children and adolescents with neurodevelopmental disorders: a systematic review and meta-analysis. PMC11347421. [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11347421/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11347421/)
+
+16. **AAPHERD Active Start (2020).** Active Start: A statement of physical activity guidelines for children from birth to age 5. [https://cpin.us/sites/default/files/fcab_resources/virtual/Active%20Start_2020_Final.pdf](https://cpin.us/sites/default/files/fcab_resources/virtual/Active%20Start_2020_Final.pdf)
+
+17. **Frontiers in Education (2026).** Physical activity, sedentary behavior and screen time in young toddlers (1–2 years old) attending Spanish ECEC institutions. [https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1735315/full](https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1735315/full)
+
+18. **BMC Public Health (2024).** Are physical activity and sleep associated with emotional self-regulation in toddlers? A cross-sectional study. PMC10763404. [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10763404/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10763404/)
