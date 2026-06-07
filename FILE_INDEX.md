@@ -1,6 +1,6 @@
 # FILE INDEX - academic-research-agent_v1
 
-> 最終更新: 2026-06-07 | ファイル数: 213（R047追加）
+> 最終更新: 2026-06-07 | ファイル数: 218（R047-R049追加）
 
 ## ディレクトリ構造 (depth=5)
 
@@ -30,7 +30,7 @@
 ├── prompts/
 │   └── .gitkeep
 ├── reports/
-│   ├── [R001-R046 レポートファイル群]
+│   ├── [R001-R049 レポートファイル群]
 │   └── INDEX.md
 ├── requirements.txt
 ├── src/
@@ -51,9 +51,9 @@
 | ファイルパス | 説明 | 最終更新 | 優先度 |
 |---|---|---|---|
 | `CLAUDE.md` | プロジェクト運用ルール（最重要） | 2026-05-15 | 高 |
-| `tasks.md` | タスク管理 | 2026-06-04 | 高 |
-| `FILE_INDEX.md` | このファイル（ファイルインデックス） | 2026-06-04 | 高 |
-| `reports/INDEX.md` | レポートカタログ（R001〜R046） | 2026-06-04 | 高 |
+| `tasks.md` | タスク管理 | 2026-06-07 | 高 |
+| `FILE_INDEX.md` | このファイル（ファイルインデックス） | 2026-06-07 | 高 |
+| `reports/INDEX.md` | レポートカタログ（R001〜R049） | 2026-06-07 | 高 |
 | `.claude/rules/git-rules.md` | Git操作ルール | 2026-05-15 | 高 |
 | `.claude/rules/output-rules.md` | 成果物・報告ルール | 2026-05-15 | 高 |
 | `.claude/rules/timeout-prevention.md` | タイムアウト防止・大ファイル生成ルール | 2026-05-15 | 高 |
@@ -64,7 +64,7 @@
 | `README.md` | プロジェクト概要 | 2026-04 | 低 |
 | `templates/report_template.md` | レポートテンプレート | 2026-04 | 低 |
 
-### Reports (レポートファイル R001〜R046)
+### Reports (レポートファイル R001〜R049)
 
 | ファイルパス | レポートID | テーマ | 作成日 |
 |---|---|---|---|
@@ -113,7 +113,12 @@
 | `reports/2026-05-20_alcohol-wine-health-effects-bias-corrected.md` | R043 | アルコール・ワイン健康影響レビュー | 2026-05-20 |
 | `reports/2026-06-01_hair-quality-improvement-ingredients.md` | R044 | 髪質改善有効成分エビデンスガイド | 2026-06-01 |
 | `reports/2026-06-04_supplement-evidence-review-sleep-stress-4products.md` | R045 | iHerbサプリ4種エビデンス評価 | 2026-06-04 |
-| `reports/2026-06-04_supplement-product-search-optimized-dose.md` | R046 | サプリ代替製品コスパサーチ（用量改善） | 2026-06-04 |
+| `reports/2026-06-04_supplement-product-search-optimized-dose.md` | R046 | 定期購入サプリ6製品エビデンスベース評価・用量最適化ガイド | 2026-06-04 |
+| `reports/2026-06-07_toddler-physical-activity-sleep-evidence.md` | R047 | 2歳幼児の身体活動・運動が睡眠に与える影響 系統的レビュー | 2026-06-07 |
+| `reports/2026-06-07_toddler-sleep-nutrition-evidence.md` | R047 | 2歳幼児の睡眠改善：食品・栄養エビデンスレビュー | 2026-06-07 |
+| `reports/2026-06-07_toddler-sleep-bedtime-routine-evidence.md` | R047 | 2歳幼児の睡眠改善：就床ルーティン・睡眠衛生介入 | 2026-06-07 |
+| `reports/2026-06-07_toddler-sleep-supplements-medications.md` | R048 | 2歳幼児の睡眠改善：サプリメント・薬剤エビデンスベース評価 | 2026-06-07 |
+| `reports/2026-06-07_toddler-sleep-improvement-comprehensive.md` | R049 | 2歳児の睡眠改善 完全ガイド（統合版） | 2026-06-07 |
 
 ### Code (13件)
 
