@@ -55,6 +55,8 @@
 | T032 | R047: 2歳幼児の睡眠改善食品・栄養エビデンス系統的レビュー（トリプトファン・Mg・メラトニン食品・食事タイミング・避けるべき食品） | 2026-06-07 | Sonnet | `reports/2026-06-07_toddler-sleep-nutrition-evidence.md` |
 | T032 | R047: 2歳幼児の身体活動・運動が睡眠に与える影響 エビデンスベース系統的レビュー（SOL/TST/SE効果量・WHO2019ガイドライン・戸外遊び・構造化運動・タイミング・概日リズム） | 2026-06-07 | Sonnet | `reports/2026-06-07_toddler-physical-activity-sleep-evidence.md` |
 | T033 | R048: 2歳幼児の睡眠改善サプリメント・薬剤エビデンスベース評価（メラトニン・Mg・グリシン・鉄・VitD・スボレキサント・抱水クロラール・ヒドロキシジン・日本規制）安全性重視 | 2026-06-07 | Sonnet | `reports/2026-06-07_toddler-sleep-supplements-medications.md` |
+| T034 | R050: 死菌・生菌・乳酸菌の効果比較 — ポストバイオティクス vs プロバイオティクス エビデンスベース系統的レビュー（Tier1 15本・Tier2 14本。ISAPP2021定義・免疫・アレルギー・腸内環境・安全性・有効用量） | 2026-06-11 | Sonnet | `reports/2026-06-11_postbiotics-vs-probiotics-lactic-acid-bacteria.md` |
+| T035 | R050補強: 成人腸内細菌叢の組成変化（効果量・持続性の定量分析）追加。Zmora/Suez 2018（Cell）ランドマーク研究統合。エビデンス強度（CEBM Level）と効果量（SMD/NNT）の区別を明確化（Section 4.2a・4.6新設） | 2026-06-11 | Sonnet | `reports/2026-06-11_postbiotics-vs-probiotics-lactic-acid-bacteria.md`（更新） |
 
 ---
 
@@ -67,7 +69,7 @@
 4. `reports/INDEX.md` を Read → 既存レポートを確認
 
 ### タスク追加時
-- 「未着手」セクションに追加（ID: T001〜連番、次は `T033`）
+- 「未着手」セクションに追加（ID: T001〜連番、次は `T036`）
 - 担当モデル（Opus/Sonnet）を明記
 - 期待成果物を具体的に記述
 
@@ -86,6 +88,6 @@
 
 | 業務 | タイミング | 方法 |
 |---|---|---|
-| `reports/INDEX.md` 更新 | 新レポート作成時 | 次のIDは `R048` |
+| `reports/INDEX.md` 更新 | 新レポート作成時 | 次のIDは `R051` |
 | `FILE_INDEX.md` 更新 | 新ファイル追加時 | ファイル種別・説明を追記 |
 | masterへのpush | 全コミット後 | `git push origin HEAD:master` |
