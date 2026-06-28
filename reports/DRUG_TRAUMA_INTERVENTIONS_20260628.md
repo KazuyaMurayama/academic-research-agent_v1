@@ -348,44 +348,313 @@ MDMA（3,4-メチレンジオキシメタンフェタミン）補助心理療法
 
 ### 5-1. 機序
 
-<!-- I11_KETAMINE_MECHANISM_PLACEHOLDER -->
+ケタミンは解離性麻酔薬であり、主にNMDA型グルタミン酸受容体の非競合的拮抗薬として作用する。近年は治療抵抗性うつ病に対するエスケタミン（Spravato、鼻腔内投与）がFDA承認を得たことで注目が高まったが、PTSDへの応用は別の機序経路が想定されている。
+
+**PTSDへの作用仮説（複数存在）**:
+
+**仮説1: 再固定化促進モデル（積極的記憶書き換え）**
+- ケタミンはNMDA受容体を阻害することで、想起時の記憶再固定化プロセスを撹乱する
+- 記憶再活性化と組み合わせることで、恐怖記憶の感情的強度を弱化・消去できる可能性
+- 前臨床データ（マウスBLA engram cellsモデル、Liu et al. 2024）では、再曝露ウィンドウ内のケタミン投与が外傷性社会回避を解消
+
+**仮説2: 急速抗うつ・抗解離作用（症状管理モデル）**
+- BDNF（脳由来神経栄養因子）の急速放出を促進し、前頭前野−扁桃体回路の再編成を助ける
+- PTSDの過覚醒・抑うつ症状への対症的効果
+
+**仮説3: 記憶強化リスク（⚠️ 両義的効果の懸念）**
+- NMDAは記憶固定化に必要なシグナルを担うが、ケタミンによる遮断は文脈・タイミングによって恐怖記憶を「強化」または「固定化」してしまう可能性がある
+- 動物実験では、ストレス後（=トラウマ直後相当）のケタミン投与がPTSD様行動を増悪させたという報告もある
+- 投与タイミング（トラウマ急性期 vs 慢性期）と記憶状態（安定時 vs 再活性化時）が効果の方向性を決定すると考えられている
+
+**解離性効果**:
+- ケタミンは解離症状（現実感喪失、離人感）を引き起こす
+- PTSDには解離症状が伴うことが多く、ケタミン誘発解離が症状に及ぼす影響（悪化 vs 改善）は複雑
 
 ### 5-2. 効果量・臨床アウトカム
 
-<!-- I12_KETAMINE_EFFICACY_PLACEHOLDER -->
+**Feder et al. 2014（先駆的パイロット試験）**:
+- デザイン: 二重盲検クロスオーバーRCT（n=41）
+- 介入: ケタミン単回静脈内投与 0.5 mg/kg（ミダゾラムを対照）
+- 主要結果: 投与1週間後にCAPS（旧版）で大きな効果量（clinician ratingでlarge effect）
+  - ただし自己評価指標では有意差なし（不一致）
+- **出典**: Feder, A., et al. (2014). *JAMA Psychiatry*, 71(6), 681-688.
+
+**Feder et al. 2021（反復投与RCT、最大規模の単独RCT）**:
+- デザイン: 二重盲検RCT（n=30、ランダム化1:1）
+- 介入: ケタミン 0.5 mg/kg 静脈内 × 6回（2週間にわたり）vs ミダゾラム × 6回
+- 主要アウトカム（2週時点のCAPS-5変化）:
+  - **群間差: −11.88点（ケタミン優位）**
+  - **Cohen's d = 1.13（95% CI: 0.36〜1.91）— 大きな効果量**
+  - 反応率: ケタミン群67% vs ミダゾラム群20%
+- **出典**: Feder, A., et al. (2021). *American Journal of Psychiatry*, 178(2), 193-202.
+
+**メタ分析の結果（効果量の変動）**:
+
+| メタ分析 | 採用研究数 | 効果量 | 評価時点 | 備考 |
+|---|---|---|---|---|
+| Banov et al. 2024（PMC10791091） | 複数 | g=0.35（95% CI: 0.06〜0.64） | 24時間後 | 小効果。CIが0をほぼまたぎかけている |
+| Singh et al. 2022（Frontiers Psychiatry）| 複数 | 有意な改善（多変量） | 複数 | ケタミンが全スケールで有意に上回る |
+| 2024メタ分析（Feder 2021含む） | 少数 | g=0.92（Feder 2021単独） | 2週 | 他の試験と合算すると縮小 |
+
+**重要な解釈上の注意**:
+- Feder 2021のd=1.13は**単一小規模試験（n=30）**の結果であり、信頼区間が非常に広い（0.36〜1.91）
+- メタ分析で合算すると効果量は大幅に縮小（g=0.35〜0.92）
+- ミダゾラムを対照としているため、「ケタミンが真に特異的か」vs「他の解離性薬物一般の効果か」という問いが残る
+
+**その後の試験（2024〜2026年最新）**:
+- NIMHやVA（退役軍人省）主導の複数の多施設RCTが進行中
+- PTSDと治療抵抗性うつ病の重複症例での効果を中心に検討
 
 ### 5-3. エビデンス強度
 
-<!-- I13_KETAMINE_EVIDENCE_PLACEHOLDER -->
+**Oxford CEBM エビデンスレベル**:
+- **Level 1b（小規模RCT）〜 Level 2a（メタ分析）**
+- 推定グレード: **Grade B**（RCTは存在するが小規模・単一グループによる反復が多い）
+
+**試験規模と限界**:
+
+| 課題 | 詳細 |
+|---|---|
+| 試験規模の小ささ | 最大試験でも n=41（Feder 2014）、n=30（Feder 2021） |
+| 独立再現の不足 | Feder研究グループへの依存度が高い |
+| 対照薬の問題 | ミダゾラム（鎮静薬）が「活性プラセボ」として妥当かどうか議論がある |
+| 追跡期間 | 多くの試験で4〜8週間以内。長期効果データが乏しい |
+| 利益相反 | Feder 2014/2021では複数の資金源およびケタミン特許の利益相反が報告されている |
+| 心理療法の併用 | 試験によって心理療法の有無・内容が異なり、どちらの効果かが不明 |
+
+**試験数の全体像**:
+- PTSD対象のケタミンRCT: 2026年時点で5本前後（Feder 2014, 2021を含む）
+- うつ病対象のケタミンRCT（参考）: 50本以上
+
+**総合判断**: 急速な症状改善効果は有望だが、試験規模・数が不十分。現時点では「研究段階の介入」であり、標準治療としての推奨には至らない。
 
 ### 5-4. 実行しやすさ（プロトコル・アクセス性）
 
-<!-- I14_KETAMINE_FEASIBILITY_PLACEHOLDER -->
+**投与プロトコル（Feder 2021標準）**:
+- 薬剤: ケタミン塩酸塩 0.5 mg/kg（静脈内投与）
+- 投与スケジュール: 週3回 × 2週間（合計6回）または週2回 × 3週間
+- 投与時間: 40〜45分の持続静脈内点滴
+- 施設要件: 静脈ラインの設置・バイタルモニタリングが可能な医療施設
+- 心理療法との組み合わせ: プロトコルにより異なる（必須ではないが推奨される試験が増加）
+
+**規制状況**:
+- 麻酔薬としてFDA（米国）および日本では既承認薬
+- PTSDへの使用は**適応外（off-label）**
+- エスケタミン（Spravato）はFDA承認済みだが適応はTRD（治療抵抗性うつ病）のみ
+
+**医師要件**:
+- 麻酔科・精神科・疼痛科の医師が処方可能
+- 特殊な資格認定は不要（静脈麻酔の一般的スキルがあれば）
+- ただし「ケタミンクリニック」での提供では倫理委員会の監督が推奨される
+
+**日本での状況**:
+- ケタミンは向精神薬（麻薬及び向精神薬取締法）として規制。一般の精神科クリニックでの取り扱いは限定的
+- 一部の疼痛クリニック・麻酔科で利用可能
+
+**コスト目安**（米国参考）:
+- 1回のケタミン静脈内投与セッション: $400〜$800（米国クリニック）
+- 6回コース: $2,400〜$4,800
+- 保険適用外（適応外使用のため）が多い
 
 ### 5-5. 注意点・論争（両義的メモリー効果・Feder研究）
 
-<!-- I15_KETAMINE_CONTROVERSY_PLACEHOLDER -->
+**⚠️ 最重要論争点：両義的なメモリー効果（記憶を弱める vs 強化/固定化する）**
+
+#### 1. 「タイミング依存性」の問題（前臨床エビデンス）
+
+ケタミンがトラウマ記憶に与える効果は、投与のタイミングによって正反対になりうる：
+
+- **記憶再活性化ウィンドウ内の投与**: 恐怖記憶のBLA（基底外側扁桃体）エングラム細胞の活動を抑制 → 症状改善（Liu et al., 2024, *Neuron*）
+- **記憶再活性化ウィンドウ外の投与（安定期）**: 既存の恐怖記憶には影響しないか、場合によっては新たな記憶形成を促進
+- **トラウマ直後（急性ストレス期）の投与**: 動物実験の一部で、ケタミン投与がPTSD様行動を**増悪**させる報告あり
+
+#### 2. Feder 2014の自己評価 vs 臨床医評価の不一致
+
+- 臨床医評価（CAPS）では大きな効果量
+- 自己評価では**有意差なし**
+- この不一致は「医師の期待バイアス」の可能性を示唆。対照群のミダゾラムもやはり心理作用があるため、完全な盲検は困難
+
+#### 3. 解離症状の問題
+
+- PTSD患者の一部（特に解離型PTSD）では、ケタミン誘発解離が治療的か有害かが不明
+- 解離はケタミンの主な急性副作用であり（38.8%に発現）、PTSDの核心症状の一つでもある
+- 有害事象頻度（Banov et al. 2024メタ分析より）:
+  - 解離: 38.8%
+  - 悪心: 31.6%
+  - めまい: 24.7%
+  - 頭痛: 22.0%
+  - 不安: 15.8%
+
+#### 4. 依存性・乱用リスク
+
+- ケタミンには依存性・乱用リスクがある（膀胱炎を含む長期副作用も知られる）
+- 治療目的の限定的投与（6回程度）では依存性発現は稀だが、長期・反復投与では監視が必要
+- PTSDとサブスタンス使用障害（SUD）の高い共病率を考慮すると、適切な患者選択が重要
+
+#### 5. 「特殊性問題」— ケタミン vs 鎮静薬一般
+
+- ミダゾラム（対照薬）はGABA-A受容体作動薬で、やはり抗不安・解離的効果を持つ
+- 「ケタミン特異的な効果なのか」vs「急性の解離・鎮静が外傷記憶の感情的強度を一時的に下げているだけなのか」という問いに対する決定的回答がない
+
+#### 6. 効果の持続性問題
+
+- ほとんどの試験で追跡期間は4〜8週間
+- 6回投与後4週間での効果減衰が複数試験で観察されており、「維持投与が必要か」という新たな問いが生じている
 
 ---
 
 ## 6. 3介入の横断比較
 
-<!-- S3_COMPARISON_TABLE_PLACEHOLDER -->
+### 6-1. 主要パラメータ比較表
+
+| 項目 | プロプラノロール（Brunet法） | MDMA補助心理療法 | ケタミン補助療法 |
+|---|---|---|---|
+| **作用機序** | β受容体遮断→再固定化ブロック（ノルアドレナリン系） | セロトニン大量放出+オキシトシン→恐怖記憶の感情的再処理 | NMDA拮抗→再固定化干渉・急速抗うつ・BDNF促進 |
+| **投与形態** | 経口（40mg、即放性） | 静脈/経口（80〜120mg） | 静脈内点滴（0.5 mg/kg） |
+| **セッション数** | 週1回×6回（=6セッション） | 3回（8時間/回）+ 準備/統合計12〜15回 | 週3回×2週＝6回（40〜45分） |
+| **最良の効果量（RCT）** | d=0.5〜0.7（Brunet 2018）→ 修正後d≒0 | CAPS-5差 −10.5点（MAPP1）/ −8.9点（MAPP2） | d=1.13（Feder 2021、n=30） |
+| **メタ分析での効果量** | 中程度（Frontiers 2025）→ ゼロ（Lonergan 2022修正版） | データ不足（2試験のみ） | g=0.35〜0.92（試験・時点依存） |
+| **寛解率（RCT）** | データ不足 | 67〜71%（MDMA）vs 32〜48%（プラセボ） | 67%（ケタミン）vs 20%（ミダゾラム） |
+| **Oxford CEBM** | Level 1a（相矛盾するメタ分析）→ 実質Grade C | Level 1b（2試験）→ FDA却下でGrade B〜C | Level 1b（小規模RCT）→ Grade B |
+| **再現性** | **深刻な問題あり**（Roullet 2021失敗、Lonergan 2022陰性） | 2試験とも陽性だが独立再現なし | 限定的（試験数少・Feder依存） |
+| **FDA規制状況** | 適応外使用（既承認薬） | **未承認（CRL 2024年8月）** | 麻酔薬として承認、PTSDは適応外 |
+| **日本でのアクセス** | 処方可能（降圧薬として）・適応外 | **不可**（麻薬指定） | 限定的（麻酔科等） |
+| **主な有害事象** | 徐脈、低血圧、気管支攣縮（禁忌注意） | 筋緊張、血圧上昇、悪心、口渇 | 解離（38.8%）、悪心（31.6%）、依存リスク |
+| **コスト（薬剤費）** | 極めて低い（ジェネリック） | 高い（集中セラピスト時間含む） | 中程度（静脈投与設備） |
+| **実施容易性** | 高（外来設定で可能） | 低（専門施設+訓練済セラピスト必須） | 中（医療施設・麻酔スキル必要） |
+
+### 6-2. 現状の総合評価
+
+**現時点で最も注意が必要な誤解・誤情報**:
+1. 「MDMA補助療法はFDA承認済み」→ **誤り**（2024年8月CRL発行で却下済み）
+2. 「プロプラノロールでトラウマ記憶を消せる」→ **誇大表現**（再現性に深刻な問題）
+3. 「ケタミンはPTSDに一方向的に有効」→ **単純化しすぎ**（タイミングによって正反対の効果）
+
+**3介入の「使いやすさ vs 証拠の質」マトリックス**:
+
+```
+             高（使いやすい）
+                  |
+  プロプラノロール ●
+                  |
+                  |                    
+─────────────────────────────── エビデンス充実
+  低品質          |        ケタミン ●
+                  |
+                  |          MDMA ●（未承認）
+                  |
+             低（使いにくい）
+```
+
+最も実臨床に近いのはケタミン（既承認薬・医師処方可）だが、エビデンスは試験数の少なさが課題。MDMAは最も大規模なRCTを持つが未承認・倫理問題あり。プロプラノロールは入手容易だが再現性に深刻な疑問符。
 
 ---
 
 ## 7. エビデンスギャップと今後の課題
 
-<!-- S4_EVIDENCE_GAP_PLACEHOLDER -->
+**1. プロプラノロール: プロトコル最適化研究の不足**
+- 最適な想起誘導方法（スクリプト vs 映像 vs VR vs 対面問診）の比較RCTが存在しない
+- 投与量の最適化（40mg、80mg等）を直接比較した試験がない
+- どの患者サブグループ（外傷タイプ、重症度、発症期間、ノルアドレナリン活性）で効果が出るかが不明
+- 「想起曝露のみ（プロプラノロールなし）」対照アームを含むRCTが少なく、薬剤特異的効果の分離が困難
+
+**2. MDMA: 独立再現・長期追跡・安全性データの欠如**
+- MAPS関連グループ以外の独立研究チームによる第III相試験がない
+- 最長追跡期間が18週間（治療終了後1か月）にすぎず、PTSDの慢性経過を考えると不十分
+- 「活性プラセボ」問題に対する方法論的解決策（例: 低用量MDMA対照）の検証が進んでいない
+- 解離型PTSD、複雑性PTSD（C-PTSD）、高自殺リスク患者でのサブグループ分析が不十分
+- 心臓弁膜症リスク（理論的懸念）の長期観察データが存在しない
+
+**3. ケタミン: 規模・多様性・投与タイミング最適化の欠如**
+- 全試験を合わせても総n数が数百名以下と小規模
+- 「記憶再活性化と組み合わせたケタミン」（再固定化介入的使用）と「再活性化なしのケタミン」を比較するRCTがない
+- 複数投与プロトコル（回数・間隔・用量）の最適化データがない
+- 長期維持治療（反復投与の安全性・依存性リスク）に関するエビデンスが希薄
+- SUD（物質使用障害）合併患者への適切な安全基準が未確立
+
+**4. 3介入共通のギャップ**
+- **治療抵抗性PTSDへの有効性**: 既存の第一線治療（PE療法、EMDR、SSRI）に反応しなかった患者への有効性データが少ない
+- **実世界データ（RWE）**: RCT設定の外での効果・安全性（effectiveness）データが極めて少ない
+- **頭部対頭部比較**: 3介入を直接比較したRCTは存在しない
+- **コスト効果分析**: 正式なQALY（質調整生存年）分析が不十分
+- **神経画像バイオマーカー**: 誰が各介入に反応するかを予測するバイオマーカーが未同定
 
 ---
 
 ## 8. 実務への示唆
 
-<!-- S5_IMPLICATIONS_PLACEHOLDER -->
+### 臨床家・研究者への示唆
+
+**プロプラノロール（Brunet法）について**:
+- 現時点では「試験的・研究目的」の扱いが適切。標準的PTSD治療として患者に推奨することは科学的根拠が不十分
+- 研究に参加している患者への説明では「再現性に問題があること」を明示的に伝えるべき
+- 既存の曝露療法（PE療法）と組み合わせた場合の効果の分離が課題である点を認識する
+
+**MDMA補助心理療法について**:
+- **「FDA承認済み」という誤情報を患者や家族に伝えてはならない**（2026年6月現在、未承認）
+- 第III相での大きな寛解率（67〜71%）は注目に値するが、盲検破綻・倫理問題を踏まえて過信しない
+- 現実的なオプションは臨床試験登録のみ（clinicaltrials.gov で MDMA PTSD で検索）
+- 将来的に承認される可能性は残っているが、追加試験完了まで最低3〜5年を要する見通し
+
+**ケタミン補助療法について**:
+- 既承認薬として精神科医・麻酔科医が適応外処方できる唯一の選択肢
+- 治療抵抗性PTSDで既存治療が奏効しない患者へのbridge療法としての可能性
+- 投与タイミング（再活性化と組み合わせるかどうか）の議論を理解した上で使用すること
+- SUD合併患者、解離型PTSDでは特に慎重な適用が必要
+- 効果が一時的（4〜8週）であることを患者に事前説明する
+
+### 患者・一般向けの示唆
+
+- 現在「確立した」薬物系トラウマ記憶介入は存在しない。3介入とも研究段階
+- PTSD治療の現時点での第一選択は、エビデンスが確立している**心理療法（PE、CPT、EMDR）**
+- SSRIはPTSD症状管理に保険適用があり、心理療法と組み合わせることが現実的
+- 新規薬物介入への過度な期待は「研究段階の困難さ」への理解を妨げる可能性がある
+
+### 研究開発の優先事項（推奨）
+
+1. プロプラノロール: 大規模な独立再現試験（n≥200）が最優先。特に想起手続きと薬物効果を分離する設計
+2. MDMA: 倫理的完全性と盲検問題を解決した独立研究者による第III相試験
+3. ケタミン: 再活性化ありvs なしの比較試験と長期追跡（1年以上）RCT
+4. 全介入: ニューロイメージング・遺伝的バイオマーカーを活用したレスポンダー予測研究
 
 ---
 
 ## 9. 主要参考文献（APA形式）
 
-<!-- S6_REFERENCES_PLACEHOLDER -->
+### プロプラノロール関連
+
+Brunet, A., Thomas, É., Saumier, D., Ashbaugh, A. R., Azzoug, A., Pitman, R. K., Orr, S. P., & Tremblay, J. (2018). Trauma reactivation plus propranolol is associated with durably low physiological responding during subsequent script-driven traumatic imagery. *Canadian Journal of Psychiatry*, 96(152), 152-158. https://doi.org/10.1177/0706743717726756
+
+Roullet, P., Vaiva, G., Véry, E., Bourcier, A., Yrondi, A., Dupuch, L., Lamy, P., Thalamas, C., Jasse, L., Eche, J., & Birmes, P. (2021). Traumatic memory reactivation with or without propranolol for PTSD and comorbid MD symptoms: a randomised clinical trial. *Neuropsychopharmacology*, 46(5), 1028-1036. https://doi.org/10.1038/s41386-020-00820-z（PMC7897457）
+
+Lonergan, M., Pitman, R. K., & Brunet, A. (2022). Updated and rectified meta-analysis shows no effect of propranolol versus placebo on traumatic memory reconsolidation disruption. *Journal of Psychiatry & Neuroscience*, 47(4), E311-E321. https://doi.org/10.1503/jpn.210185（PMC9640173）
+
+Brunet, A., Lonergan, M., Pigeon, S., Saumier, D., Orr, S. P., & Pitman, R. K. (2022). Response to: "Updated and rectified meta-analysis shows no effect of propranolol versus placebo on traumatic memory reconsolidation disruption." *Journal of Psychiatry & Neuroscience*, 47(5), E338. https://www.jpn.ca/content/47/5/E338
+
+Wang, X., Fang, Q., Cai, W., & Liu, J. (2025). Systematic review and meta-analysis of propranolol in the prevention and treatment of post-traumatic stress disorder. *Frontiers in Pharmacology*, 2025. https://doi.org/10.3389/fphar.2025.1545493（PMC11814184）
+
+Raut, S. B., Bhatt, L. K., & Mahajan, U. B. (2022). Effects of propranolol on the modification of trauma memory reconsolidation in PTSD patients: A systematic review and meta-analysis. *Journal of Psychiatric Research*, 149, 231-242. https://doi.org/10.1016/j.jpsychires.2022.03.023
+
+### MDMA補助心理療法関連
+
+Mitchell, J. M., Bogenschutz, M., Lilienstein, A., Harrison, C., Kleiman, S., Parker-Guilbert, K., ... & Doblin, R. (2021). MDMA-assisted therapy for severe PTSD: a randomized, double-blind, placebo-controlled phase 3 study. *Nature Medicine*, 27, 1025-1033. https://doi.org/10.1038/s41591-021-01336-3
+
+Mitchell, J. M., Ot'alora G., M., van der Kolk, B., Shannon, S., Bogenschutz, M., Gelfand, Y., ... & Doblin, R. (2023). MDMA-assisted therapy for moderate to severe PTSD: a randomized, placebo-controlled phase 3 trial. *Nature Medicine*, 29, 2473-2480. https://doi.org/10.1038/s41591-023-02565-4
+
+MAPS (Multidisciplinary Association for Psychedelic Studies). (2024, August 9). *MAPS statement on FDA Complete Response Letter on MDMA-Assisted Therapy for PTSD New Drug Application*. https://maps.org/2024/08/09/maps-statement-on-fda-complete-response-letter-on-mdma-assisted-therapy-for-ptsd-new-drug-application/
+
+MAPS. (2025, September 4). *MAPS statement on FDA's public release of Complete Response Letter for MDMA-assisted Therapy*. https://maps.org/2025/09/04/fda-public-release-of-crl/
+
+FDA. (2025, September 4). *Complete Response Letter: Midomafetamine (MDMA) Capsules for Posttraumatic Stress Disorder*. [Public release via MAPS]. https://maps.org/2025/09/04/fda-public-release-of-crl/
+
+### ケタミン補助療法関連
+
+Feder, A., Parides, M. K., Murrough, J. W., Perez, A. M., Morgan, J. E., Saxena, S., ... & Charney, D. S. (2014). Efficacy of intravenous ketamine for treatment of chronic posttraumatic stress disorder: a randomized clinical trial. *JAMA Psychiatry*, 71(6), 681-688. https://doi.org/10.1001/jamapsychiatry.2014.62
+
+Feder, A., Costi, S., Rutter, S. B., Singh, A. B., Rosenfeld, H., Alonso, C. M., ... & Murrough, J. W. (2021). A randomized controlled trial of repeated ketamine administration for chronic posttraumatic stress disorder. *American Journal of Psychiatry*, 178(2), 193-202. https://doi.org/10.1176/appi.ajp.2020.20050596（PubMed: 33397139）
+
+Singh, B., Hughes, A. J., Mehta, G., Erwin, P. J., & Parsaik, A. K. (2022). The multivariate effect of ketamine on PTSD: Systematic review and meta-analysis. *Frontiers in Psychiatry*, 13, 813103. https://doi.org/10.3389/fpsyt.2022.813103（PMC8959757）
+
+Banov, M., Singh, B., Naykur, S., Patel, P., & Watanakunakorn, P. (2024). So how special is special K? A systematic review and meta-analysis of ketamine for PTSD RCTs. *European Journal of Psychotraumatology*, 15(1). https://doi.org/10.1080/20008066.2023.2299124（PMC10791091）
+
+Liu, Z. P., et al. (2024). Ketamine ameliorates post-traumatic social avoidance by erasing the traumatic memory encoded in VTA-innervated BLA engram cells. *Neuron*. https://doi.org/10.1016/j.neuron.2024.04.012
