@@ -57,6 +57,7 @@
 | T033 | R048: 2歳幼児の睡眠改善サプリメント・薬剤エビデンスベース評価（メラトニン・Mg・グリシン・鉄・VitD・スボレキサント・抱水クロラール・ヒドロキシジン・日本規制）安全性重視 | 2026-06-07 | Sonnet | `reports/2026-06-07_toddler-sleep-supplements-medications.md` |
 | T034 | R050: 死菌・生菌・乳酸菌の効果比較 — ポストバイオティクス vs プロバイオティクス エビデンスベース系統的レビュー（Tier1 15本・Tier2 14本。ISAPP2021定義・免疫・アレルギー・腸内環境・安全性・有効用量） | 2026-06-11 | Sonnet | `reports/2026-06-11_postbiotics-vs-probiotics-lactic-acid-bacteria.md` |
 | T035 | R050補強: 成人腸内細菌叢の組成変化（効果量・持続性の定量分析）追加。Zmora/Suez 2018（Cell）ランドマーク研究統合。エビデンス強度（CEBM Level）と効果量（SMD/NNT）の区別を明確化（Section 4.2a・4.6新設） | 2026-06-11 | Sonnet | `reports/2026-06-11_postbiotics-vs-probiotics-lactic-acid-bacteria.md`（更新） |
+| T036 | R051: トラウマ記憶介入4種（EMDR・PE・CPT・TF-CBT）エビデンスベース系統的レビュー。機序・効果量（Hedges' g）・Oxford CEBM・実行しやすさ・論争を5項目で整理。APA 2025 vs WHO/VA/DoD格付け差異も分析 | 2026-06-28 | Sonnet | `reports/TRAUMA_INTERVENTIONS_EVIDENCE_20260628.md` |
 
 ---
 
