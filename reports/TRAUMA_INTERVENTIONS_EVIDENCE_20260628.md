@@ -136,17 +136,87 @@ EMDRの作用機序は**適応情報処理（Adaptive Information Processing: AI
 - **トレーニングのコスト・期間**: 基礎研修2日＋6〜12ヶ月のスーパービジョン。費用は国・機関により異なる（日本は数十万円規模）
 
 ### 3-5. 注意点・論争（眼球運動成分のdismantling問題）
-<!-- I05_EMDR_CONTROVERSY_PLACEHOLDER -->
+**最大の論争：眼球運動は本質的成分か？（Dismantling Research）**
+
+EMDR最大の論争は、「眼球運動（bilateral stimulation）がプロトコルの本質的要素か、あるいは単なる注意転換の道具に過ぎないか」という問いである。
+
+**実験的エビデンス（眼球運動の効果を支持）**
+- Lee & Cuijpers (2013, *Journal of Behavior Therapy and Experimental Psychiatry*): 実験室研究のメタ分析（26研究）で眼球運動 vs. 眼球運動なし条件の平均効果量 **d = 0.74**（95% CI: 0.57–0.91）を報告。眼球運動の付加価値を支持する
+
+**臨床的エビデンス（眼球運動の役割に懐疑的）**
+- Cuijpers et al. (2020, *BMC Psychiatry*): 臨床PTSDに特化した5本のdismantling RCTのプール解析では、**full EMDR vs. 眼球運動なし条件の差が非有意**（p > 0.05）
+- Cochrane review (Bisson et al.): EMDRと眼球運動なしのコントロールの比較で一貫した差を確認できなかった
+- 2023年の系統的レビュー（EMDR Therapy Quarterly）: 作業記憶の観点から眼球運動の役割を再検討。実験研究と臨床研究の乖離が主要課題と結論
+
+**論争の核心**
+1. 実験室（非臨床集団・単純トラウマ記憶）では眼球運動の効果が観測される
+2. 臨床RCT（実際のPTSD患者）では有意差が確認しにくい → 症例の複雑性、プロセス変数、サンプルサイズの問題が絡む
+3. 眼球運動の代わりに手叩き・オーディオ刺激を使用した研究でも同等効果 → bilateral stimulationの種類には依存しない可能性
+4. 「眼球運動なし条件」もEMDRの全要素（曝露・認知再処理）を含むため、「眼球運動なしEMDR」自体がすでに治療的要素を持つ
+
+**2024年現在のコンセンサス** (Jongh et al., 2024, *Journal of Traumatic Stress*「State of the Science」):
+- 眼球運動は作用の一部として寄与する可能性が高いが、EMDRの全効果がそれのみで説明されるわけではない
+- 実際の臨床効果はbilateral stimulationの有無に関わらず再現されており、EMDR全体の治療的価値は確立されている
+- 「dismantling論争はEMDRの臨床的有効性を否定するものではない」というのが現在の主流見解
+
+**APA 2025年ガイドラインの位置づけ問題**
+- APA（2025年）はEMDRを第二選択（conditional recommendation）に格付けしたが、これはWHO・VA/DoD・ISTSSと矛盾
+- Journal of EMDR Practice and Research誌（2025）に「APA 2025ガイドラインのEMDR格付けへの批判」論文が掲載され、効果量を正当に評価していないと批判
+- APA Monitor (2025年7-8月号) によれば「CPT・PE・TF-CBTが最も強いエビデンス」とする立場
 
 ---
 
 ## 4. 介入2：持続エクスポージャー療法（Prolonged Exposure, PE）
 
 ### 4-1. 機序
-<!-- I06_PE_MECHANISM_PLACEHOLDER -->
+PEは**感情処理理論（Emotional Processing Theory）**および**禁制学習理論（Inhibitory Learning Theory）**を理論的基盤とする。
+
+**コアメカニズム：2種類の曝露**
+
+1. **想像曝露（Imaginal Exposure）**
+   - トラウマ体験を詳細に繰り返し言語化・想起することで、安全な文脈でのトラウマ記憶活性化を促す
+   - 繰り返し活性化により**恐怖ネットワーク（fear network）**が修正される
+
+2. **現実曝露（In Vivo Exposure）**
+   - 回避行動の対象（場所・状況・物・人）に段階的に直面する
+   - 「これらは実際には危険ではない」という安全記憶（inhibitory memory）が形成される
+
+**神経生物学的メカニズム**
+- **恐怖消去（Fear Extinction）**: 前内側前頭前皮質（vmPFC）、扁桃体、海馬の機能的連携強化が消去記憶の保持に関与（PMC, 2017）
+- **抑制学習（Inhibitory Learning）**: 新たな安全連合記憶が元の恐怖記憶を上書きするのではなく、競合する連合として形成される（現代モデル）
+- **睡眠との関係**: 睡眠不足が消去記憶の保持を障害することが明らかになっており、PE効果はセッション後の睡眠の質に依存する可能性がある（PMC, 2025）
+- **vmPFC-扁桃体-海馬の連携**: PE寛解後は皮質の菲薄化・体積変化も確認されている（PMC, 2016）
+
+**CPT・EMDRとの機序的違い**
+- PE: 回避の直接的除去＋恐怖消去（曝露中心）
+- CPT: 認知的「stuck points」の修正（認知再構成中心）
+- EMDR: 作業記憶競合＋記憶再固定化（bilateral stimulation活用）
+- PE固有の特徴として、「ホットスポット」（最もディストレスの高い瞬間への繰り返し焦点化）が重要なメカニズムとされている
 
 ### 4-2. 効果量（メタ分析）
-<!-- I07_PE_EFFECT_SIZE_PLACEHOLDER -->
+**主要メタ分析の効果量**
+
+| 研究 | 比較条件 | 効果量 | サンプル |
+|---|---|---|---|
+| Powers et al. (2010). *Psychiatric Annals*. | vs. waitlist/通常ケア | Hedges' g = **1.08** (95% CI: 0.69–1.46) | 13研究, n=675 |
+| Powers et al. (2010) | vs. 対照（二次アウトカム） | g = 0.77 (95% CI: 0.53–1.01) | 13試験 |
+| ScienceDirect (2021) Exposure therapy meta-analysis | 曝露療法全般 | 大効果量 | 複数RCT |
+| Tran et al. (2023). *Psychological Medicine*, 53(13). | waitlist対比（ネットワーク） | 大効果（EMDRより小さく、TF-CBTと同水準） | ネットワークメタ分析 |
+
+**Follow-up効果量（長期維持）**
+- フォローアップ時（平均6ヶ月）: 一次アウトカム Hedges' g = **0.68**、二次アウトカム g = 0.41
+- 長期維持は確認されているが効果量は治療終了直後より縮小
+
+**PTSD症状改善・寛解率**
+- PE群は対照条件の**86%**より良好な転帰（Powers et al.）
+- 寛解率（症状消失）: PE完了後15%（vs. 対照7%）。6ヶ月後追跡で40%（vs. 33%）（McLean 2024, *Journal of Traumatic Stress*）
+- ⚠️ **注意点**: PE完了者の20〜60%が依然としてPTSD診断基準を満たすとする報告あり（McLean 2024）。個人差が大きい
+
+**能動的比較条件との直接比較**
+- PE vs. CPT: 寛解率・効果量に有意差なし（複数RCT）
+- PE vs. EMDR: 同等（VA/DoD 2023分類）
+- PE vs. 他の心理療法（全般）: g = 0.19の微小な優位性（Tran 2023）
+- 高い回復率（recovery rate）: RR = 1.26（vs. 他治療）
 
 ### 4-3. エビデンス強度
 <!-- I08_PE_EVIDENCE_LEVEL_PLACEHOLDER -->
