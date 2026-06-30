@@ -121,6 +121,7 @@
 | `reports/2026-06-07_toddler-sleep-improvement-comprehensive.md` | R049 | 2歳児の睡眠改善 完全ガイド（統合版） | 2026-06-07 |
 | `reports/2026-06-11_postbiotics-vs-probiotics-lactic-acid-bacteria.md` | R050 | 死菌・生菌・乳酸菌の効果比較（ポスト/プロバイオティクス） | 2026-06-11 |
 | `reports/2026-06-28_trauma-memory-intervention-scoring.md` | R051 | トラウマ・嫌な記憶を弱める短時間介入 実践ガイド（3軸採点＋具体的やり方） | 2026-06-28 |
+| `reports/2026-06-30_male-urinary-incontinence-interventions.md` | R052 | 40代男性の尿漏れ予防・対策 実践ガイド（タイプ別・17施策3軸採点＋具体的やり方） | 2026-06-30 |
 
 ### Code (13件)
 

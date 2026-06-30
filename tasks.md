@@ -58,6 +58,7 @@
 | T034 | R050: 死菌・生菌・乳酸菌の効果比較 — ポストバイオティクス vs プロバイオティクス エビデンスベース系統的レビュー（Tier1 15本・Tier2 14本。ISAPP2021定義・免疫・アレルギー・腸内環境・安全性・有効用量） | 2026-06-11 | Sonnet | `reports/2026-06-11_postbiotics-vs-probiotics-lactic-acid-bacteria.md` |
 | T035 | R050補強: 成人腸内細菌叢の組成変化（効果量・持続性の定量分析）追加。Zmora/Suez 2018（Cell）ランドマーク研究統合。エビデンス強度（CEBM Level）と効果量（SMD/NNT）の区別を明確化（Section 4.2a・4.6新設） | 2026-06-11 | Sonnet | `reports/2026-06-11_postbiotics-vs-probiotics-lactic-acid-bacteria.md`（更新） |
 | T036 | R051: トラウマ・嫌な記憶を弱める／消す／書き換える短時間介入15種の網羅的評価。効果量・エビデンス強度・実行しやすさの3軸100点スコアリング。記憶再固定化理論で横断比較（EMDR/PE/CPT/TF-CBT/テトリス/ImRs/IRT/WM干渉/プロプラノロール/MDMA/ケタミン/RTM/CISD/EFT/TIR）。CISD有害性・MDMA FDA却下・EMDR眼球運動論争をファクトチェック。文献58本。計画Opus+実行Sonnet | 2026-06-28 | Opus計画+Sonnet実行 | `reports/2026-06-28_trauma-memory-intervention-scoring.md` |
+| T037 | R052: 40代男性の尿漏れ予防・対策 実践ガイド。4タイプ（排尿後尿滴下/腹圧性/切迫性OAB/溢流性）見極め＋17施策を3軸100点スコアリング。骨盤底筋・尿道ミルキング・膀胱訓練・水分/カフェイン・減量・薬物（β3/α遮断/抗コリン）に具体的やり方。ノコギリヤシ無効・抗コリン認知症リスク・水分制限逆効果をファクトチェック。文献27本。実践重視テンプレ準拠。計画Opus+実行Sonnet | 2026-06-30 | Opus計画+Sonnet実行 | `reports/2026-06-30_male-urinary-incontinence-interventions.md` |
 
 ---
 
@@ -70,7 +71,7 @@
 4. `reports/INDEX.md` を Read → 既存レポートを確認
 
 ### タスク追加時
-- 「未着手」セクションに追加（ID: T001〜連番、次は `T037`）
+- 「未着手」セクションに追加（ID: T001〜連番、次は `T038`）
 - 担当モデル（Opus/Sonnet）を明記
 - 期待成果物を具体的に記述
 
@@ -89,6 +90,6 @@
 
 | 業務 | タイミング | 方法 |
 |---|---|---|
-| `reports/INDEX.md` 更新 | 新レポート作成時 | 次のIDは `R052` |
+| `reports/INDEX.md` 更新 | 新レポート作成時 | 次のIDは `R053` |
 | `FILE_INDEX.md` 更新 | 新ファイル追加時 | ファイル種別・説明を追記 |
 | masterへのpush | 全コミット後 | `git push origin HEAD:master` |
